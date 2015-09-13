@@ -30,10 +30,7 @@
                                 <td><?php echo $i++ ?></td>
                                 <td><?php echo $item['name'] ?></td>
                                 <td>
-                                    <?php echo intval($data['static'][$item['id']]); ?>/
-                                    <strong style="color: red"><?php echo intval($data['use'][$item['id']]); ?></strong>
-                                    -
-                                    <a target="_blank" href="<?php echo $this->createUrl('review/index', array('cate_id' => $item['id'])) ?>">Review</a>
+                                    <?php echo intval($data['static'][$item['id']]); ?>
                                 </td>
                                 <td>
                                     <a href="<?php echo $this->createUrl('edit', array('id' => $item['id'])) ?>"><i class="icon-pencil"></i></a>

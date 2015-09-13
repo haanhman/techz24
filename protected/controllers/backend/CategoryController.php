@@ -28,20 +28,11 @@ class CategoryController extends BackendController
 
 
         $query = "SELECT cate_id, COUNT(id) AS total FROM tbl_archive GROUP BY cate_id";
-        $result = $this->db_crawler->createCommand($query)->queryAll();
+        $result = $this->db->createCommand($query)->queryAll();
 
         foreach($result as $item) {
             $data['static'][$item['cate_id']] = $item['total'];
         }
-
-        $query = "SELECT cate_id, COUNT(id) AS total FROM tbl_archive WHERE is_use = 1 GROUP BY cate_id";
-        $result = $this->db_crawler->createCommand($query)->queryAll();
-
-        foreach($result as $item) {
-            $data['use'][$item['cate_id']] = $item['total'];
-        }
-
-
 
         $this->render('index', array('data' => $data));
     }

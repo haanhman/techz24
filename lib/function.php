@@ -677,3 +677,9 @@ function strpos_all($haystack, $str)
     }
     return $allpos;
 }
+
+function trim_array(&$arr) {
+    foreach($arr as $index => $value) {
+        $arr[$index] = trim($value);
+    }
+}

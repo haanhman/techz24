@@ -36,31 +36,14 @@
                 </form>
                 <!-- END RESPONSIVE QUICK SEARCH FORM -->
             </li>
-            <li class="start ">
-                <a href="javascript:;">
+            <?php $controller = Yii::app()->controller->id; ?>
+            <li class="start <?php if($controller == 'index') echo 'active'; ?>">
+                <a href="<?php echo $this->createUrl('index/index') ?>">
                     <i class="icon-home"></i>
                     <span class="title">Dashboard</span>
-                    <span class="arrow "></span>
                 </a>
-                <ul class="sub-menu">
-                    <li>
-                        <a href="index.html">
-                            <i class="icon-bar-chart"></i>
-                            Default Dashboard</a>
-                    </li>
-                    <li>
-                        <a href="index_2.html">
-                            <i class="icon-bulb"></i>
-                            New Dashboard #1</a>
-                    </li>
-                    <li>
-                        <a href="index_3.html">
-                            <i class="icon-graph"></i>
-                            New Dashboard #2</a>
-                    </li>
-                </ul>
             </li>
-            <li>
+            <li <?php if($controller == 'user') echo 'class="active"'; ?>>
                 <a href="javascript:;">
                     <i class="icon-user"></i>
                     <span class="title">Người dùng</span>
@@ -77,11 +60,16 @@
                     </li>
                 </ul>
             </li>
-            <li>
+            <li <?php if($controller == 'category') echo 'class="active"'; ?>>
                 <a href="<?php echo $this->createUrl('category/index') ?>">
                     <i class="icon-present"></i>
                     <span class="title">Danh mục</span>
-                    <span class="arrow "></span>
+                </a>
+            </li>
+            <li <?php if($controller == 'archive') echo 'class="active"'; ?>>
+                <a href="<?php echo $this->createUrl('archive/index') ?>">
+                    <i class="icon-puzzle"></i>
+                    <span class="title">News</span>
                 </a>
             </li>
 

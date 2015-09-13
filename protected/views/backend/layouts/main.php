@@ -50,6 +50,7 @@ License: You must have a valid license purchased only from themeforest(the above
     <link href="<?php echo base_url() ?>/public/assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
     <link href="<?php echo base_url() ?>/public/assets/global/plugins/icheck/skins/all.css" rel="stylesheet" type="text/css"/>
     <!-- END THEME STYLES -->
+    <script src="<?php echo base_url() ?>/public/assets/global/plugins/jquery.min.js" type="text/javascript"></script>
     <link rel="shortcut icon" href="favicon.ico"/>
 </head>
 <body class="page-header-fixed page-quick-sidebar-over-content">
@@ -112,7 +113,6 @@ License: You must have a valid license purchased only from themeforest(the above
 <script src="<?php echo base_url() ?>/public/assets/global/plugins/respond.min.js"></script>
 <script src="<?php echo base_url() ?>/public/assets/global/plugins/excanvas.min.js"></script>
 <![endif]-->
-<script src="<?php echo base_url() ?>/public/assets/global/plugins/jquery.min.js" type="text/javascript"></script>
 <script src="<?php echo base_url() ?>/public/assets/global/plugins/jquery-migrate.min.js"
         type="text/javascript"></script>
 <!-- IMPORTANT! Load jquery-ui.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->

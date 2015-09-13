@@ -16,11 +16,11 @@ class CnetController extends CrawlerController
     {
 
         $page = isset($_GET['page']) ? intval($_GET['page']) : 1;
-        if($page < 1) {
+        if ($page < 1) {
             $page = 1;
         }
 //        $cate_id = 1;
-//        $category_url = 'http://www.cnet.com/apple';
+//        $category_url = 'http://www.cnet.com/apple/';
 //        $cate_id = 2;
 //        $category_url = 'http://www.cnet.com/tags/google/';
         $cate_id = 3;
@@ -43,16 +43,22 @@ class CnetController extends CrawlerController
         }
 
         $data = array();
-        $links = $content->find('.assetThumb a');
-        foreach ($links as $item) {
-            $data[] = $this->_domain . trim($item->href);
+        $assets = $content->find('.asset');
+        foreach ($assets as $item) {
+            $a = $item->find('.assetThumb a', 0);
+            $link_url = $this->_domain . trim($a->href);
+            $dek = $item->find('p.dek', 0);
+            if (!empty($dek)) {
+                $data[$link_url] = trim($dek->innertext());
+            }
         }
+
 
         if (empty($data)) {
             echo 'Khong co du lieu vui long kiem tra lai';
         }
 
-        $data = array_unique($data);
+
         $params = array();
         $remove_link = array(
             'products',
@@ -60,23 +66,24 @@ class CnetController extends CrawlerController
             'pictures'
         );
 
-        foreach ($data as $index => $item) {
+        foreach ($data as $link_url => $dek) {
             $break = false;
-            foreach($remove_link as $prefix) {
-                if(strpos($item, $prefix) !== false) {
+            foreach ($remove_link as $prefix) {
+                if (strpos($link_url, $prefix) !== false) {
                     $break = true;
-                    unset($data[$index]);
+                    unset($data[$link_url]);
                     break;
                 }
             }
-            if($break) {
+            if ($break) {
                 continue;
             }
             $params[] = array(
                 'cate_id' => $cate_id,
-                'url' => $item,
-                'md5url' => md5($item),
-                'source_id' => $this->_source_id
+                'url' => $link_url,
+                'md5url' => md5($link_url),
+                'source_id' => $this->_source_id,
+                'short_text' => $dek
             );
         }
         $params = array_reverse($params);
@@ -89,7 +96,7 @@ class CnetController extends CrawlerController
     {
         $query = "SELECT * FROM tbl_link WHERE source_id = " . $this->_source_id . " AND status = 0 ORDER BY id LIMIT 1";
         $row = $this->db_crawler->createCommand($query)->queryRow();
-        if(empty($row)) {
+        if (empty($row)) {
             die('het roi');
         }
         echo "<pre>" . print_r($row, true) . "</pre>";
@@ -161,16 +168,30 @@ class CnetController extends CrawlerController
 
         $title = trim($html->find('title', 0)->innertext());
 
-        //`title`, `content`, `tags`, `gallery`, `source_id`, `source_url`
+        //meta_keywords
+        //meta itemprop="keywords"
+        $meta_keywords = $html->find('meta[itemprop="keywords"]', 0);
+        if (!empty($meta_keywords)) {
+            $meta_keywords = trim($meta_keywords->content);
+        }
+        $meta_description = $html->find('meta[name="description"]', 0);
+        if (!empty($meta_description)) {
+            $meta_description = trim($meta_description->content);
+        }
+
         $values = array(
             'cate_id' => $row['cate_id'],
-            'title' => $title,
+            'title' => str_replace(' - CNET', '', $title),
             'thumbnail' => $thumbnail,
             'gallery' => json_encode($list_images),
             'tags' => json_encode($tags),
             'content' => $content->outertext,
             'source_id' => $this->_source_id,
-            'source_url' => $url
+            'source_url' => $url,
+            'short_text' => $row['short_text'],
+            'meta_keywords' => $meta_keywords,
+            'meta_description' => $meta_description,
+            'created' => time()
         );
         yii_insert_row('archive', $values, 'db_crawler');
         $this->crawlerSuccess($row);
