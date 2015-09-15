@@ -1,0 +1,56 @@
+ul.wl-category li .cc{
+	background: #16a085;
+}
+
+.nav-bar>li.active{
+	background: #16a085;
+}
+
+.nav-bar>li.active:hover,
+.topcat,
+.topcat .overlay .number,
+.catf-format .fp,
+.catf .catf-caption span.meta,
+#mixedContent .overlay:hover > .title-carousel,
+.tagcloud a,
+ul.wl-category li.active > .cc, 
+ul.wl-category li:hover > .cc,
+#singlepost .loverate {
+	background: #1abc9c; 
+}
+#maincontainer a:hover,
+#maincontainer h2 a:hover,
+ul.breadcrumbs a,
+.merah,
+.tagcloud a:hover,
+#maincontainer a,
+.widget .stars,
+.widget a h2.wtitle:hover,
+ul.newsticker a{	
+	color: #1abc9c;
+}
+
+.ticarousel{
+	border-left: 3px solid #1abc9c;
+}
+
+#footer h3.blocktitle{
+	border-left: 1px solid #1abc9c;
+	border-top: 1px solid #1abc9c;
+}
+
+#singlepost header h1{
+	border-left: 5px solid #1abc9c;
+}
+
+.mainbar .sf-arrows .sf-with-ul:after, 
+.mainbar .sf-arrows ul li:hover > .sf-with-ul:after, 
+.mainbar .sf-arrows ul .sfHover > .sf-with-ul:after {
+	border: 5px solid #1abc9c !important;
+}
+
+.tabs dd.active, 
+.tabs li.active,
+ul.accordion>li.active{
+	border-top: 3px solid #1abc9c;
+}

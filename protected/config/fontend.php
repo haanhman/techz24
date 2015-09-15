@@ -2,6 +2,10 @@
 
 $fontend_settings = array(
     'defaultController' => 'index',
+    'import' => array(
+        'application.components.widget.*',
+        'application.components.*'
+    ),
 //    'controllerMap' => array(
 //        'min' => array(
 //            'class' => 'ext.minScript.controllers.ExtMinScriptController'

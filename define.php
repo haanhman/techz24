@@ -20,6 +20,10 @@ define('ROOT_PATH', dirname(__FILE__));
 define('FRAMEWORK_PATH', ROOT_PATH . '/framework');
 define('LIB_PATH', ROOT_PATH . '/lib');
 define('YII_DEBUG', $_GET['bug'] == 1 ? TRUE : FALSE);
+
+
+define('SHOW_SOURCE', FALSE);
+
 if (YII_DEBUG == TRUE) {
     ini_set('display_errors', 1);
     ini_set('display_startup_errors', 1);

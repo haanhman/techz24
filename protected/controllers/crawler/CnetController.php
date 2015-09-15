@@ -23,8 +23,13 @@ class CnetController extends CrawlerController
 //        $category_url = 'http://www.cnet.com/apple/';
 //        $cate_id = 2;
 //        $category_url = 'http://www.cnet.com/tags/google/';
-        $cate_id = 3;
-        $category_url = 'http://www.cnet.com/tags/microsoft/';
+//        $cate_id = 3;
+//        $category_url = 'http://www.cnet.com/tags/microsoft/';
+
+        $cate_id = 4;
+        $category_url = 'http://www.cnet.com/topics/mobile/';
+
+
         if ($page > 1) {
             $category_url .= $page;
         }
