@@ -50,3 +50,27 @@ div.dataTables_paginate li.selected a {
     font-style: italic;
     border-bottom: 3px solid #E4E7EA;
 }
+
+ol.flex-control-nav {
+    display: none;
+}
+
+.flex-direction-nav a {
+    top: 50% !important;
+}
+
+ul.list-tag {
+    margin-top: 10px;
+}
+
+ul.list-tag li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+ul.related-post h2 {
+    font-size: 16px !important;
+    margin: 0px 0px 5px 0px;
+    padding: 0px;
+}

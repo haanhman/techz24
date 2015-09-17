@@ -5,7 +5,6 @@ class IndexController extends FontendController
     public function actionIndex()
     {
         $data = array();
-
         $categories = $this->getListCategory();
         $category_feature = array();
         foreach ($categories as $item) {
@@ -13,11 +12,9 @@ class IndexController extends FontendController
                 $category_feature[] = $item['id'];
             }
         }
-        $data['category'] = $categories;
-        $data['cate_static'] = $this->staticCategory();
+        $data['category'] = $this->getListCategory();
         $data['catslide'] = $this->getCategoryFeatureContent($category_feature);
         $data['catebox'] = $this->getCategoryContentBox($category_feature);
-
         $data['newpost'] = $this->getNewPostNormal($category_feature);
         $tags = array();
         if(!empty($data['newpost'])) {
@@ -32,6 +29,16 @@ class IndexController extends FontendController
             $tags = array_unique($tags);
             $data['tags'] = $this->getListTags($tags);
         }
+
+        //lay danh sach tag noi bat
+        $query = "SELECT name FROM tbl_tags WHERE is_feature = 1";
+        $tags = $this->db->createCommand($query)->queryColumn();
+
+        $this->_meta = array(
+            'title' => 'Product reviews and prices, and tech news - Techz24',
+            'description' => 'Techz24 is the world\'s leader in tech product reviews, news, prices, videos, forums, how to\'s and more.',
+            'keywords' => implode(', ', $tags)
+        );
 
         $this->render('index', array('data' => $data));
     }

@@ -35,6 +35,8 @@
 
                     <!-- widget custome menus -->
                     <?php $this->widget('CategoryWidget'); ?>
+
+                    <?php $this->widget('AdsWidget'); ?>
                 </aside>
             </div>
         </section>

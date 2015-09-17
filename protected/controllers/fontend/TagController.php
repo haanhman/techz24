@@ -1,30 +1,21 @@
 <?php
 
-class CategoryController extends FontendController
+class TagController extends FontendController
 {
     public function actionIndex()
     {
         $data = array();
         $alias = urlGETParams('alias');
-        $categories = $this->getListCategory();
-        $category_feature = array();
-        $cate = array();
-        foreach ($categories as $item) {
-            if ($item['alias'] == $alias) {
-                $cate = $item;
-                break;
-            }
-        }
-        if(empty($cate)) {
+        $query = "SELECT * FROM tbl_tags WHERE alias = :alias";
+        $values = array(':alias' => $alias);
+        $row = $this->db->createCommand($query)->bindValues($values)->queryRow();
+
+        if (empty($row)) {
             $this->redirect($this->createUrl('index/index'));
         }
-        $cate_id = $cate['id'];
-        $data['cur_cate'] = $cate;
-        $data['category'] = $categories;
-
-
-
-        $where = " AND cate_id = " . $cate_id;
+        $data['row'] = $row;
+        $tag_id = $row['id'];
+        $where = " AND tags LIKE '%," . $tag_id . ",%' ";
         $query_count = "SELECT COUNT(id) FROM tbl_archive WHERE 1 " . $where;
         $item_count = $this->db->createCommand($query_count)->queryScalar();
 
@@ -44,12 +35,12 @@ class CategoryController extends FontendController
         $data['newpost'] = $this->db->createCommand($query)->queryAll();
 
         $tags = array();
-        if(!empty($data['newpost'])) {
-            foreach($data['newpost'] as $item) {
+        if (!empty($data['newpost'])) {
+            foreach ($data['newpost'] as $item) {
                 $arr = explode(',', trim($item['tags'], ','));
-                if(!empty($arr)) {
+                if (!empty($arr)) {
                     foreach ($arr as $t) {
-                        $tags[] =$t;
+                        $tags[] = $t;
                     }
                 }
             }
@@ -57,12 +48,12 @@ class CategoryController extends FontendController
             $data['tags'] = $this->getListTags($tags);
         }
 
-        $this->_meta = array(
-            'title' => $cate['meta_title'],
-            'description' => $cate['meta_description'],
-            'keywords' => $cate['meta_keywords']
-        );
+        $data['category'] = $this->getListCategory();
 
+        $this->_meta = array(
+            'title' => $data['row']['name'] . ' News - Techz24',
+            'description' => 'Techz24 news editors and reporters provide top '.$data['row']['name'].' news, with in-depth coverage of issues and events.'
+        );
 
         $this->render('index', array(
             'data' => $data,
@@ -72,11 +63,12 @@ class CategoryController extends FontendController
         ));
     }
 
-    private function staticCategory() {
+    private function staticCategory()
+    {
         $data = array();
         $query = "SELECT cate_id, COUNT(id) AS total FROM tbl_archive GROUP BY cate_id";
         $result = $this->db->createCommand($query)->queryAll();
-        foreach($result as $item) {
+        foreach ($result as $item) {
             $data[$item['cate_id']] = $item['total'];
         }
         return $data;

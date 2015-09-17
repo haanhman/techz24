@@ -648,7 +648,7 @@ h1, h2, h3, h4, h5, h6 {
 .black{ background: #000000 !important;}
 
 
-h3.blocktitle {
+h1.blocktitle, h3.blocktitle {
 	background: #F8F8F8;
 	height: 50px;
 	line-height: 50px;
@@ -659,17 +659,19 @@ h3.blocktitle {
 	border-top: 1px solid #EBEBEB;
 	margin-bottom: 20px;
 }
-h3.blocktitle span {
+h3.blocktitle span, h1.blocktitle span {
 	text-align: right;
 	float: right;
 	padding: 0 20px 0 0;
 	color: #FF0000;
 	font-size: 14px;
 }
-h3.blocktitle span a{ 
+h3.blocktitle span a, h1.blocktitle span a{
 	color:#FF0000;
 }
-
+h1.blocktitle {
+	font-size: 27px;
+}
 #singlepost p{
 	font-weight: normal;
 	font-size: 14px;

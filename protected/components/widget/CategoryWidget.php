@@ -14,7 +14,6 @@ class CategoryWidget extends MyWidget {
 
     public function run() {
         $data = array();
-        $data = array();
         $query = "SELECT * FROM tbl_category ORDER BY weight";
         $result = $this->db->createCommand($query)->queryAll();
         foreach ($result as $item) {

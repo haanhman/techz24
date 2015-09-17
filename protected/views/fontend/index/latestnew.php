@@ -4,8 +4,19 @@ $title = 'LATEST POST';
 if ($controller == 'category') {
     $title = $data['cur_cate']['name'];
 }
+if ($controller == 'tag') {
+    $title = $data['row']['name'];
+}
+if ($controller == 'search') {
+    $keyword = isset($_GET['keyword']) ? urlGETParams('keyword') : '';
+    $title = $keyword;
+}
+$htag = 'h3';
+if($controller != 'index') {
+    $htag = 'h1';
+}
 ?>
-<h3 class="blocktitle"><?php echo $title ?></h3>
+<<?php echo $htag ?> class="blocktitle"><?php echo $title ?></<?php echo $htag ?>>
 <!-- list blog latest news -->
 <section id="listnews">
     <ul>
@@ -33,7 +44,7 @@ if ($controller == 'category') {
                     </h2>
 
                     <p class="meta-date"><?php echo date('F d,Y', $item['created']) ?> IN <a
-                            href="<?php echo $url_category ?>">MOBILE</a></p>
+                            href="<?php echo $url_category ?>"><?php echo $category['name'] ?></a></p>
 
                     <div class="desc">
                         <p><?php echo nl2br($item['short_text']) ?></p>

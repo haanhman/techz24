@@ -15,17 +15,23 @@
     <!-- Set the viewport width to device width for mobile -->
     <meta name="viewport" content="width=device-width"/>
 
-    <title>EXTRANEWS html5 & Css3 Template</title>
+    <title><?php echo $this->_meta['title'] ?></title>
 
-    <meta property="og:site_name" content="Extranews"/>
-    <meta property="og:title" content="EXTRANEWS html5 & Css3 Template"/>
-    <meta property="og:url" content="http://www.envalabs.com/"/>
-    <meta property="og:image" content="<?php echo base_url() ?>/public/assets/fontend/images/exthumb.jpg"/>
-    <meta property="og:description" content="Modern & clean HTML5, CSS3 Template"/>
+    <meta property="og:site_name" content="Techz24"/>
+    <meta property="og:title" content="<?php echo CHtml::encode($this->_meta['title']) ?>"/>
+    <meta property="og:url" content="http://www.techz24.com/"/>
+    <?php
+    if (!empty($this->_meta['image'])) {
+        ?>
+        <meta property="og:image" content="<?php echo $this->_meta['image'] ?>"/>
+        <?php
+    }
+    ?>
+    <meta property="og:description" content="<?php echo CHtml::encode($this->_meta['description']) ?>"/>
 
-    <meta name="description" content="Modern & clean HTML5, CSS3 Template"/>
-    <meta name="keywords" content="HTML,CSS,XML,JavaScript"/>
-    <meta name="author" content="envalabs"/>
+    <meta name="description" content="<?php echo CHtml::encode($this->_meta['description']) ?>"/>
+    <meta name="keywords" content="<?php echo CHtml::encode($this->_meta['keywords']) ?>"/>
+    <meta name="author" content="anhmantk"/>
 
 
     <link rel="stylesheet" href="<?php echo base_url() ?>/public/assets/fontend/style.css">
@@ -37,6 +43,9 @@
     <link href="<?php echo base_url() ?>/public/assets/fontend/css/schemes/redori.css" id="switchyuk" rel='stylesheet'
           type='text/css'/>
     <!-- end switch theme -->
+    <?php $this->renderPartial('//layouts/analyticstracking') ?>
+
+
 <body>
 <!-- Pushy Menu -->
 <?php $this->renderPartial('//layouts/nav_mobile') ?>
@@ -191,96 +200,5 @@
 <script src="<?php echo base_url() ?>/public/assets/fontend/js/pushy.js"></script>
 <script src="<?php echo base_url() ?>/public/assets/fontend/js/plugins.js"></script>
 <script src="<?php echo base_url() ?>/public/assets/fontend/js/app.js"></script>
-
-
-<!-- SWITCH SCHEME - REMOVE THIS  -->
-
-<div class="ganti">
-    <div class="openedit"><i class="fa fa-magic fa-2x"></i></div>
-    <div class="slideleftha">
-        <h3>Style Switcher</h3>
-        <hr/>
-        <p>Choose Color Scheme</p>
-        <ul id="switcher">
-            <li><a href="#" data-scheme="<?php echo base_url() ?>/public/assets/fontend/css/schemes/orange.css"
-                   class="chng orangeflat">orange</a></li>
-            <li><a href="#" data-scheme="<?php echo base_url() ?>/public/assets/fontend/css/schemes/blue.css"
-                   class="chng blueflat">carrot</a></li>
-            <li><a href="#" data-scheme="<?php echo base_url() ?>/public/assets/fontend/css/schemes/purple.css"
-                   class="chng purpleflat">purple</a></li>
-            <li><a href="#" data-scheme="<?php echo base_url() ?>/public/assets/fontend/css/schemes/greensea.css"
-                   class="chng greenseaflat">greensea</a></li>
-            <li><a href="#" data-scheme="<?php echo base_url() ?>/public/assets/fontend/css/schemes/red.css"
-                   class="chng redflat">red</a><br/></li>
-            <li><a href="#" data-scheme="<?php echo base_url() ?>/public/assets/fontend/css/schemes/greenori.css"
-                   class="chng greenoriflat">green</a></li>
-            <li><a href="#" data-scheme="<?php echo base_url() ?>/public/assets/fontend/css/schemes/redori.css"
-                   class="chng redori">green</a></li>
-        </ul>
-        <div class="clearfix"></div>
-        <p>Choose Pattern</p>
-        <ul id="bodybg">
-            <li><a href="#" data-scheme="<?php echo base_url() ?>/public/assets/fontend/images/patterns/1.png"><img
-                        src="<?php echo base_url() ?>/public/assets/fontend/images/patterns/1.png" alt="image"/></a>
-            </li>
-            <li><a href="#" data-scheme="<?php echo base_url() ?>/public/assets/fontend/images/patterns/2.png"><img
-                        src="<?php echo base_url() ?>/public/assets/fontend/images/patterns/2.png" alt="image"/></a>
-            </li>
-            <li><a href="#" data-scheme="<?php echo base_url() ?>/public/assets/fontend/images/patterns/3.png"><img
-                        src="<?php echo base_url() ?>/public/assets/fontend/images/patterns/3.png" alt="image"/></a>
-            </li>
-            <li><a href="#" data-scheme="<?php echo base_url() ?>/public/assets/fontend/images/patterns/4.png"><img
-                        src="<?php echo base_url() ?>/public/assets/fontend/images/patterns/4.png" alt="image"/></a>
-            </li>
-            <li><a href="#" data-scheme="<?php echo base_url() ?>/public/assets/fontend/images/patterns/5.png"><img
-                        src="<?php echo base_url() ?>/public/assets/fontend/images/patterns/5.png" alt="image"/></a>
-            </li>
-            <li><a href="#" data-scheme="<?php echo base_url() ?>/public/assets/fontend/images/patterns/6.png"><img
-                        src="<?php echo base_url() ?>/public/assets/fontend/images/patterns/6.png" alt="image"/></a>
-            </li>
-            <li><a href="#" data-scheme="<?php echo base_url() ?>/public/assets/fontend/images/patterns/7.png"><img
-                        src="<?php echo base_url() ?>/public/assets/fontend/images/patterns/7.png" alt="image"/></a>
-            </li>
-            <li><a href="#" data-scheme="<?php echo base_url() ?>/public/assets/fontend/images/patterns/8.png"><img
-                        src="<?php echo base_url() ?>/public/assets/fontend/images/patterns/8.png" alt="image"/></a>
-            </li>
-            <li><a href="#" data-scheme="<?php echo base_url() ?>/public/assets/fontend/images/patterns/9.png"><img
-                        src="<?php echo base_url() ?>/public/assets/fontend/images/patterns/9.png" alt="image"/></a>
-            </li>
-            <li><a href="#" data-scheme="<?php echo base_url() ?>/public/assets/fontend/images/patterns/10.png"><img
-                        src="<?php echo base_url() ?>/public/assets/fontend/images/patterns/10.png" alt="image"/></a>
-            </li>
-            <li><a href="#" data-scheme="<?php echo base_url() ?>/public/assets/fontend/images/patterns/11.png"><img
-                        src="<?php echo base_url() ?>/public/assets/fontend/images/patterns/11.png" alt="image"/></a>
-            </li>
-            <li><a href="#" data-scheme="<?php echo base_url() ?>/public/assets/fontend/images/patterns/12.png"><img
-                        src="<?php echo base_url() ?>/public/assets/fontend/images/patterns/12.png" alt="image"/></a>
-            </li>
-            <li><a href="#" data-scheme="<?php echo base_url() ?>/public/assets/fontend/images/patterns/13.png"><img
-                        src="<?php echo base_url() ?>/public/assets/fontend/images/patterns/13.png" alt="image"/></a>
-            </li>
-            <li><a href="#" data-scheme="<?php echo base_url() ?>/public/assets/fontend/images/patterns/14.png"><img
-                        src="<?php echo base_url() ?>/public/assets/fontend/images/patterns/14.png" alt="image"/></a>
-            </li>
-            <li><a href="#" data-scheme="<?php echo base_url() ?>/public/assets/fontend/images/patterns/15.png"><img
-                        src="<?php echo base_url() ?>/public/assets/fontend/images/patterns/15.png" alt="image"/></a>
-            </li>
-            <li><a href="#" data-scheme="<?php echo base_url() ?>/public/assets/fontend/images/patterns/16.png"><img
-                        src="<?php echo base_url() ?>/public/assets/fontend/images/patterns/16.png" alt="image"/></a>
-            </li>
-            <li><a href="#" data-scheme="<?php echo base_url() ?>/public/assets/fontend/images/patterns/17.png"><img
-                        src="<?php echo base_url() ?>/public/assets/fontend/images/patterns/17.png" alt="image"/></a>
-            </li>
-            <li><a href="#" data-scheme="<?php echo base_url() ?>/public/assets/fontend/images/patterns/18.png"><img
-                        src="<?php echo base_url() ?>/public/assets/fontend/images/patterns/18.png" alt="image"/></a>
-            </li>
-        </ul>
-    </div>
-</div>
-<script type="text/javascript" src="<?php echo base_url() ?>/public/assets/fontend/js/jquery.cookie.js"></script>
-<script type="text/javascript" src="<?php echo base_url() ?>/public/assets/fontend/js/themeswitch.js"></script>
-<!-- END Switcher Scripts -->
-
-
 </body>
 </html>

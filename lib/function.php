@@ -683,3 +683,11 @@ function trim_array(&$arr) {
         $arr[$index] = trim($value);
     }
 }
+
+function createShortUrl($url) {
+    $createUrl = 'http://ouo.io/s/XiEqR34B?s=' . $url;
+    $arr = get_headers($createUrl, 1);
+    if(!empty($arr)) {
+        return $arr['Location'];
+    }
+}

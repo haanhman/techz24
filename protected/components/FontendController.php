@@ -3,6 +3,11 @@
 class FontendController extends CController
 {
 
+    /**
+     * meta tag
+     * @var
+     */
+    protected $_meta;
     protected $_table;
 
     /**
@@ -20,7 +25,7 @@ class FontendController extends CController
 
     public function getSource() {
         return array(
-            1 => 'cnet.com'
+            1 => 'Cnet.com'
         );
     }
 
