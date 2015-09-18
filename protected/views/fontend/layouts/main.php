@@ -69,75 +69,13 @@
                 <section id="footer">
                     <!-- widget tags -->
                     <div class="four columns">
-                        <div class="widget wcategory">
-                            <h3 class="blocktitle"><span>TAGS POST</span></h3>
-
-                            <div class="tagcloud">
-                                <a href="#" rel="tag">Style</a>
-                                <a href="#" rel="tag">masonry</a>
-                                <a href="#" rel="tag">Music</a>
-                                <a href="#" rel="tag">art</a>
-                                <a href="#" rel="tag">design</a>
-                                <a href="#" rel="tag">creative</a>
-                                <a href="#" rel="tag">nature</a>
-                                <a href="#" rel="tag">word</a>
-                                <a href="#" rel="tag">inspiration</a>
-                                <a href="#" rel="tag">video</a>
-                                <a href="#" rel="tag">quote</a>
-                                <a href="#" rel="tag">sytle</a>
-                                <a href="#" rel="tag">life</a>
-                                <a href="#" rel="tag">mas</a>
-                            </div>
-                        </div>
+                        <?php $this->widget('TagWidget'); ?>
                     </div>
 
                     <!-- widget latest comment -->
                     <div class="four columns gridfooter">
                         <div class="widget lastcomment">
-                            <h3 class="blocktitle"><span>LATEST COMMENTS</span></h3>
-
-                            <div class="listcomment">
-                                <ul class="listcomment">
-                                    <li>
-                                        <div class="cthumb">
-                                            <a href="#"><img
-                                                    src="<?php echo base_url() ?>/public/assets/fontend/images/user1.jpg"
-                                                    alt=""></a>
-                                        </div>
-                                        <div class="dcomment">
-                                            <a href="#"><strong>Richard</strong> on Lorem ipsum dolor sit amet,
-                                                consectetur adipiscing elit. Nullam eu convallis mi, sit amet iaculis
-                                                orci. Duis v...</a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="cthumb">
-                                            <a href="#"><img
-                                                    src="<?php echo base_url() ?>/public/assets/fontend/images/user2.jpg"
-                                                    alt=""></a>
-                                        </div>
-                                        <div class="dcomment">
-                                            <a href="#"><strong>Richard</strong> on Lorem ipsum dolor sit amet,
-                                                consectetur adipiscing elit. Nullam eu convallis mi, sit amet iaculis
-                                                orci. Duis v...</a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="cthumb">
-                                            <a href="#"><img
-                                                    src="<?php echo base_url() ?>/public/assets/fontend/images/user3.jpg"
-                                                    alt=""></a>
-                                        </div>
-                                        <div class="dcomment">
-                                            <a href="#"><strong>Richard</strong> on Lorem ipsum dolor sit amet,
-                                                consectetur adipiscing elit. Nullam eu convallis mi, sit amet iaculis
-                                                orci. Duis v...</a>
-                                        </div>
-                                    </li>
-                                </ul>
-
-
-                            </div>
+                            <?php $this->widget('CommentWidget'); ?>
                         </div>
                     </div>
 
@@ -149,13 +87,9 @@
 
                             <div class="dcontact">
                                 <img src="<?php echo base_url() ?>/public/assets/fontend/images/logo.png" alt=""><br/>
-
-                                <p>100 Biscayne Blvd. (North) 21st Floor <br/>New World Tower Miami,<br/> Florida 33148
-                                </p>
                                 <br/><br/>
-
                                 <div class="sn">
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="https://www.facebook.com/techz24dotcom" target="_blank" title="Techz24 on facebook"><i class="fa fa-facebook"></i></a>
                                     <a href="#"><i class="fa fa-google-plus"></i></a>
                                     <a href="#"><i class="fa fa-twitter"></i></a>
                                     <a href="#"><i class="fa fa-youtube"></i></a>

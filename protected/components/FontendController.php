@@ -20,6 +20,12 @@ class FontendController extends CController
     public function init()
     {
         parent::init();
+
+        $ip = ip_address();
+        if($ip != '118.71.87.162') {
+            die('access define');
+        }
+
         $this->db = EduDataBase::getConnection();
     }
 

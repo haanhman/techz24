@@ -49,11 +49,32 @@ $title = 'Product reviews and prices, and tech news - Techz24';
                     <li class="active">
                         <a href="#">NEWS</a>
                         <?php
-                        $categories = $this->getListCategory();
+                        $result = $this->getListCategory();
+                        $categories = array();
+                        foreach ($result as $item) {
+                            if ($item['parent_id'] == 0) {
+                                foreach ($result as $sub) {
+                                    if ($sub['parent_id'] == $item['id']) {
+                                        $item['sub'][] = $sub;
+                                    }
+                                }
+                                $categories[] = $item;
+                            }
+                        }
+
                         if (!empty($categories)) {
                             echo '<ul>';
                             foreach ($categories as $cate) {
-                                echo '<li><a href="' . $this->createUrl('category/index', array('alias' => $cate['alias'])) . '">' . $cate['name'] . '</a></li>';
+                                echo '<li>';
+                                echo '<a>' . $cate['name'] . '</a>';
+                                if(!empty($cate['sub'])) {
+                                    echo '<ul>';
+                                    foreach($cate['sub'] as $sub) {
+                                        echo '<li><a href="' . $this->createUrl('category/index', array('alias' => $sub['alias'])) . '">' . $sub['name'] . '</a></li>';
+                                    }
+                                    echo '</ul>';
+                                }
+                                echo '</li>';
                             }
                             echo '</ul>';
                         }

@@ -3,6 +3,9 @@
 	<ul class="wl-category">
 		<?php
 		foreach ($data['category'] as $item) {
+			if($item['parent_id'] == 0) {
+				continue;
+			}
 			$static = isset($data['cate_static'][$item['id']]) ? intval($data['cate_static'][$item['id']]) : 0;
 			?>
 			<li>

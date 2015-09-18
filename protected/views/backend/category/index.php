@@ -1,3 +1,6 @@
+<?php
+$page = 5;
+?>
 <div class="row">
     <div class="col-md-12">
 
@@ -17,6 +20,8 @@
                         <tr>
                             <th style="width: 5%">#</th>
                             <th>Tên danh mục</th>
+                            <th>Parent</th>
+                            <th>Source URL</th>
                             <th>Crawler</th>
                             <th style="width: 5%">Sửa</th>
                         </tr>
@@ -28,15 +33,51 @@
                             ?>
                             <tr>
                                 <td><?php echo $i++ ?></td>
-                                <td><?php echo $item['name'] ?></td>
+                                <td>
+                                    <a href="<?php echo $this->createUrl('edit', array('id' => $item['id'])) ?>"><?php echo $item['name'] ?></a>
+                                </td>
+                                <td>
+                                    <?php
+                                    if ($item['parent_id'] == 0) {
+                                        echo '<i style="color: green;" class="icon-check"></i>';
+                                    }
+                                    ?>
+                                </td>
+                                <td></td>
                                 <td>
                                     <?php echo intval($data['static'][$item['id']]); ?>
                                 </td>
                                 <td>
-                                    <a href="<?php echo $this->createUrl('edit', array('id' => $item['id'])) ?>"><i class="icon-pencil"></i></a>
+                                    <a href="<?php echo $this->createUrl('edit', array('id' => $item['id'])) ?>"><i
+                                            class="icon-pencil"></i></a>
                                 </td>
                             </tr>
                             <?php
+                            if (!empty($item['sub'])) {
+                                foreach ($item['sub'] as $sub) {
+                                    $run_url = '/crawler/cnet/category?cate_id=' . $sub['id'] . '&page=' . $page;
+                                    ?>
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <a href="<?php echo $this->createUrl('edit', array('id' => $sub['id'])) ?>"><?php echo $sub['name'] ?></a>
+                                        </td>
+                                        <td>&nbsp;</td>
+                                        <td>
+                                            CNet: <a rel="nofollow" href="<?php echo $run_url ?>"
+                                                     target="_blank"><?php echo $sub['cnet_url'] ?></a>
+                                        </td>
+                                        <td>
+                                            <?php echo intval($data['static'][$sub['id']]); ?>
+                                        </td>
+                                        <td>
+                                            <a href="<?php echo $this->createUrl('edit', array('id' => $sub['id'])) ?>"><i
+                                                    class="icon-pencil"></i></a>
+                                        </td>
+                                    </tr>
+                                    <?php
+                                }
+                            }
                         }
                         ?>
 

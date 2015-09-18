@@ -50,7 +50,7 @@ $row = $data['row'];
                                     echo '</ul>';
                                 }
                                 ?>
-
+                                <?php $this->renderPartial('social', array('data' => $data)) ?>
                                 <div id="disqus_thread"></div>
                                 <script type="text/javascript">
                                     /* * * CONFIGURATION VARIABLES * * */

@@ -25,9 +25,12 @@ class CnetController extends CrawlerController
 //        $category_url = 'http://www.cnet.com/tags/google/';
 //        $cate_id = 3;
 //        $category_url = 'http://www.cnet.com/tags/microsoft/';
+        $cate_id = urlGETParams('cate_id', VARIABLE_NUMBER);
+        $query = "SELECT * FROM tbl_category WHERE id = " . $cate_id;
+        $category = $this->db->createCommand($query)->queryRow();
 
-        $cate_id = 4;
-        $category_url = 'http://www.cnet.com/topics/mobile/';
+
+        $category_url = $category['cnet_url'];
 
 
         if ($page > 1) {
@@ -88,11 +91,13 @@ class CnetController extends CrawlerController
                 'url' => $link_url,
                 'md5url' => md5($link_url),
                 'source_id' => $this->_source_id,
-                'short_text' => $dek
+                'short_text' => $dek,
+                'parent_id' => $category['parent_id']
             );
         }
         $params = array_reverse($params);
         yii_insert_multiple('link', $params, 'db_crawler');
+
         echo "<pre>" . print_r($params, true) . "</pre>";
     }
 
@@ -185,6 +190,7 @@ class CnetController extends CrawlerController
         }
 
         $values = array(
+            'parent_id' => $row['parent_id'],
             'cate_id' => $row['cate_id'],
             'title' => str_replace(' - CNET', '', $title),
             'thumbnail' => $thumbnail,
