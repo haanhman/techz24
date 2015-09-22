@@ -35,6 +35,9 @@
                     <?php $this->widget('CategoryWidget'); ?>
 
                     <?php $this->widget('AdsWidget'); ?>
+
+                    <?php $this->widget('SocialWidget'); ?>
+
                 </aside>
             </div>
         </section>

@@ -1,8 +1,16 @@
 
 <div class="row">
     <div class="col-md-12">
+
+        <div style="margin-bottom: 10px;">
+            <a href="<?php echo $this->createUrl('index', array('source' => 1)) ?>" class="btn btn-circle red-sunglo btn-sm">Cnet</a>
+            <a href="<?php echo $this->createUrl('index', array('source' => 2)) ?>" class="btn btn-circle red-sunglo btn-sm">Techcrunch</a>
+        </div>
+
         <p>Tổng số có <strong><?php echo $item_count ?></strong> nội dung cần duyệt</p>
-        <p><a href="<?php echo $this->createUrl('review/approveall') ?>">Approve All Data</a></p>
+        <p>
+            <a href="<?php echo $this->createUrl('review/approveall') ?>">Approve All Data</a>
+        </p>
         <div class="portlet box green">
             <div class="portlet-title">
                 <div class="caption">Danh sách nội dung </div>

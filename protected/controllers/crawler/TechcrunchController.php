@@ -19,48 +19,29 @@ class TechcrunchController extends CrawlerController
         if ($page < 1) {
             $page = 1;
         }
-//        $cate_id = 1;
-//        $category_url = 'http://www.cnet.com/apple/';
-//        $cate_id = 2;
-//        $category_url = 'http://www.cnet.com/tags/google/';
-//        $cate_id = 3;
-//        $category_url = 'http://www.cnet.com/tags/microsoft/';
         $cate_id = urlGETParams('cate_id', VARIABLE_NUMBER);
         $query = "SELECT * FROM tbl_category WHERE id = " . $cate_id;
         $category = $this->db->createCommand($query)->queryRow();
 
 
-        $category_url = $category['cnet_url'];
+        $category_url = $category['techcrunch_url'];
 
 
         if ($page > 1) {
-            $category_url .= $page;
+            $category_url .= 'page/' . $page . '/';
+            //http://techcrunch.com/mobile/page/5/
         }
 
         $html = file_get_html($category_url);
-        $content = $html->find('.col-8', 0);
-
-
-        $remove_elements = array(
-            '.latestGalleries',
-            '.curated-hero'
-        );
-
-        foreach ($content->find(implode(', ', $remove_elements)) as $item) {
-            $item->outertext = '';
-        }
-
+        $contents = $html->find('.block-content');
         $data = array();
-        $assets = $content->find('.asset');
-        foreach ($assets as $item) {
-            $a = $item->find('.assetThumb a', 0);
-            $link_url = $this->_domain . trim($a->href);
-            $dek = $item->find('p.dek', 0);
-            if (!empty($dek)) {
-                $data[$link_url] = trim($dek->innertext());
-            }
+        foreach($contents as $item) {
+            $a = $item->find('.post-title a', 0);
+            $excerpt = $item->find('.excerpt', 0);
+            $excerpt->find('a', 0)->outertext = '';
+            $link_url = trim($a->href);
+            $data[$link_url] = trim($excerpt->innertext());
         }
-
 
         if (empty($data)) {
             echo 'Khong co du lieu vui long kiem tra lai';
@@ -69,9 +50,7 @@ class TechcrunchController extends CrawlerController
 
         $params = array();
         $remove_link = array(
-            'products',
-            'videos',
-            'pictures'
+//            'pictures'
         );
 
         foreach ($data as $link_url => $dek) {
@@ -94,27 +73,24 @@ class TechcrunchController extends CrawlerController
                 'short_text' => $dek,
                 'parent_id' => $category['parent_id']
             );
+            echo $link_url . '<br />';
         }
         $params = array_reverse($params);
         yii_insert_multiple('link', $params, 'db_crawler');
 
-        echo "<pre>" . print_r($params, true) . "</pre>";
+//        echo "<pre>" . print_r($params, true) . "</pre>";
     }
 
 
     public function actionDetail()
     {
         $query = "SELECT * FROM tbl_link WHERE source_id = " . $this->_source_id . " AND status = 0 ORDER BY id LIMIT 1";
-        $query = "SELECT * FROM tbl_link WHERE id = 345";
         $row = $this->db_crawler->createCommand($query)->queryRow();
         if (empty($row)) {
             die('het roi');
         }
 
         $url = $row['url'];
-        $url = 'http://techcrunch.com/2015/09/17/the-new-roomba-980-can-now-watch-your-dirt/';
-        $url = 'http://techcrunch.com/2015/09/16/ios-9-review/#.kckb5f:wusI';
-        $url = 'http://techcrunch.com/2015/09/15/the-sorry-button/#.kckb5f:RrA1';
         $html = file_get_html($url);
         //div.article-main-body:first
         //.col-8:first
@@ -135,18 +111,26 @@ class TechcrunchController extends CrawlerController
 
         //content
         $content = $html->find('div.article-entry', 0);
+        if(empty($content)) {
+            echo '<h1>Error</h1>';
+            $this->crawlerSuccess($row, 2);
+            die;
+        }
         $remove_elements = array(
             '.byline',
             '.inset-ad',
             '.inset-sm',
             '.social-share',
-            '.slideshowify'
+            '.slideshowify',
+            '.aside-related-articles',
+            '.native-ad-mobile',
+            'script',
+            'small'
         );
 
         foreach ($content->find(implode(', ', $remove_elements)) as $item) {
             $item->outertext = '';
         }
-
         //cancel link in content
         $links = $content->find('a');
         foreach ($links as $item) {
@@ -189,6 +173,8 @@ class TechcrunchController extends CrawlerController
         if (!empty($meta_description)) {
             $meta_description = trim($meta_description->content);
         }
+        $content = str_replace('<!-- Begin: Wordpress Article Content -->', '', $content->outertext);
+        $content = str_replace('<!-- End: Wordpress Article Content -->', '', $content);
 
         $values = array(
             'parent_id' => $row['parent_id'],
@@ -196,7 +182,7 @@ class TechcrunchController extends CrawlerController
             'title' => str_replace(' | TechCrunch', '', $title),
             'thumbnail' => $thumbnail,
             'tags' => json_encode($tags),
-            'content' => $content->outertext,
+            'content' => $content,
             'source_id' => $this->_source_id,
             'source_url' => $url,
             'short_text' => $row['short_text'],
@@ -205,8 +191,7 @@ class TechcrunchController extends CrawlerController
             'gallery' => json_encode($gallery),
             'created' => time()
         );
-        echo "<pre>" . print_r($values, true) . "</pre>";
-        die;
+        echo "<pre>" . print_r($row, true) . "</pre>";
         yii_insert_row('archive', $values, 'db_crawler');
         $this->crawlerSuccess($row);
     }

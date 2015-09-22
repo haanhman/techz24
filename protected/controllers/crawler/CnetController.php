@@ -137,7 +137,8 @@ class CnetController extends CrawlerController
             '.ad-inpage-video-top',
             '.cnetVideoPlayer',
             '.enlargeImage',
-            'noscript'
+            'noscript',
+            '.ad-replay-wide-top'
         );
 
         foreach ($content->find(implode(', ', $remove_elements)) as $item) {

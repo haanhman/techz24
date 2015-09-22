@@ -36,7 +36,8 @@ class FontendController extends CController
     public function getSource()
     {
         return array(
-            1 => 'Cnet.com'
+            1 => 'Cnet.com',
+            2 => 'Techcrunch.com'
         );
     }
 

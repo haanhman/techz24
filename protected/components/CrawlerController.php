@@ -27,9 +27,9 @@ class CrawlerController extends CController
         $this->db_crawler = EduDataBase::getConnection('db_crawler');
     }
 
-    protected function crawlerSuccess($row)
+    protected function crawlerSuccess($row, $status = 1)
     {
-        $query = "UPDATE tbl_link SET status = 1 WHERE id = " . $row['id'];
+        $query = "UPDATE tbl_link SET status = " . $status . " WHERE id = " . $row['id'];
         $this->db_crawler->createCommand($query)->execute();
         echo '<meta http-equiv="refresh" content="1">';
     }

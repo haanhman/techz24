@@ -59,7 +59,7 @@ class CategoryController extends FontendController
         }
 
         $this->_meta = array(
-            'title' => $cate['meta_title'],
+            'title' => $cate['meta_title'] . ' | Techz24',
             'description' => $cate['meta_description'],
             'keywords' => $cate['meta_keywords']
         );

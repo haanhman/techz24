@@ -55,7 +55,8 @@ $page = 1;
                             <?php
                             if (!empty($item['sub'])) {
                                 foreach ($item['sub'] as $sub) {
-                                    $run_url = '/crawler/cnet/category?cate_id=' . $sub['id'] . '&page=' . $page;
+
+
                                     ?>
                                     <tr>
                                         <td>&nbsp;</td>
@@ -64,8 +65,18 @@ $page = 1;
                                         </td>
                                         <td>&nbsp;</td>
                                         <td>
-                                            CNet: <a rel="nofollow" href="<?php echo $run_url ?>"
-                                                     target="_blank"><?php echo $sub['cnet_url'] ?></a>
+                                            <?php
+                                            if (!empty($sub['cnet_url'])) {
+                                                $run_url = '/crawler/cnet/category?cate_id=' . $sub['id'] . '&page=' . $page;
+                                                echo 'CNet: <a rel="nofollow" href="' . $run_url . '" target="_blank">' . $sub['cnet_url'] . '</a><br />';
+                                            }
+                                            if (!empty($sub['techcrunch_url'])) {
+                                                $page = 5;
+                                                $run_url = '/crawler/techcrunch/category?cate_id=' . $sub['id'] . '&page=' . $page;
+                                                echo 'Techcrunch: <a rel="nofollow" href="' . $run_url . '" target="_blank">' . $sub['techcrunch_url'] . '</a>';
+                                            }
+                                            ?>
+
                                         </td>
                                         <td>
                                             <?php echo intval($data['static'][$sub['id']]); ?>

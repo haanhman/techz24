@@ -10,8 +10,11 @@ class IndexController extends BackendController
         $query = "SELECT COUNT(*) FROM tbl_archive";
         $data['total_review'] = $this->db_crawler->createCommand($query)->queryScalar();
 
-        $query = "SELECT COUNT(*) FROM tbl_link WHERE status = 0";
-        $data['total_crawler'] = $this->db_crawler->createCommand($query)->queryScalar();
+        $query = "SELECT COUNT(*) FROM tbl_link WHERE status = 0 AND source_id = 1";
+        $data['cnet_crawler'] = $this->db_crawler->createCommand($query)->queryScalar();
+
+        $query = "SELECT COUNT(*) FROM tbl_link WHERE status = 0 AND source_id = 2";
+        $data['techcrunch_crawler'] = $this->db_crawler->createCommand($query)->queryScalar();
 
         $this->render('index', array('data' => $data));
     }

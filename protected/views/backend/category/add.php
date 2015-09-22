@@ -32,6 +32,11 @@ if(empty($row)) {
                             <input class="form-control" type="text" name="cnet_url"
                                    value="<?php echo $row['cnet_url']?>" placeholder="Nhập URL CNET">
                         </div>
+                        <div class="form-group">
+                            <label>Techcrunch Url</label>
+                            <input class="form-control" type="text" name="techcrunch_url"
+                                   value="<?php echo $row['techcrunch_url']?>" placeholder="Nhập URL Techcrunch">
+                        </div>
 
                         <div class="form-group">
                             <label>Danh mục mục cha</label>

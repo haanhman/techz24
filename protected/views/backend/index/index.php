@@ -26,8 +26,17 @@
                     <i class="fa fa-coffee"></i>
                 </div>
                 <div class="tile-object">
-                    <div class="name">RUN</div>
-                    <div class="number"><?php echo $data['total_crawler'] ?></div>
+                    <div class="name">Cnet</div>
+                    <div class="number"><?php echo $data['cnet_crawler'] ?></div>
+                </div>
+            </div>
+            <div class="tile bg-green" onclick="window.location='/crawler/techcrunch/detail';">
+                <div class="tile-body">
+                    <i class="fa fa-coffee"></i>
+                </div>
+                <div class="tile-object">
+                    <div class="name">Cechcrunch</div>
+                    <div class="number"><?php echo $data['techcrunch_crawler'] ?></div>
                 </div>
             </div>
         </div>
