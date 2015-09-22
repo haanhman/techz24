@@ -9,10 +9,27 @@
                 </div>
                 <div class="tile-object">
                     <div class="name">Comment</div>
-                    <div class="number"><?php echo $data['total_item'] ?></div>
+                    <div class="number"><?php echo $data['total_comment'] ?></div>
                 </div>
             </div>
-
+            <div class="tile bg-green" onclick="window.location='<?php echo $this->createUrl('review/index') ?>';">
+                <div class="tile-body">
+                    <i class="fa fa-bar-chart-o"></i>
+                </div>
+                <div class="tile-object">
+                    <div class="name">Reviews</div>
+                    <div class="number"><?php echo $data['total_review'] ?></div>
+                </div>
+            </div>
+            <div class="tile bg-red-intense" onclick="window.location='/crawler/cnet/detail';">
+                <div class="tile-body">
+                    <i class="fa fa-coffee"></i>
+                </div>
+                <div class="tile-object">
+                    <div class="name">RUN</div>
+                    <div class="number"><?php echo $data['total_crawler'] ?></div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

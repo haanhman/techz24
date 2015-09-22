@@ -16,10 +16,13 @@
     <meta name="viewport" content="width=device-width"/>
 
     <title><?php echo $this->_meta['title'] ?></title>
-
+    <?php
+    $url = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+    ?>
     <meta property="og:site_name" content="Techz24"/>
     <meta property="og:title" content="<?php echo CHtml::encode($this->_meta['title']) ?>"/>
-    <meta property="og:url" content="http://www.techz24.com/"/>
+    <meta property="og:url" content="<?php echo $url ?>"/>
+    <link rel="canonical" href="<?php echo $url ?>" />
     <?php
     if (!empty($this->_meta['image'])) {
         ?>
@@ -89,9 +92,9 @@
                                 <img src="<?php echo base_url() ?>/public/assets/fontend/images/logo.png" alt=""><br/>
                                 <br/><br/>
                                 <div class="sn">
-                                    <a href="https://www.facebook.com/techz24dotcom" target="_blank" title="Techz24 on facebook"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a target="_blank" href="https://www.facebook.com/techz24dotcom" title="Techz24 on facebook"><i class="fa fa-facebook"></i></a>
+                                    <a target="_blank" href="https://plus.google.com/118045223438632929013" title="Techz24 on google plus"><i class="fa fa-google-plus"></i></a>
+                                    <a target="_blank" href="https://twitter.com/techz24" title="Techz24 on twitter"><i class="fa fa-twitter"></i></a>
                                     <a href="#"><i class="fa fa-youtube"></i></a>
                                     <a href="#"><i class="fa fa-instagram"></i></a>
                                 </div>

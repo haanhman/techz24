@@ -13,7 +13,7 @@ $(function() {
 		pushyActiveClass = "pushy-active", //css class to toggle site overlay
 		containerClass = "container-push", //container open class
 		pushClass = "push-push", //css class to add pushy capability
-		menuBtn = $('.menu-btn, .pushy a, #logos'), //css classes to toggle the menu
+		menuBtn = $('.pushy a, #logos'), //css classes to toggle the menu
 		menuSpeed = 200, //jQuery fallback menu speed
 		menuWidth = pushy.width() + "px"; //jQuery fallback menu width
 

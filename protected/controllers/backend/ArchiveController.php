@@ -51,7 +51,8 @@ class ArchiveController extends BackendController
 
         $offset = ($page - 1) * $perPage;
 
-        $query = "SELECT id, cate_id, short_text, title, thumbnail FROM " . $this->_table . " WHERE 1 " . $where . " "
+        $query = "SELECT id, cate_id, short_text, title, thumbnail, created FROM " . $this->_table . " WHERE 1 " . $where . " "
+            . " ORDER BY id DESC "
             . "LIMIT " . $offset . "," . $perPage;
         $data['listItem'] = $this->db->createCommand($query)->queryAll();
 
@@ -66,5 +67,29 @@ class ArchiveController extends BackendController
         ));
     }
 
+    public function actionShortUrl()
+    {
+        $query = "SELECT id, source_url FROM " . $this->_table . " WHERE short_url = '' LIMIT 10";
+        $result = $this->db->createCommand($query)->queryAll();
+        if (empty($result)) {
+            die('Het roi');
+        }
+        $query = "UPDATE " . $this->_table . " SET short_url = :short_url WHERE id = :id";
+        $urls = array();
+        foreach ($result as $item) {
+            $short_url = createShortUrl($item['source_url']);
+            if(!empty($short_url)) {
+                $urls[] = $short_url;
+                $values = array(
+                    ':id' => $item['id'],
+                    ':short_url' => $short_url,
+                );
+                $this->db->createCommand($query)->bindValues($values)->execute();
+            }
+        }
+        echo "<pre>" . print_r($urls, true) . "</pre>";
+        echo '<meta http-equiv="refresh" content="1">';
+        die;
+    }
 
 }

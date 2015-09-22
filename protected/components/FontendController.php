@@ -21,15 +21,20 @@ class FontendController extends CController
     {
         parent::init();
 
-        $ip = ip_address();
-        if($ip != '118.71.87.162') {
-            die('access define');
-        }
+//        if ($_SERVER['HTTP_HOST'] == 'techz24.com' || $_SERVER['HTTP_HOST'] == 'www.techz24.com') {
+//            $user = Yii::app()->session['user'];
+//            $ip = ip_address();
+//            if (empty($user) && $ip != '118.71.87.162') {
+//                echo '<meta name="robots" content="noindex, nofollow">';
+//                die('Comming soon...');
+//            }
+//        }
 
         $this->db = EduDataBase::getConnection();
     }
 
-    public function getSource() {
+    public function getSource()
+    {
         return array(
             1 => 'Cnet.com'
         );

@@ -13,6 +13,13 @@ $mysql_config = array(
     'db_crawler' => 'db_tech24z_crawler'
 );
 
+if($_SERVER['HTTP_HOST'] == 'techz24.com' || $_SERVER['HTTP_HOST'] == 'www.techz24.com') {
+    $mysql_config['username'] = 'anhmantk_admin';
+    $mysql_config['password'] = 'MAoo[T^0gT0}';
+    $mysql_config['dbname'] = 'anhmantk_techz24';
+    $mysql_config['db_crawler'] = 'anhmantk_tech24z_crawler';
+}
+
 //so ban ghi tren 1 trang
 define('PAGE_SIZE', 20);
 

@@ -2,6 +2,7 @@
 <div class="row">
     <div class="col-md-12">
         <p>Tổng số có <strong><?php echo $item_count ?></strong> nội dung cần duyệt</p>
+        <p><a href="<?php echo $this->createUrl('review/approveall') ?>">Approve All Data</a></p>
         <div class="portlet box green">
             <div class="portlet-title">
                 <div class="caption">Danh sách nội dung </div>

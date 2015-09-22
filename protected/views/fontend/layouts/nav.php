@@ -13,10 +13,10 @@ $title = 'Product reviews and prices, and tech news - Techz24';
                     echo '<h1 style="padding: 0px; margin: 0px;">';
                 }
                 ?>
-                <a href="#"><img class="logo"
+                <img class="logo"
                                  src="<?php echo base_url() ?>/public/assets/fontend/images/logo.png"
                                  alt="<?php echo CHtml::encode($title) ?>"
-                                 title="<?php echo CHtml::encode($title) ?>"></a>
+                                 title="<?php echo CHtml::encode($title) ?>">
                 <?php
                 if ($controller == 'index' && $action == 'index') {
                     echo '</h1>';

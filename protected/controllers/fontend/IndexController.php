@@ -66,7 +66,7 @@ class IndexController extends FontendController
     private function getCategoryContentBox($category_feature)
     {
         $querys = $data = array();
-
+        $category_feature[] = 11;
         foreach ($category_feature as $cate_id) {
             $querys[] = "(SELECT id, cate_id, title, alias, thumbnail,short_text FROM tbl_archive WHERE cate_id = " . $cate_id . " ORDER BY id DESC LIMIT 4)";
         }

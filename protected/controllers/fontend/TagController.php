@@ -31,6 +31,7 @@ class TagController extends FontendController
         $offset = ($page - 1) * $perPage;
 
         $query = "SELECT id, cate_id, title, alias, thumbnail,short_text,created,tags FROM tbl_archive WHERE 1 " . $where . " "
+            . " ORDER BY id DESC "
             . "LIMIT " . $offset . "," . $perPage;
         $data['newpost'] = $this->db->createCommand($query)->queryAll();
 

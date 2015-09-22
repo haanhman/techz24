@@ -1,6 +1,6 @@
 <div id="share-buttons">
     <?php
-    $url = 'http://www.' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+    $url = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
     $text = $data['row']['title'];
     ?>
     <!-- Facebook -->

@@ -24,14 +24,17 @@ $row = $data['row'];
                             <div class="post-content">
                                 <?php echo $row['content'] ?>
                                 <?php
+
+                                //hien thi nguon
+                                if (!empty($row['short_url'])) {
+                                    echo '<div class="clear"></div>';
+                                    echo '<p style="text-align: right">Source: <strong><a target="_blank" href="' . $row['short_url'] . '">' . $data['source'][$row['source_id']] . '</a></strong></p>';
+                                }
+
                                 //danh sach anh neu co
                                 $gallery = json_decode($row['gallery'], true);
                                 if (!empty($gallery)) {
                                     $this->renderPartial('gallery', array('data' => $data));
-                                }
-                                //hien thi nguon
-                                if (!empty($row['short_url'])) {
-                                    echo '<p style="text-align: right">Source: <strong><a target="_blank" href="' . $row['short_url'] . '">' . $data['source'][$row['source_id']] . '</a></strong></p>';
                                 }
 
                                 if (!empty($data['tags'])) {

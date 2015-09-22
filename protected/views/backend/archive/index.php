@@ -2,7 +2,7 @@
 <div class="row">
     <div class="col-md-12">
         <p>Tổng số có <strong><?php echo $item_count ?></strong> nội dung cần duyệt</p>
-
+        <a href="<?php echo $this->createUrl('shorturl') ?>">Create short url</a>
         <?php echo showMessage(); ?>
         <div class="table-responsive">
             <table class="table table-striped table-bordered table-hover">

@@ -82,3 +82,8 @@ ul.related-post h2 {
     box-shadow: 0;
     display: inline;
 }
+
+.post-content figure.chart {
+    width: 100% !important;
+    height: 100% !important;
+}

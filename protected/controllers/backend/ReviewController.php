@@ -51,6 +51,7 @@ class ReviewController extends BackendController
         $offset = ($page - 1) * $perPage;
 
         $query = "SELECT id, cate_id, short_text, title, thumbnail FROM tbl_archive WHERE 1 " . $where . " "
+            . " ORDER BY id "
             . "LIMIT " . $offset . "," . $perPage;
         $data['listItem'] = $this->db_crawler->createCommand($query)->queryAll();
 
@@ -168,12 +169,52 @@ class ReviewController extends BackendController
             'created' => time()
         );
         yii_insert_row('archive', $values);
-        createMessage('Approve noi dung: ' . $row['title']. ' thành công');
+        createMessage('Approve noi dung: ' . $row['title'] . ' thành công');
 
         $query = "DELETE FROM tbl_archive WHERE id = " . $id;
         $this->db_crawler->createCommand($query)->execute();
 
         $this->redirect($this->createUrl('review/index', array('source' => $row['source_id'])));
+    }
+
+    public function actionApproveAll()
+    {
+        $query = "SELECT * FROM tbl_archive";
+        $result = $this->db_crawler->createCommand($query)->queryAll();
+        if (empty($result)) {
+            die('khong co du lieu');
+        }
+        foreach ($result as $row) {
+            if (!empty($row['tags'])) {
+                $tags = json_decode($row['tags'], true);
+                trim_array($tags);
+                $tags = $this->createTags($tags);
+            }
+            //`tags`, `meta_keywords`, `meta_description`, `gallery`, `source_id`, `source_url`, `status`
+            $values = array(
+                'parent_id' => $row['parent_id'],
+                'cate_id' => $row['cate_id'],
+                'title' => $row['title'],
+                'alias' => change_url_seo($row['title']),
+                'thumbnail' => $row['thumbnail'],
+                'short_text' => $row['short_text'],
+                'content' => $row['content'],
+                'gallery' => $row['gallery'],
+                'meta_keywords' => $row['meta_keywords'],
+                'meta_description' => $row['meta_description'],
+                'source_id' => $row['source_id'],
+                'source_url' => $row['source_url'],
+                'status' => 1,
+                'tags' => $tags,
+                'created' => time()
+            );
+            yii_insert_row('archive', $values);
+            createMessage('Approve noi dung: ' . $row['title'] . ' thành công');
+        }
+
+        $query = "DELETE FROM tbl_archive";
+        $this->db_crawler->createCommand($query)->execute();
+        $this->redirect($this->createUrl('review/index'));
     }
 
 }

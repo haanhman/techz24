@@ -5,7 +5,14 @@ class IndexController extends BackendController
     public function actionIndex() {
         $data = array();
         $query = "SELECT COUNT(id) FROM tbl_latest_comment";
-        $data['total_item'] = $this->db->createCommand($query)->queryScalar();
+        $data['total_comment'] = $this->db->createCommand($query)->queryScalar();
+
+        $query = "SELECT COUNT(*) FROM tbl_archive";
+        $data['total_review'] = $this->db_crawler->createCommand($query)->queryScalar();
+
+        $query = "SELECT COUNT(*) FROM tbl_link WHERE status = 0";
+        $data['total_crawler'] = $this->db_crawler->createCommand($query)->queryScalar();
+
         $this->render('index', array('data' => $data));
     }
 

@@ -1,17 +1,36 @@
 <nav class="pushy pushy-left">
     <ul>
-        <li><a href="#">News</a>
-            <?php
-            $categories = $this->getListCategory();
-            if (!empty($categories)) {
-                echo '<ul class="dropdown">';
-                foreach ($categories as $cate) {
-                    echo '<li><a href="' . $this->createUrl('category/index', array('alias' => $cate['alias'])) . '">' . $cate['name'] . '</a></li>';
+        <?php
+        $result = $this->getListCategory();
+        $categories = array();
+        foreach ($result as $item) {
+            if ($item['parent_id'] == 0) {
+                foreach ($result as $sub) {
+                    if ($sub['parent_id'] == $item['id']) {
+                        $item['sub'][] = $sub;
+                    }
                 }
-                echo '</ul>';
+                $categories[] = $item;
             }
-            ?>
-        </li>
+        }
+
+        if (!empty($categories)) {
+            echo '<ul class="dropdown">';
+            foreach ($categories as $cate) {
+                echo '<li>';
+                echo '<a href="#">' . $cate['name'] . '</a>';
+                if (!empty($cate['sub'])) {
+                    echo '<ul>';
+                    foreach ($cate['sub'] as $sub) {
+                        echo '<li><a href="' . $this->createUrl('category/index', array('alias' => $sub['alias'])) . '">' . $sub['name'] . '</a></li>';
+                    }
+                    echo '</ul>';
+                }
+                echo '</li>';
+            }
+            echo '</ul>';
+        }
+        ?>
         <li><a href="#">Video</a></li>
         <li><a href="#">Reviews</a></li>
     </ul>
