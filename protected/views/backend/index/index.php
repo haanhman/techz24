@@ -23,22 +23,40 @@
             </div>
             <div class="tile bg-red-intense" onclick="window.location='/crawler/cnet/detail';">
                 <div class="tile-body">
-                    <i class="fa fa-coffee"></i>
+                    <div style="font-size: 30px;padding-top: 35px;text-align: center;">Cnet</div>
                 </div>
                 <div class="tile-object">
-                    <div class="name">Cnet</div>
                     <div class="number"><?php echo $data['cnet_crawler'] ?></div>
                 </div>
             </div>
             <div class="tile bg-green" onclick="window.location='/crawler/techcrunch/detail';">
                 <div class="tile-body">
-                    <i class="fa fa-coffee"></i>
+                    <div style="font-size: 18px;padding-top: 35px;text-align: center;">Cechcrunch</div>
                 </div>
                 <div class="tile-object">
-                    <div class="name">Cechcrunch</div>
+                    <div class="name"></div>
                     <div class="number"><?php echo $data['techcrunch_crawler'] ?></div>
                 </div>
             </div>
+            <div class="tile bg-red-intense" onclick="window.location='/crawler/wpcentral/detail';">
+                <div class="tile-body">
+                    <div style="font-size: 20px;padding-top: 35px;text-align: center;">WPcentral</div>
+                </div>
+                <div class="tile-object">
+                    <div class="number"><?php echo $data['wpcentral_crawler'] ?></div>
+                </div>
+            </div>
+
+            <div class="tile bg-green" onclick="window.location='<?php echo $this->createUrl('tag') ?>';">
+                <div class="tile-body">
+                    <div style="font-size: 84px;padding-top: 35px;text-align: center;">@</div>
+                </div>
+                <div class="tile-object">
+                    <div class="name">Tags</div>
+                    <div class="number"></div>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>

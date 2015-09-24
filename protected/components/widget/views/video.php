@@ -3,7 +3,7 @@
 
     <div class="getvid">
         <div class="flex-video widescreen">
-            <iframe height="200" src="http://www.youtube.com/embed/61TAqY03xwk"
+            <iframe height="200" src="http://www.youtube.com/embed/NB_FaOnPtE4"
                     allowfullscreen></iframe>
         </div>
     </div>

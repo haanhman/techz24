@@ -37,7 +37,8 @@ class FontendController extends CController
     {
         return array(
             1 => 'Cnet.com',
-            2 => 'Techcrunch.com'
+            2 => 'Techcrunch.com',
+            3 => 'Windowscentral.com'
         );
     }
 
@@ -60,6 +61,10 @@ class FontendController extends CController
     {
         $data = array();
         if (empty($list_tags_id)) {
+            return $data;
+        }
+        $list_tags_id = array_unique(array_filter($list_tags_id));
+        if(empty($list_tags_id)) {
             return $data;
         }
         $query = "SELECT id, name, alias FROM tbl_tags WHERE id IN (" . implode(',', $list_tags_id) . ")";

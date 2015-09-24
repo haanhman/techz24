@@ -11,6 +11,21 @@ class CnetController extends CrawlerController
         $this->_domain = 'http://www.cnet.com';
     }
 
+    public function actionAll()
+    {
+        $query = "SELECT id FROM tbl_category WHERE cnet_url <> '' ORDER BY id";
+        $result = $this->db->createCommand($query)->queryColumn();
+        $index = isset($_GET['index']) ? intval($_GET['index']) : 0;
+        if ($index >= count($result)) {
+            die('xong roi');
+        }
+        $_GET['cate_id'] = $result[$index];
+        $this->actionCategory();
+        $index++;
+        $url = $this->createAbsoluteUrl('all', array('index' => $index));
+        echo '<meta http-equiv="refresh" content="0;URL='.$url.'" />';
+    }
+
 
     public function actionCategory()
     {
@@ -36,7 +51,8 @@ class CnetController extends CrawlerController
         if ($page > 1) {
             $category_url .= $page;
         }
-
+        echo "<pre>" . print_r($_GET, true) . "</pre>";
+        echo $category_url . '<br />';
         $html = file_get_html($category_url);
         $content = $html->find('.col-8', 0);
 

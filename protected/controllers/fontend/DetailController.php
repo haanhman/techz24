@@ -27,7 +27,7 @@ class DetailController extends FontendController
 
 
         $this->_meta = array(
-            'title' => $data['row']['title'],
+            'title' => $data['row']['title'] . ' - Techz24',
             'description' => $data['row']['meta_description'],
             'keywords' => $data['row']['meta_keywords'],
             'image' => $data['row']['thumbnail']

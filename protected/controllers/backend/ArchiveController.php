@@ -20,10 +20,13 @@ class ArchiveController extends BackendController
     }
 
 
-    private function getCategory()
+    private function getCategory($child = false)
     {
         $data = array();
         $query = "SELECT * FROM tbl_category";
+        if($child == true) {
+            $query .= " WHERE parent_id <> 0 ORDER BY name";
+        }
         $result = $this->db->createCommand($query)->queryAll();
         foreach ($result as $item) {
             $data[$item['id']] = $item['name'];
@@ -51,7 +54,7 @@ class ArchiveController extends BackendController
 
         $offset = ($page - 1) * $perPage;
 
-        $query = "SELECT id, cate_id, short_text, title, thumbnail, created FROM " . $this->_table . " WHERE 1 " . $where . " "
+        $query = "SELECT id, cate_id, short_text, title, thumbnail, created, alias FROM " . $this->_table . " WHERE 1 " . $where . " "
             . " ORDER BY id DESC "
             . "LIMIT " . $offset . "," . $perPage;
         $data['listItem'] = $this->db->createCommand($query)->queryAll();
@@ -90,6 +93,38 @@ class ArchiveController extends BackendController
         echo "<pre>" . print_r($urls, true) . "</pre>";
         echo '<meta http-equiv="refresh" content="1">';
         die;
+    }
+
+    public function actionEdit()
+    {
+        $data = array();
+        $id = urlGETParams('id', VARIABLE_NUMBER);
+
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            $remove_gallery = intval($_POST['remove_gallery']);
+            $params = $_POST;
+            unset($params['remove_gallery']);
+            if ($remove_gallery == 1) {
+                $params['gallery'] = '';
+            }
+            if (!empty($params['tags'])) {
+                $tags = explode(', ', $params['tags']);
+                trim_array($tags);
+                $params['tags'] = json_encode($tags);
+            }
+
+            yii_update_row('archive', $params, 'id = ' . $id);
+            createMessage('Cập nhật thành công');
+            $this->redirect($this->createUrl('index'));
+        }
+
+
+        $data['category'] = $this->getCategory(true);
+
+
+        $query = "SELECT * FROM tbl_archive WHERE id = " . $id;
+        $data['row'] = $this->db->createCommand($query)->queryRow();
+        $this->render('edit', array('data' => $data));
     }
 
 }

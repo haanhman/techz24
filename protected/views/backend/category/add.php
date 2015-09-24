@@ -28,6 +28,12 @@ if(empty($row)) {
                         </div>
 
                         <div class="form-group">
+                            <label>Weight</label>
+                            <input class="form-control" type="text" name="weight"
+                                   value="<?php echo $row['weight'] ?>">
+                        </div>
+
+                        <div class="form-group">
                             <label>CNET Url</label>
                             <input class="form-control" type="text" name="cnet_url"
                                    value="<?php echo $row['cnet_url']?>" placeholder="Nhập URL CNET">
@@ -36,6 +42,11 @@ if(empty($row)) {
                             <label>Techcrunch Url</label>
                             <input class="form-control" type="text" name="techcrunch_url"
                                    value="<?php echo $row['techcrunch_url']?>" placeholder="Nhập URL Techcrunch">
+                        </div>
+                        <div class="form-group">
+                            <label>WPcentral Url</label>
+                            <input class="form-control" type="text" name="wpcentral_url"
+                                   value="<?php echo $row['wpcentral_url']?>" placeholder="Nhập URL wpcentral">
                         </div>
 
                         <div class="form-group">
@@ -59,6 +70,11 @@ if(empty($row)) {
                                 <option value="1" <?php if($row['status'] == 1) echo 'selected=""'; ?>>Hiển thị</option>
                                 <option value="0" <?php if($row['status'] == 0) echo 'selected=""'; ?>>Ẩn</option>
                             </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Nổi bật</label><br />
+                            <input <?php if($row['is_feature'] == 1) echo 'checked=""'; ?> data-checkbox="icheckbox_minimal-red" class="icheck" name="is_feature" type="checkbox" value="1" />
                         </div>
 
                         <div class="form-group">

@@ -34,8 +34,8 @@ div.dataTables_paginate li.selected a {
 
 .post-content figure {
     float: right;
-    width: 250px;
-    margin-left: 10px;
+    width: 100%;
+    text-align: center;
 }
 .post-content figure .originalImage {
     max-width: 250px;
@@ -86,4 +86,8 @@ ul.related-post h2 {
 .post-content figure.chart {
     width: 100% !important;
     height: 100% !important;
+}
+
+div.iframe {
+    text-align: center;
 }

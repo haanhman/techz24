@@ -5,6 +5,7 @@
         <div style="margin-bottom: 10px;">
             <a href="<?php echo $this->createUrl('index', array('source' => 1)) ?>" class="btn btn-circle red-sunglo btn-sm">Cnet</a>
             <a href="<?php echo $this->createUrl('index', array('source' => 2)) ?>" class="btn btn-circle red-sunglo btn-sm">Techcrunch</a>
+            <a href="<?php echo $this->createUrl('index', array('source' => 3)) ?>" class="btn btn-circle red-sunglo btn-sm">WPcentral</a>
         </div>
 
         <p>Tổng số có <strong><?php echo $item_count ?></strong> nội dung cần duyệt</p>

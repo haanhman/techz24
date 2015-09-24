@@ -29,9 +29,10 @@
                         <td><?php echo $i++ ?></td>
                         <td>
                             <img class="thumbnail" src="<?php echo $item['thumbnail'] ?>" />
+                            <a href="<?php echo $this->createUrl('edit', array('id' => $item['id'])) ?>">Edit</a>
                         </td>
                         <td>
-                            <a href="<?php echo $this->createUrl('detail', array('id' => $item['id'])) ?>"><?php echo $item['title'] ?></a>
+                            <a href="/news/<?php echo $item['alias'] ?>.html" target="_blank"><?php echo $item['title'] ?></a>
                             <br />
                             <?php echo $data['category'][$item['cate_id']] ?>
                         </td>

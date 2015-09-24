@@ -31,6 +31,13 @@ $row = $data['row'];
                                     echo '<p style="text-align: right">Source: <strong><a target="_blank" href="' . $row['short_url'] . '">' . $data['source'][$row['source_id']] . '</a></strong></p>';
                                 }
 
+                                $user = Yii::app()->session['user'];
+                                if (!empty($user)) {
+                                    echo '<hr />';
+                                    echo '<a href="/backend/archive/edit?id='. $row['id'] .'">Edit</a>';
+                                    echo '<hr />';
+                                }
+
                                 //danh sach anh neu co
                                 $gallery = json_decode($row['gallery'], true);
                                 if (!empty($gallery)) {

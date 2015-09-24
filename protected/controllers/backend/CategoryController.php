@@ -59,8 +59,11 @@ class CategoryController extends BackendController
                 'meta_description' => formPostParams('meta_description'),
                 'meta_title' => formPostParams('meta_title'),
                 'status' => formPostParams('status', VARIABLE_NUMBER),
+                'is_feature' => formPostParams('is_feature', VARIABLE_NUMBER),
+                'weight' => formPostParams('weight', VARIABLE_NUMBER),
                 'cnet_url' => formPostParams('cnet_url'),
                 'techcrunch_url' => formPostParams('techcrunch_url'),
+                'wpcentral_url' => formPostParams('wpcentral_url'),
             );
             yii_insert_row($this->_table, $params);
             createMessage('Thêm mới danh mục thành công');
@@ -95,8 +98,11 @@ class CategoryController extends BackendController
                 'meta_description' => formPostParams('meta_description'),
                 'meta_title' => formPostParams('meta_title'),
                 'status' => formPostParams('status', VARIABLE_NUMBER),
+                'is_feature' => formPostParams('is_feature', VARIABLE_NUMBER),
+                'weight' => formPostParams('weight', VARIABLE_NUMBER),
                 'cnet_url' => formPostParams('cnet_url'),
                 'techcrunch_url' => formPostParams('techcrunch_url'),
+                'wpcentral_url' => formPostParams('wpcentral_url'),
             );
             yii_update_row($this->_table, $params, 'id = ' . $id);
             createMessage('Sửa danh mục thành công');

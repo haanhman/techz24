@@ -30,6 +30,11 @@ $fontend_settings = array(
 //                '/about-us.html' => 'index/aboutus',
 //                'rate-<os:(ios|android)>.html' => array('rate/index'),
 //                //tac gia
+                '/m' => array('index/index'),
+                '/m/' => array('index/index'),
+                '/mobile' => array('index/index'),
+                '/mobile/' => array('index/index'),
+                'sitemap.xml' => array('sitemap/index'),
                 'search' => array('search/index', 'urlSuffix' => '/'),
                 'category/<alias:[a-zA-Z0-9\-]+>' => array('category/index', 'urlSuffix' => '.html'),
                 'topics/<alias:[a-zA-Z0-9\-]+>' => array('tag/index', 'urlSuffix' => '.html'),

@@ -12,6 +12,23 @@ class TechcrunchController extends CrawlerController
     }
 
 
+    public function actionAll()
+    {
+        $query = "SELECT id FROM tbl_category WHERE techcrunch_url <> '' ORDER BY id";
+        $result = $this->db->createCommand($query)->queryColumn();
+        $index = isset($_GET['index']) ? intval($_GET['index']) : 0;
+
+
+        if ($index >= count($result)) {
+            die('xong roi');
+        }
+        $_GET['cate_id'] = $result[$index];
+        $this->actionCategory();
+        $index++;
+        $url = $this->createAbsoluteUrl('all', array('index' => $index));
+        echo '<meta http-equiv="refresh" content="0;URL='.$url.'" />';
+    }
+
     public function actionCategory()
     {
 
@@ -31,6 +48,9 @@ class TechcrunchController extends CrawlerController
             $category_url .= 'page/' . $page . '/';
             //http://techcrunch.com/mobile/page/5/
         }
+
+        echo "<pre>" . print_r($_GET, true) . "</pre>";
+        echo $category_url . '<br />';
 
         $html = file_get_html($category_url);
         $contents = $html->find('.block-content');
@@ -77,6 +97,8 @@ class TechcrunchController extends CrawlerController
         }
         $params = array_reverse($params);
         yii_insert_multiple('link', $params, 'db_crawler');
+
+
 
 //        echo "<pre>" . print_r($params, true) . "</pre>";
     }

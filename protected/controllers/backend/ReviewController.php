@@ -96,7 +96,7 @@ class ReviewController extends BackendController
 
             yii_update_row('archive', $params, 'id = ' . $id, 'db_crawler');
             createMessage('Cập nhật thành công');
-            $this->redirect($_SERVER['HTTP_REFERER']);
+            $this->redirect($this->createUrl('detail', array('id' => $id)));
         }
 
 

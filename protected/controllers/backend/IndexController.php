@@ -16,6 +16,9 @@ class IndexController extends BackendController
         $query = "SELECT COUNT(*) FROM tbl_link WHERE status = 0 AND source_id = 2";
         $data['techcrunch_crawler'] = $this->db_crawler->createCommand($query)->queryScalar();
 
+        $query = "SELECT COUNT(*) FROM tbl_link WHERE status = 0 AND source_id = 3";
+        $data['wpcentral_crawler'] = $this->db_crawler->createCommand($query)->queryScalar();
+
         $this->render('index', array('data' => $data));
     }
 
@@ -71,4 +74,40 @@ class IndexController extends BackendController
         return $data;
     }
 
+    public function actionTag() {
+
+        $query = "UPDATE tbl_tags SET is_feature = 0";
+        $this->db->createCommand($query)->execute();
+
+        $query = "SELECT tags FROM tbl_archive";
+        $result = $this->db->createCommand($query)->queryColumn();
+
+        $data = array();
+        foreach($result as $item) {
+            $arr = explode(',', trim($item, ','));
+            $data = array_merge($data, $arr);
+        }
+        $data = array_filter($data);
+        $data = array_count_values($data);
+        uasort($data, 'sortTag');
+        $tags = array();
+        foreach($data as $tid => $count) {
+            $tags[] = $tid;
+            if(count($tags) == 10) {
+                break;
+            }
+        }
+        $query = "UPDATE tbl_tags SET is_feature = 1 WHERE id IN (". implode(',', $tags) .")";
+        $this->db->createCommand($query)->execute();
+        createMessage('Update feature tag thanh cong');
+        $this->redirect($this->createUrl('index'));
+    }
+
+}
+
+function sortTag($a, $b) {
+    if($a == $b) {
+        return 0;
+    }
+    return $a < $b ? 1 : -1;
 }

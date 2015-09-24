@@ -8,6 +8,13 @@ $page = 1;
             <a href="<?php echo $this->createUrl('add') ?>" class="btn btn-circle red-sunglo btn-sm">
                 <i class="fa fa-plus"></i> Thêm mới</a>
         </div>
+
+        <p>
+            <a target="_blank" href="/crawler/cnet/all">Crawler cnet</a><br />
+            <a target="_blank" href="/crawler/techcrunch/all">Crawler techcrunch</a>
+            <a target="_blank" href="/crawler/wpcentral/all">Crawler wpcentral</a>
+        </p>
+
         <?php echo showMessage(); ?>
         <div class="portlet box green">
             <div class="portlet-title">
@@ -21,6 +28,8 @@ $page = 1;
                             <th style="width: 5%">#</th>
                             <th>Tên danh mục</th>
                             <th>Parent</th>
+                            <th>Feature</th>
+                            <th>Weight</th>
                             <th>Source URL</th>
                             <th>Crawler</th>
                             <th style="width: 5%">Sửa</th>
@@ -36,12 +45,16 @@ $page = 1;
                                 <td>
                                     <a href="<?php echo $this->createUrl('edit', array('id' => $item['id'])) ?>"><?php echo $item['name'] ?></a>
                                 </td>
-                                <td>
+                                <td style="text-align: center">
                                     <?php
                                     if ($item['parent_id'] == 0) {
                                         echo '<i style="color: green;" class="icon-check"></i>';
                                     }
                                     ?>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
                                 </td>
                                 <td></td>
                                 <td>
@@ -64,6 +77,14 @@ $page = 1;
                                             <a href="<?php echo $this->createUrl('edit', array('id' => $sub['id'])) ?>"><?php echo $sub['name'] ?></a>
                                         </td>
                                         <td>&nbsp;</td>
+                                        <td style="text-align: center">
+                                            <?php
+                                            if ($sub['is_feature'] == 1) {
+                                                echo '<i style="color: green;" class="icon-check"></i>';
+                                            }
+                                            ?>
+                                        </td>
+                                        <td><?php echo $sub['weight'] ?></td>
                                         <td>
                                             <?php
                                             if (!empty($sub['cnet_url'])) {
@@ -71,9 +92,12 @@ $page = 1;
                                                 echo 'CNet: <a rel="nofollow" href="' . $run_url . '" target="_blank">' . $sub['cnet_url'] . '</a><br />';
                                             }
                                             if (!empty($sub['techcrunch_url'])) {
-                                                $page = 5;
                                                 $run_url = '/crawler/techcrunch/category?cate_id=' . $sub['id'] . '&page=' . $page;
                                                 echo 'Techcrunch: <a rel="nofollow" href="' . $run_url . '" target="_blank">' . $sub['techcrunch_url'] . '</a>';
+                                            }
+                                            if (!empty($sub['wpcentral_url'])) {
+                                                $run_url = '/crawler/wpcentral/category?cate_id=' . $sub['id'] . '&page=' . $page;
+                                                echo 'WPcentral: <a rel="nofollow" href="' . $run_url . '" target="_blank">' . $sub['wpcentral_url'] . '</a>';
                                             }
                                             ?>
 
