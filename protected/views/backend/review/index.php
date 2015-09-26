@@ -9,8 +9,14 @@
         </div>
 
         <p>Tổng số có <strong><?php echo $item_count ?></strong> nội dung cần duyệt</p>
+        <?php
+            if($data['total_have_video'] > 0) {
+                echo 'Có <strong>' . $data['total_have_video'] . '</strong> tin cần phải check video';
+            }
+        ?>
         <p>
-            <a href="<?php echo $this->createUrl('review/approveall') ?>">Approve All Data</a>
+            <a onclick="return confirm('are you sure?');" href="<?php echo $this->createUrl('review/approveall') ?>">Approve All Data</a> ||
+            <a href="<?php echo $this->createUrl('review/check') ?>">Check have video</a>
         </p>
         <div class="portlet box green">
             <div class="portlet-title">
@@ -24,6 +30,7 @@
                         <tr>
                             <th style="width: 5%">#</th>
                             <th>Hình ảnh</th>
+                            <th>Video</th>
                             <th style="width: 40%">Tiêu đề</th>
                             <th>Short text</th>
                             <th style="width: 5%">Xoá</th>
@@ -44,6 +51,13 @@
                                 <td>
                                     <img class="thumbnail" src="<?php echo $item['thumbnail'] ?>" />
                                 </td>
+                                <th>
+                                    <?php
+                                        if($item['have_video'] == 1) {
+                                            echo '<i style="color: green;" class="icon-check"></i>';
+                                        }
+                                    ?>
+                                </th>
                                 <td>
                                     <a href="<?php echo $this->createUrl('detail', array('id' => $item['id'])) ?>"><?php echo $item['title'] ?></a>
                                     <br />

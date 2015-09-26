@@ -36,7 +36,7 @@ class SitemapController extends FontendController
         $result = $this->db->createCommand($query)->queryAll();
         foreach ($result as $item) {
             $url = $this->createAbsoluteUrl('detail/index', array('alias' => $item['alias']));
-            $urls[] = array($url, date('c'), 'daily', '0.6');
+            $urls[] = array($url);
         }
 
         if($_GET['test'] == 1) {

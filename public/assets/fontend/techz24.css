@@ -290,3 +290,8 @@ canvas {
     float: left;
     text-align: left;
 }
+
+.text-center img {
+    display: block;
+    margin: 0px auto;
+}

@@ -50,11 +50,14 @@ class ReviewController extends BackendController
 
         $offset = ($page - 1) * $perPage;
 
-        $query = "SELECT id, cate_id, short_text, title, thumbnail FROM tbl_archive WHERE 1 " . $where . " "
+        $query = "SELECT id, cate_id, short_text, title, thumbnail, have_video FROM tbl_archive WHERE 1 " . $where . " "
             . " ORDER BY id "
             . "LIMIT " . $offset . "," . $perPage;
         $data['listItem'] = $this->db_crawler->createCommand($query)->queryAll();
 
+
+        $query = "SELECT COUNT(id) FROM tbl_archive WHERE have_video = 1 " . $where;
+        $data['total_have_video'] = $this->db_crawler->createCommand($query)->queryScalar();
 
         $data['category'] = $this->getCategory();
 
@@ -164,6 +167,7 @@ class ReviewController extends BackendController
             'meta_description' => $row['meta_description'],
             'source_id' => $row['source_id'],
             'source_url' => $row['source_url'],
+            'have_video' => $row['have_video'],
             'status' => 1,
             'tags' => $tags,
             'created' => time()
@@ -179,7 +183,7 @@ class ReviewController extends BackendController
 
     public function actionApproveAll()
     {
-        $query = "SELECT * FROM tbl_archive WHERE is_delete = 0";
+        $query = "SELECT * FROM tbl_archive WHERE is_delete = 0 AND have_video = 0";
         $result = $this->db_crawler->createCommand($query)->queryAll();
         if (empty($result)) {
             die('khong co du lieu');
@@ -204,6 +208,7 @@ class ReviewController extends BackendController
                 'meta_description' => $row['meta_description'],
                 'source_id' => $row['source_id'],
                 'source_url' => $row['source_url'],
+                'have_video' => $row['have_video'],
                 'status' => 1,
                 'tags' => $tags,
                 'created' => time()
@@ -214,6 +219,13 @@ class ReviewController extends BackendController
 
         $query = "DELETE FROM tbl_archive";
         $this->db_crawler->createCommand($query)->execute();
+        $this->redirect($this->createUrl('review/index'));
+    }
+
+    public function actionCheck() {
+        $query = "UPDATE tbl_archive SET have_video = 1 WHERE content LIKE '%<div class=\"playOverlay\">Play</div>%'";
+        $this->db_crawler->createCommand($query)->execute();
+        createMessage('Check thanh cong');
         $this->redirect($this->createUrl('review/index'));
     }
 

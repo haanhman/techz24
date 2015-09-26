@@ -31,7 +31,7 @@
             <div class="four columns">
                 <aside>
                     <!-- widget video  -->
-                    <?php $this->widget('VideoWidget'); ?>
+                    <?php $this->widget('ReviewWidget'); ?>
 
                     <!-- widget custome menus -->
                     <?php $this->widget('CategoryWidget'); ?>

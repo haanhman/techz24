@@ -228,8 +228,12 @@ class CnetController extends CrawlerController
 
     private function getImages($gallery_href)
     {
+        echo $this->_domain . $gallery_href;
         $data = array();
-        $html = file_get_html($this->_domain . '/' . $gallery_href);
+        $html = file_get_html($this->_domain . $gallery_href);
+        if(empty($html)) {
+            return;
+        }
         $images = $html->find('ul.images img');
         if (empty($images)) {
             return;

@@ -55,6 +55,7 @@ class IndexController extends FontendController
 
     private function getNewPostNormal($category_feature) {
         $data = array();
+        $category_feature[] = 20;
         $query = "SELECT id, cate_id, title, alias, thumbnail,short_text,created,tags FROM tbl_archive WHERE cate_id NOT IN (". implode(',', $category_feature) .") ORDER BY id DESC LIMIT 10";
         $result = $this->db->createCommand($query)->queryAll();
         foreach($result as $item) {

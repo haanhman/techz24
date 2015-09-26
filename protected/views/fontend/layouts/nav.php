@@ -46,7 +46,16 @@ $title = 'Product reviews and prices, and tech news - Techz24';
             </div>
             <div class="seven columns">
                 <ul id="barnav" class="sf-menu nav-bar">
-                    <li class="active">
+                    <?php
+                    $page_type = 1;
+                    if($controller == 'review') {
+                        $page_type = 2;
+                    }
+                    if($_SERVER['REDIRECT_URL'] == '/category/reviews.html') {
+                        $page_type = 2;
+                    }
+                    ?>
+                    <li <?php if($page_type == 1) echo 'class="active"'; ?>>
                         <a href="#">NEWS</a>
                         <?php
                         $result = $this->getListCategory();
@@ -80,7 +89,9 @@ $title = 'Product reviews and prices, and tech news - Techz24';
                         }
                         ?>
                     </li>
-                    <li><a href="#">reviews</a></li>
+                    <li <?php if($page_type == 2) echo 'class="active"'; ?>>
+                        <a href="/category/reviews.html">reviews</a>
+                    </li>
                     <li><a href="#">video</a></li>
                 </ul>
             </div>

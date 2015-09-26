@@ -12,6 +12,12 @@ class DetailController extends FontendController
         if(empty($data['row'])) {
             $this->redirect($this->createUrl('index/index'));
         }
+
+        if($data['row']['cate_id'] == 20) {
+            $redirect_url = $this->createUrl('detail/index', $data['row']);
+            $this->redirect($redirect_url);
+        }
+
         $data['source'] = $this->getSource();
 
         if(!empty($data['row']['tags'])) {
@@ -24,6 +30,7 @@ class DetailController extends FontendController
         $data['category'] = $this->db->createCommand($query)->queryRow();
 
         $data['relate_post'] = $this->getRelatedPost($data['row']);
+
 
 
         $this->_meta = array(
@@ -39,7 +46,7 @@ class DetailController extends FontendController
     }
 
     private function getRelatedPost($row) {
-        $query = "SELECT id, alias, title, thumbnail, short_text FROM tbl_archive WHERE cate_id = :cate_id AND id <> :id ORDER BY id DESC LIMIT 10";
+        $query = "SELECT id, alias, title, thumbnail, short_text, cate_id FROM tbl_archive WHERE cate_id = :cate_id AND id <> :id ORDER BY id DESC LIMIT 10";
         $values = array(':cate_id' => $row['cate_id'], ':id' => $row['id']);
         return $this->db->createCommand($query)->bindValues($values)->queryAll();
     }

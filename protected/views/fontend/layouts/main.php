@@ -96,7 +96,7 @@
                                     <a target="_blank" href="https://www.facebook.com/techz24dotcom" title="Techz24 on facebook"><i class="fa fa-facebook"></i></a>
                                     <a target="_blank" href="https://plus.google.com/118045223438632929013" title="Techz24 on google plus"><i class="fa fa-google-plus"></i></a>
                                     <a target="_blank" href="https://twitter.com/techz24" title="Techz24 on twitter"><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-youtube"></i></a>
+                                    <a target="_blank" href="https://www.youtube.com/channel/UCaFh8XtzKLXA6zjiylbI2zw/videos" title="Techz24 on youtube"><i class="fa fa-youtube"></i></a>
                                     <a href="#"><i class="fa fa-instagram"></i></a>
                                 </div>
                             </div>

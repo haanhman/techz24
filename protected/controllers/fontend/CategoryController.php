@@ -30,18 +30,22 @@ class CategoryController extends FontendController
 
         $pages = new CPagination($item_count);
         $perPage = 10;
+        if($cate_id == 20) {
+            $perPage = 100;
+        }
         $pages->setPageSize($perPage);
 
         $page = isset($_GET['page']) ? intval($_GET['page']) : 0;
         if ($page <= 0) {
             $page = 1;
         }
-
         $offset = ($page - 1) * $perPage;
+
 
         $query = "SELECT id, cate_id, title, alias, thumbnail,short_text,created,tags FROM tbl_archive WHERE 1 " . $where . " "
             . " ORDER BY id DESC "
             . "LIMIT " . $offset . "," . $perPage;
+
         $data['newpost'] = $this->db->createCommand($query)->queryAll();
 
         $tags = array();
@@ -67,7 +71,10 @@ class CategoryController extends FontendController
             'keywords' => $cate['meta_keywords']
         );
 
-
+        if($cate_id == 20) {
+            $this->render('review', array('data' => $data));
+            return;
+        }
         $this->render('index', array(
             'data' => $data,
             'item_count' => $item_count,

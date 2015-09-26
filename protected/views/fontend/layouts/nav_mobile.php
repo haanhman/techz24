@@ -31,7 +31,7 @@
             echo '</ul>';
         }
         ?>
+        <li><a href="/category/reviews.html">Reviews</a></li>
         <li><a href="#">Video</a></li>
-        <li><a href="#">Reviews</a></li>
     </ul>
 </nav>
