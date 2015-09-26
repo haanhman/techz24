@@ -23,7 +23,7 @@ if($controller != 'index') {
         <?php
         foreach ($data['newpost'] as $item) {
             $category = $data['category'][$item['cate_id']];
-            $url_detail = $this->createUrl('detail/index', array('alias' => $item['alias']));
+            $url_detail = $this->createUrl('detail/index', $item);
             $url_category = $this->createUrl('category/index', array('alias' => $category['alias']));
 
             ?>

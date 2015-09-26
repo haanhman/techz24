@@ -45,8 +45,13 @@ class SearchController extends FontendController
 
         $data['category'] = $this->getListCategory();
 
+        $title = $keyword . ' search results';
+        if($page > 1) {
+            $title .= ' - page ' . $page;
+        }
+
         $this->_meta = array(
-            'title' => $keyword . ' search results - Techz24'
+            'title' => $title . ' - Techz24'
         );
 
         $this->render('index', array(

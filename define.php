@@ -7,6 +7,7 @@ error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING & ~E_DEPRECATED);
 global $mysql_config;
 $mysql_config = array(
     'host' => '127.0.0.1',
+//    'host' => 'localhost',
     'username' => 'eduuser',
     'password' => 'Eadux23X',
     'dbname' => 'db_techz24',

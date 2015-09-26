@@ -2,7 +2,7 @@
 foreach ($data['catebox'] as $cate_id => $rows) {
     $category = $data['category'][$cate_id];
     $item = array_shift($rows);
-    $url_detail = $this->createUrl('detail/index', array('alias' => $item['alias']));
+    $url_detail = $this->createUrl('detail/index', $item);
     ?>
     <h3 class="blocktitle"><?php echo $category['name'] ?><span>
             <a href="<?php echo $this->createUrl('category/index', array('alias' => $category['alias'])) ?>">MORE</a></span>
@@ -35,7 +35,7 @@ foreach ($data['catebox'] as $cate_id => $rows) {
             <ul class="oc-horizon">
                 <?php
                 foreach ($rows as $item) {
-                    $url_detail = $this->createUrl('detail/index', array('alias' => $item['alias']));
+                    $url_detail = $this->createUrl('detail/index', $item);
                     ?>
                     <li>
                         <div class="octhumb">

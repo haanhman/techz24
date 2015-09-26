@@ -51,8 +51,13 @@ class TagController extends FontendController
 
         $data['category'] = $this->getListCategory();
 
+        $title = $data['row']['name'] . ' News';
+        if($page > 1) {
+            $title .= ' - page ' . $page;
+        }
+
         $this->_meta = array(
-            'title' => $data['row']['name'] . ' News - Techz24',
+            'title' => $title . ' - Techz24',
             'description' => 'Techz24 news editors and reporters provide top '.$data['row']['name'].' news, with in-depth coverage of issues and events.'
         );
 

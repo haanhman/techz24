@@ -113,7 +113,7 @@ class ReviewController extends BackendController
         $query = "SELECT * FROM tbl_archive WHERE id = " . $id;
         $row = $this->db_crawler->createCommand($query)->queryRow();
 
-        $query = "UPDATE tbl_archive SET is_delete = 1 WHERE id = " . $id;
+        $query = "DELETE FROM tbl_archive WHERE id = " . $id;
         $data = $this->db_crawler->createCommand($query)->execute();
         createMessage('Xoá nội dung: ' . $row['title'] . ' thành công');
         $this->redirect($_SERVER['HTTP_REFERER']);
@@ -179,7 +179,7 @@ class ReviewController extends BackendController
 
     public function actionApproveAll()
     {
-        $query = "SELECT * FROM tbl_archive";
+        $query = "SELECT * FROM tbl_archive WHERE is_delete = 0";
         $result = $this->db_crawler->createCommand($query)->queryAll();
         if (empty($result)) {
             die('khong co du lieu');

@@ -91,3 +91,202 @@ ul.related-post h2 {
 div.iframe {
     text-align: center;
 }
+
+.text-center {
+    text-align: center;
+}
+
+.shortcode.chart h2 {
+    font-size: 14px;
+    color: #B80000;
+    background: #DBDBDB;
+    height: 3px;
+    line-height: 5px;
+    margin: 10px 0 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.shortcode.chart h2 span {
+    background: white;
+    font-family: Proxima Nova,Proxima-Nova,proxima-nova,Helvetica,Arial,sans-serif;
+    padding: 0 10px 0 0;
+    float: left;
+}
+
+.shortcode.chart .legend h3 {
+    color: #B80000;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0;
+    font-weight: 700;
+    font-family: Proxima Nova,Proxima-Nova,proxima-nova,Helvetica,Arial,sans-serif;
+    text-align: left;
+}
+
+canvas {
+    display: none;
+}
+.chartWrapper table {
+    width: 100%;
+}
+
+.shortcode.chart.type_perfchart .products {
+    font-size: 14px;
+}
+
+.shortcode.chart.type_perfchart .name {
+    float: left;
+    margin: 0
+}
+
+.shortcode.chart.type_perfchart .barWrap {
+    display: block;
+    background-color: #eee;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset, 0 1px #fff;
+    margin-top: 4px;
+    margin-bottom: 4px
+}
+
+.shortcode.chart.type_perfchart .barWrap span {
+    background-color: #2C67A4;
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQzODdjZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzJjNjdhNCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4387cf), color-stop(100%, #2c67a4));
+    background-image: -moz-linear-gradient(#4387cf, #2c67a4);
+    background-image: -webkit-linear-gradient(#4387cf, #2c67a4);
+    background-image: linear-gradient(#4387cf, #2c67a4);
+    border: 1px solid #1E61A8;
+    box-shadow: 0 1px rgba(255, 255, 255, 0.4) inset;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    display: block;
+    height: 6px
+}
+
+.shortcode.chart.type_perfchart .barWrap span.test-0, .shortcode.chart.type_perfchart .legend.test-0 {
+    background: #396803;
+    border: 1px solid #2B4F02
+}
+
+.shortcode.chart.type_perfchart .barWrap span.test-1, .shortcode.chart.type_perfchart .legend.test-1 {
+    background: #549A04;
+    border: 1px solid #478203
+}
+
+.shortcode.chart.type_perfchart .barWrap span.test-2, .shortcode.chart.type_perfchart .legend.test-2 {
+    background: #6FCC05;
+    border: 1px solid #62B305
+}
+
+.shortcode.chart.type_perfchart .barWrap span.test-3, .shortcode.chart.type_perfchart .legend.test-3 {
+    background: #8AF90B;
+    border: 1px solid #7DE506
+}
+
+.shortcode.chart.type_perfchart .barWrap span.test-4, .shortcode.chart.type_perfchart .legend.test-4 {
+    background: #AEFC54;
+    border: 1px solid #8AFB09
+}
+
+.shortcode.chart.type_perfchart .rating {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.shortcode.chart.type_perfchart .product {
+
+}
+
+.shortcode.chart.type_perfchart .product .test.col-8 {
+    margin: 0
+}
+
+.shortcode.chart.type_perfchart .legend {
+    margin-bottom: 10px;
+    margin-top: 34px;
+    border: 1px solid #E3E3E3;
+    padding: 0 20px 40px
+}
+
+.shortcode.chart.type_perfchart .legend [class|="test"] {
+    border-left-width: 20px;
+    border-left-style: solid;
+    float: left;
+    margin: 10px 20px 10px 0;
+    padding-left: 10px
+}
+
+.shortcode.chart.type_perfchart .legend [class|="test"].test-0 {
+    border-left-color: #396803
+}
+
+.shortcode.chart.type_perfchart .legend [class|="test"].test-1 {
+    border-left-color: #549A04
+}
+
+.shortcode.chart.type_perfchart .legend [class|="test"].test-2 {
+    border-left-color: #6FCC05
+}
+
+.shortcode.chart.type_perfchart .legend [class|="test"].test-3 {
+    border-left-color: #8AF90B
+}
+
+.shortcode.chart.type_perfchart .legend [class|="test"].test-4 {
+    border-left-color: #AEFC54
+}
+
+.shortcode.chart .editorial, .shortcode.chart .legend {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.shortcode.chart .editorial h3, .shortcode.chart .legend h3 {
+    color: #B80000;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0;
+    font-weight: 700;
+    font-family: Proxima Nova, Proxima-Nova, proxima-nova, Helvetica, Arial, sans-serif
+}
+
+.shortcode.chart .editorial h3:after, .shortcode.chart .legend h3:after {
+    display: none
+}
+
+.shortcode.chart .editorial h3 {
+    display: inline
+}
+
+.product {
+    clear: both;
+    padding: 5px 0px;
+}
+
+.product .name {
+    width: 20%;
+    position: relative;
+    text-align: left;
+    float: left;
+    margin: 0;
+}
+.product .test {
+    width: 80%;
+    position: relative;
+    float: right;
+}
+.product .test .barWrap {
+    width: 70%;
+    position: relative;
+    float: left;
+}
+.product .test .rating {
+    width: 30%;
+    position: relative;
+    float: left;
+    text-align: left;
+}

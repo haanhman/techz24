@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+RewriteEngine off
+</IfModule>
+AuthName "MySQLDumper"
+AuthType Basic
+AuthUserFile "/home4/anhmantk/public_html/bkgau/.htpasswd"
+require valid-user

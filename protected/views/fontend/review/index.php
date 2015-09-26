@@ -5,7 +5,7 @@ $row = $data['row'];
     <div class="twelve columns">
         <section id="maincontainer">
             <!-- Side Left Main Conten Area -->
-            <div class="eight columns">
+            <div class="twelve columns">
                 <div id="content">
                     <ul class="breadcrumbs">
                         <li><a href="<?php echo $this->createUrl('index/index') ?>">Home</a></li>
@@ -23,6 +23,8 @@ $row = $data['row'];
                         <article>
                             <div class="post-content">
                                 <?php echo $row['content'] ?>
+
+
                                 <?php
 
                                 //hien thi nguon
@@ -87,21 +89,13 @@ $row = $data['row'];
                     </section>
                 </div>
             </div>
-
-            <div class="four columns">
-                <aside>
-                    <!-- widget video  -->
-                    <?php $this->widget('VideoWidget'); ?>
-
-                    <!-- widget custome menus -->
-                    <?php $this->widget('CategoryWidget'); ?>
-
-                    <?php $this->widget('AdsWidget'); ?>
-
-                    <?php $this->widget('SocialWidget'); ?>
-
-                </aside>
-            </div>
         </section>
     </div>
 </div>
+<script type="application/javascript">
+    $(function(){
+        $('.post-content img').each(function(){
+            $(this).parent().addClass('text-center');
+        });
+    });
+</script>

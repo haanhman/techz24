@@ -16,7 +16,7 @@ $fontend_settings = array(
 //            'class' => 'ext.minScript.components.ExtMinScript'
 //        ),
         'urlManager' => array(
-//            'class' => 'MyUrlManager',
+            'class' => 'FontendUrlManager',
             'showScriptName' => false,
             'urlFormat' => 'path',
             'rules' => array(
@@ -39,6 +39,7 @@ $fontend_settings = array(
                 'category/<alias:[a-zA-Z0-9\-]+>' => array('category/index', 'urlSuffix' => '.html'),
                 'topics/<alias:[a-zA-Z0-9\-]+>' => array('tag/index', 'urlSuffix' => '.html'),
                 'news/<alias:[a-zA-Z0-9\-]+>' => array('detail/index', 'urlSuffix' => '.html'),
+                'reviews/<alias:[a-zA-Z0-9\-]+>' => array('review/index', 'urlSuffix' => '.html'),
                 '<controller>' => '<controller>',
                 '<controller>/<action>' => '<controller>/<action>',
             ),

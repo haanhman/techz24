@@ -15,6 +15,7 @@ RewriteRule (.*) http://www.techz24.com/$1 [R=301,L]
 
 RewriteRule ^backend backend.php
 RewriteRule ^crawler crawler.php
+RewriteRule ^crontab crontab.php
 
 # If a directory or a file exists, use it directly.
 RewriteCond %{REQUEST_FILENAME} !-f

@@ -39,6 +39,7 @@
 
     <link rel="stylesheet" href="<?php echo base_url() ?>/public/assets/fontend/style.css">
     <link rel="stylesheet" href="<?php echo base_url() ?>/public/assets/fontend/techz24.css">
+    <script src="<?php echo base_url() ?>/public/assets/fontend/js/jquery.min.js"></script>
     <script src="<?php echo base_url() ?>/public/assets/fontend/js/modernizr.foundation.js"></script>
 
 

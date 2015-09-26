@@ -20,7 +20,7 @@
                                                  class="slidefeatured">
                                         </div>
                                         <div class="catf-caption">
-                                            <a href="<?php echo $this->createUrl('detail/index', array('alias' => $item['alias'])) ?>"><h2><?php echo $item['title'] ?></h2></a>
+                                            <a href="<?php echo $this->createUrl('detail/index', $item) ?>"><h2><?php echo $item['title'] ?></h2></a>
                                         </div>
                                     </div>
                                     <div class="listcat">
@@ -30,7 +30,7 @@
                                             foreach ($arr[0] as $item) {
                                                 ?>
                                                 <li>
-                                                    <a href="<?php echo $this->createUrl('detail/index', array('alias' => $item['alias'])) ?>"><?php echo $item['title'] ?></a>
+                                                    <a href="<?php echo $this->createUrl('detail/index', $item) ?>"><?php echo $item['title'] ?></a>
                                                 </li>
                                                 <?php
                                             }
@@ -45,7 +45,7 @@
                                                 ?>
                                                 <li>
                                                     <div class="tthumb">
-                                                        <a href="<?php echo $this->createUrl('detail/index', array('alias' => $item['alias'])) ?>">
+                                                        <a href="<?php echo $this->createUrl('detail/index', $item) ?>">
                                                             <img src="<?php echo $item['thumbnail'] ?>"
                                                                  alt="<?php echo CHtml::encode($item['title']) ?>"
                                                                  title="<?php echo CHtml::encode($item['title']) ?>" >

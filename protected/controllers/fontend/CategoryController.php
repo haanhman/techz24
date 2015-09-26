@@ -57,9 +57,12 @@ class CategoryController extends FontendController
             $tags = array_unique($tags);
             $data['tags'] = $this->getListTags($tags);
         }
-
+        $title = $cate['meta_title'];
+        if($page > 1) {
+            $title .= ' - page ' . $page;
+        }
         $this->_meta = array(
-            'title' => $cate['meta_title'] . ' | Techz24',
+            'title' => $title . ' | Techz24',
             'description' => $cate['meta_description'],
             'keywords' => $cate['meta_keywords']
         );
