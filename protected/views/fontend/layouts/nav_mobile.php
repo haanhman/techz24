@@ -17,6 +17,9 @@
         if (!empty($categories)) {
             echo '<ul class="dropdown">';
             foreach ($categories as $cate) {
+                if($cate['id'] == 20) {
+                    continue;
+                }
                 echo '<li>';
                 echo '<a href="#">' . $cate['name'] . '</a>';
                 if (!empty($cate['sub'])) {
@@ -31,7 +34,7 @@
             echo '</ul>';
         }
         ?>
-        <li><a href="/category/reviews.html">Reviews</a></li>
-        <li><a href="#">Video</a></li>
+        <li><a href="/reviews.html">Reviews</a></li>
+        <li><a href="<?php echo $this->createUrl('video/index') ?>">Video</a></li>
     </ul>
 </nav>

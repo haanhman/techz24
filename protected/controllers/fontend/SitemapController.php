@@ -20,9 +20,11 @@ class SitemapController extends FontendController
         $result = $this->db->createCommand($query)->queryAll();
         foreach ($result as $item) {
             $url = $this->createAbsoluteUrl('category/index', array('alias' => $item['alias']));
+            if($item['id'] == 20) {
+                $url = 'http://' . $_SERVER['SERVER_NAME'] . '/reviews.html';
+            }
             $urls[] = array($url, date('c'), 'daily', '0.9');
         }
-
         //topic tag
         $query = "SELECT id, alias FROM tbl_tags";
         $result = $this->db->createCommand($query)->queryAll();
@@ -32,10 +34,10 @@ class SitemapController extends FontendController
         }
 
         //danh sach bai viet
-        $query = "SELECT id, alias FROM tbl_archive ORDER BY id DESC";
+        $query = "SELECT id, alias, cate_id FROM tbl_archive ORDER BY id DESC";
         $result = $this->db->createCommand($query)->queryAll();
         foreach ($result as $item) {
-            $url = $this->createAbsoluteUrl('detail/index', array('alias' => $item['alias']));
+            $url = $this->createAbsoluteUrl('detail/index', $item);
             $urls[] = array($url);
         }
 

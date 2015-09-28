@@ -23,6 +23,7 @@
                                     <div class="overlay">
                                         <div class="rate-carousel">1</div>
                                     </div>
+                                    <div class="clear"></div>
                                 </div>
 
                                 <div class="excerpt">
@@ -98,7 +99,7 @@
     }
 
     .product-feature {
-        height: 280px;
+        min-height: 280px;
     }
 
     .product-feature .lthumb {

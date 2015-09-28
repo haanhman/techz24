@@ -75,4 +75,22 @@ class FontendController extends CController
         return $data;
     }
 
+    protected function getListVideoTags($list_tags_id)
+    {
+        $data = array();
+        if (empty($list_tags_id)) {
+            return $data;
+        }
+        $list_tags_id = array_unique(array_filter($list_tags_id));
+        if(empty($list_tags_id)) {
+            return $data;
+        }
+        $query = "SELECT id, name, alias FROM tbl_tags_youtube WHERE id IN (" . implode(',', $list_tags_id) . ")";
+        $result = $this->db->createCommand($query)->queryAll();
+        foreach ($result as $item) {
+            $data[$item['id']] = $item;
+        }
+        return $data;
+    }
+
 }

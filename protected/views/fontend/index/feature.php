@@ -3,15 +3,19 @@
     <div class="twelve columns ">
         <div class="tcarousel">
             <div class="titlefeatured four columns">
-                FEATURED
+                Feature Video
             </div>
             <div class="six columns ">
                 <ul class="nav-carousel right">
-                    <li><a href="#">NEWS</a></li>
-                    <li><a href="#">MOVIE</a></li>
-                    <li><a href="#">SPORT</a></li>
-                    <li><a href="#">FINANCE</a></li>
-                    <li><a href="#">FINANCE2</a></li>
+                    <?php
+                    foreach ($data['video_tags'] as $item) {
+                        ?>
+                        <li>
+                            <a href="<?php echo $this->createUrl('video/tag', array('alias' => $item['alias'])) ?>"><?php echo $item['name'] ?></a>
+                        </li>
+                        <?php
+                    }
+                    ?>
                 </ul>
             </div>
         </div>
@@ -22,122 +26,29 @@
 <div class="row">
     <div class="twelve columns ">
         <div id="mixedContent">
-            <div class="contentBox">
-                <img src="<?php echo base_url() ?>/public/assets/fontend/images/c1.jpg" alt="Field"/>
+            <?php
+            foreach ($data['featureVideo'] as $item) {
+                $video_url = $this->createUrl('video/detail', array('alias' => $item['alias']));
+                ?>
+                <div class="contentBox">
+                    <img src="<?php echo getYoutubeThumbnail($item['thumbnails']) ?>"
+                         alt="<?php echo CHtml::encode($item['title']) ?>"/>
 
-                <div class="overlay">
-                    <div class="meta-carousel"><i class="fa fa-heart"></i> 45 <i class="fa fa-eye"></i> 65 <i
-                            class="fa fa-comment"></i> 12
-                    </div>
-                    <div class="rate-carousel">9.7</div>
-                    <div class="title-carousel">
-                        <a href="single-review.html">
-                            <div class="ticarousel"> World War Z is a 2013 apocalyptic film directed by Marc
-                                Forster.
-                            </div>
-                        </a>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="contentBox">
-                <img src="<?php echo base_url() ?>/public/assets/fontend/images/c2.jpg" alt="Field"/>
-
-                <div class="overlay-active">
-                    <div class="meta-carousel"><i class="fa fa-heart"></i> 45 <i class="fa fa-eye"></i> 65 <i
-                            class="fa fa-comment"></i> 12
-                    </div>
-                    <div class="rate-carousel">9.7</div>
-                    <div class="title-carousel">
-                        <a href="single-review.html">
-                            <div class="ticarousel"> World War Z is a 2013 apocalyptic film directed by Marc
-                                Forster.
-                            </div>
-                        </a>
-
+                    <div class="overlay">
+                        <div class="meta-carousel">
+                            <i class="fa fa-eye"></i> <?php echo $item['viewer'] ?>
+                        </div>
+                        <div class="title-carousel">
+                            <a href="<?php echo $video_url ?>">
+                                <div class="ticarousel"><?php echo $item['title'] ?></div>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-            </div>
-
-            <div class="contentBox">
-                <img src="<?php echo base_url() ?>/public/assets/fontend/images/c3.jpg" alt="Field"/>
-
-                <div class="overlay">
-                    <div class="meta-carousel"><i class="fa fa-heart"></i> 45 <i class="fa fa-eye"></i> 65 <i
-                            class="fa fa-comment"></i> 12
-                    </div>
-                    <div class="rate-carousel">9.7</div>
-                    <div class="title-carousel">
-                        <a href="single-review.html">
-                            <div class="ticarousel"> World War Z is a 2013 apocalyptic film directed by Marc
-                                Forster.
-                            </div>
-                        </a>
-
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="contentBox">
-                <img src="<?php echo base_url() ?>/public/assets/fontend/images/c4.jpg" alt="Field"/>
-
-                <div class="overlay">
-                    <div class="meta-carousel"><i class="fa fa-heart"></i> 45 <i class="fa fa-eye"></i> 65 <i
-                            class="fa fa-comment"></i> 12
-                    </div>
-                    <div class="rate-carousel">9.7</div>
-                    <div class="title-carousel">
-                        <a href="single-review.html">
-                            <div class="ticarousel"> World War Z is a 2013 apocalyptic film directed by Marc
-                                Forster.
-                            </div>
-                        </a>
-
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="contentBox">
-                <img src="<?php echo base_url() ?>/public/assets/fontend/images/c5.jpg" alt="Field"/>
-
-                <div class="overlay">
-                    <div class="meta-carousel"><i class="fa fa-heart"></i> 45 <i class="fa fa-eye"></i> 65 <i
-                            class="fa fa-comment"></i> 12
-                    </div>
-                    <div class="rate-carousel">9.7</div>
-                    <div class="title-carousel">
-                        <a href="single-review.html">
-                            <div class="ticarousel"> World War Z is a 2013 apocalyptic film directed by Marc
-                                Forster.
-                            </div>
-                        </a>
-
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="contentBox">
-                <img src="<?php echo base_url() ?>/public/assets/fontend/images/c6.jpg" alt="Field"/>
-
-                <div class="overlay">
-                    <div class="meta-carousel"><i class="fa fa-heart"></i> 45 <i class="fa fa-eye"></i> 65 <i
-                            class="fa fa-comment"></i> 12
-                    </div>
-                    <div class="rate-carousel">9.7</div>
-                    <div class="title-carousel">
-                        <a href="single-review.html">
-                            <div class="ticarousel"> World War Z is a 2013 apocalyptic film directed by Marc
-                                Forster.
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
+                <?php
+            }
+            ?>
         </div>
     </div>
 </div>

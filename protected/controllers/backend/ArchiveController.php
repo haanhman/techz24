@@ -39,6 +39,10 @@ class ArchiveController extends BackendController
     {
         $data = array();
         $where = "";
+        $have_video = isset($_GET['have_video']) ? intval($_GET['have_video']) : 0;
+        if($have_video == 1) {
+            $where = " AND have_video = 1 ";
+        }
         $query_count = "SELECT COUNT(id) FROM " . $this->_table . " WHERE 1 " . $where;
 
         $item_count = $this->db->createCommand($query_count)->queryScalar();
@@ -112,7 +116,7 @@ class ArchiveController extends BackendController
                 trim_array($tags);
                 $params['tags'] = json_encode($tags);
             }
-
+            $params['have_video'] = intval($_POST['have_video']);
             yii_update_row('archive', $params, 'id = ' . $id);
             createMessage('Cập nhật thành công');
             $this->redirect($this->createUrl('index'));

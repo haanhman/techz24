@@ -56,7 +56,17 @@
                     <div class="number"></div>
                 </div>
             </div>
-
+        </div>
+        <div class="tiles">
+            <div class="tile bg-red-intense" onclick="window.location='<?php echo $this->createUrl('reviewyt/index') ?>';">
+                <div class="tile-body">
+                    <i class="fa fa-youtube-play"></i>
+                </div>
+                <div class="tile-object">
+                    <div class="name">Youtube</div>
+                    <div class="number"><?php echo $data['total_youtube'] ?></div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

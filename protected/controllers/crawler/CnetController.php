@@ -13,7 +13,7 @@ class CnetController extends CrawlerController
 
     public function actionAll()
     {
-        $query = "SELECT id FROM tbl_category WHERE cnet_url <> '' ORDER BY id";
+        $query = "SELECT id FROM tbl_category WHERE id <> 20 AND cnet_url <> '' ORDER BY id";
         $result = $this->db->createCommand($query)->queryColumn();
         $index = isset($_GET['index']) ? intval($_GET['index']) : 0;
         if ($index >= count($result)) {

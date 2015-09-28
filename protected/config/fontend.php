@@ -30,16 +30,24 @@ $fontend_settings = array(
 //                '/about-us.html' => 'index/aboutus',
 //                'rate-<os:(ios|android)>.html' => array('rate/index'),
 //                //tac gia
+                '/' => array('index/index'),
                 '/m' => array('index/index'),
                 '/m/' => array('index/index'),
                 '/mobile' => array('index/index'),
                 '/mobile/' => array('index/index'),
+                'reviews.html' => array('category/index', 'defaultParams' => array('alias' => 'reviews')),
                 'sitemap.xml' => array('sitemap/index'),
                 'search' => array('search/index', 'urlSuffix' => '/'),
                 'category/<alias:[a-zA-Z0-9\-]+>' => array('category/index', 'urlSuffix' => '.html'),
                 'topics/<alias:[a-zA-Z0-9\-]+>' => array('tag/index', 'urlSuffix' => '.html'),
                 'news/<alias:[a-zA-Z0-9\-]+>' => array('detail/index', 'urlSuffix' => '.html'),
                 'reviews/<alias:[a-zA-Z0-9\-]+>' => array('review/index', 'urlSuffix' => '.html'),
+
+                //video
+                'video.html' => array('video/index'),
+                'video/tag/<alias:[a-zA-Z0-9\-]+>' => array('video/tag', 'urlSuffix' => '.html'),
+                'video/<alias:[a-zA-Z0-9\-]+>' => array('video/detail', 'urlSuffix' => '.html'),
+
                 '<controller>' => '<controller>',
                 '<controller>/<action>' => '<controller>/<action>',
             ),

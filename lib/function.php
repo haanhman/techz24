@@ -691,3 +691,35 @@ function createShortUrl($url) {
         return $arr['Location'];
     }
 }
+
+/**
+ * @param $thumnail
+ * @param string $type
+ * default: 120x90
+ * medium: 320x180
+ * high: 480x360
+ * standard: 640x480
+ * maxres: 1280x720
+ */
+function getYoutubeThumbnail($thumbnails, $type = 'medium') {
+    $thumbnail = json_decode($thumbnails, true);
+    return $thumbnail[$type]['url'];
+}
+
+function short_text($var, $len) {
+    return strLeft2($var, $len);
+}
+
+function strLeft2($str, $len, $pad = '...', $strip = FALSE) {
+    if (strlen($str) <= $len)
+        return $str;
+    if ($strip)
+        $str = strip_tags($str);
+    $txt = substr($str, 0, $len);
+    $pos = strrpos($txt, '.');
+    if ($pos === false) {
+        $pos = strrpos($txt, ' ');
+    }
+
+    return substr_replace($txt, $pad, $pos);
+}

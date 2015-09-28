@@ -98,6 +98,12 @@ $data = $data['row'];
                             ?>
                             <div style="clear: both"></div>
                         </div>
+                        <div class="form-group">
+                            <label>Have video</label>
+                            <br/>
+                            <input <?php if($data['have_video'] == 1) echo 'checked=""'; ?> type="checkbox" name="have_video" value="1"/>
+
+                        </div>
                     </div>
                     <div class="form-actions">
                         <button type="submit" class="btn blue">Submit</button>

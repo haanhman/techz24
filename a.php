@@ -1,2 +1,5 @@
 <?php
-echo dirname(__FILE__);
+
+echo date('d/m/Y H:i:s', 1443269317);
+?>
+

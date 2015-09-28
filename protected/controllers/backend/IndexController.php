@@ -19,6 +19,9 @@ class IndexController extends BackendController
         $query = "SELECT COUNT(*) FROM tbl_link WHERE status = 0 AND source_id = 3";
         $data['wpcentral_crawler'] = $this->db_crawler->createCommand($query)->queryScalar();
 
+        $query = "SELECT COUNT(*) FROM tbl_youtube WHERE status = 1 AND is_approve = 0";
+        $data['total_youtube'] = $this->db_crawler->createCommand($query)->queryScalar();
+
         $this->render('index', array('data' => $data));
     }
 
@@ -98,6 +101,35 @@ class IndexController extends BackendController
             }
         }
         $query = "UPDATE tbl_tags SET is_feature = 1 WHERE id IN (". implode(',', $tags) .")";
+        $this->db->createCommand($query)->execute();
+        createMessage('Update feature tag thanh cong');
+        $this->redirect($this->createUrl('index'));
+    }
+
+    public function actionTagYoutube() {
+
+        $query = "UPDATE tbl_tags_youtube SET is_feature = 0";
+        $this->db->createCommand($query)->execute();
+
+        $query = "SELECT tags FROM tbl_youtube";
+        $result = $this->db->createCommand($query)->queryColumn();
+
+        $data = array();
+        foreach($result as $item) {
+            $arr = explode(',', trim($item, ','));
+            $data = array_merge($data, $arr);
+        }
+        $data = array_filter($data);
+        $data = array_count_values($data);
+        uasort($data, 'sortTag');
+        $tags = array();
+        foreach($data as $tid => $count) {
+            $tags[] = $tid;
+            if(count($tags) == 20) {
+                break;
+            }
+        }
+        $query = "UPDATE tbl_tags_youtube SET is_feature = 1 WHERE id IN (". implode(',', $tags) .")";
         $this->db->createCommand($query)->execute();
         createMessage('Update feature tag thanh cong');
         $this->redirect($this->createUrl('index'));

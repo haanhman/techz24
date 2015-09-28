@@ -47,7 +47,11 @@
     <link href="<?php echo base_url() ?>/public/assets/fontend/css/schemes/redori.css" id="switchyuk" rel='stylesheet'
           type='text/css'/>
     <!-- end switch theme -->
-    <?php $this->renderPartial('//layouts/analyticstracking') ?>
+    <?php
+    if($_SERVER['HTTP_HOST'] == 'techz24.com' || $_SERVER['HTTP_HOST'] == 'www.techz24.com') {
+        $this->renderPartial('//layouts/analyticstracking');
+    }
+    ?>
 
 
 <body>
@@ -91,13 +95,15 @@
 
                             <div class="dcontact">
                                 <img src="<?php echo base_url() ?>/public/assets/fontend/images/logo.png" alt=""><br/>
+                                <p>
+                                    Email: <a href="mailto:techz24.com@gmail.com">techz24.com@gmail.com</a>
+                                </p>
                                 <br/><br/>
                                 <div class="sn">
                                     <a target="_blank" href="https://www.facebook.com/techz24dotcom" title="Techz24 on facebook"><i class="fa fa-facebook"></i></a>
                                     <a target="_blank" href="https://plus.google.com/118045223438632929013" title="Techz24 on google plus"><i class="fa fa-google-plus"></i></a>
                                     <a target="_blank" href="https://twitter.com/techz24" title="Techz24 on twitter"><i class="fa fa-twitter"></i></a>
                                     <a target="_blank" href="https://www.youtube.com/channel/UCaFh8XtzKLXA6zjiylbI2zw/videos" title="Techz24 on youtube"><i class="fa fa-youtube"></i></a>
-                                    <a href="#"><i class="fa fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -107,7 +113,7 @@
                     <div class="row clear"></div>
                     <!-- copyright -->
                     <div class="copyright twelve columns">
-                        <div class="five columns">&copy; Copyright 2013, <span style="color:#FF0000;">EXTRA</span>NEWS
+                        <div class="five columns">&copy; Copyright 2015, <span style="color:#FF0000;">TECH</span>Z24
                         </div>
                         <div class="seven columns">
                             <div class="backtop">
@@ -129,7 +135,6 @@
 <script src="<?php echo base_url() ?>/public/assets/fontend/js/foundation.min.js"></script>
 <script src="<?php echo base_url() ?>/public/assets/fontend/js/jquery-ui-1.8.23.custom.min.js"
         type="text/javascript"></script>
-<script src="../../../cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 <!-- Latest version (3.0.6) of jQuery Mouse Wheel by Brandon Aaron -->
 <script src="<?php echo base_url() ?>/public/assets/fontend/js/jquery.mousewheel.min.js"
         type="text/javascript"></script>

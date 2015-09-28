@@ -72,6 +72,12 @@
                     <span class="title">News</span>
                 </a>
             </li>
+            <li <?php if($controller == 'youtube') echo 'class="active"'; ?>>
+                <a href="<?php echo $this->createUrl('youtube/index') ?>">
+                    <i class="icon-social-youtube"></i>
+                    <span class="title">Youtube</span>
+                </a>
+            </li>
 
         </ul>
         <!-- END SIDEBAR MENU -->

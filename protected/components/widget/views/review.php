@@ -1,5 +1,8 @@
 <div class="widget">
-    <h3 class="blocktitle" style="margin: 0px;">Top Reviews</h3>
+    <h3 class="blocktitle" style="margin: 0px;">Top Reviews
+        <span>
+            <a href="/reviews.html">MORE</a></span>
+    </h3>
 
     <div class="widget-review">
         <?php

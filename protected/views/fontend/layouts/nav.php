@@ -51,8 +51,11 @@ $title = 'Product reviews and prices, and tech news - Techz24';
                     if($controller == 'review') {
                         $page_type = 2;
                     }
-                    if($_SERVER['REDIRECT_URL'] == '/category/reviews.html') {
+                    if($_SERVER['REDIRECT_URL'] == '/reviews.html' | $_SERVER['REDIRECT_URL'] == '/category/reviews.html') {
                         $page_type = 2;
+                    }
+                    if($controller == 'video') {
+                        $page_type = 3;
                     }
                     ?>
                     <li <?php if($page_type == 1) echo 'class="active"'; ?>>
@@ -90,9 +93,9 @@ $title = 'Product reviews and prices, and tech news - Techz24';
                         ?>
                     </li>
                     <li <?php if($page_type == 2) echo 'class="active"'; ?>>
-                        <a href="/category/reviews.html">reviews</a>
+                        <a href="/reviews.html">reviews</a>
                     </li>
-                    <li><a href="#">video</a></li>
+                    <li <?php if($page_type == 3) echo 'class="active"'; ?>><a href="<?php echo $this->createUrl('video/index') ?>">video</a></li>
                 </ul>
             </div>
             <div class="three columns">

@@ -40,6 +40,36 @@ class IndexController extends FontendController
             'keywords' => implode(', ', $tags)
         );
 
+
+        //danh sach feature video
+        $query = "SELECT * FROM tbl_youtube WHERE is_feature = 1 ORDER BY created DESC LIMIT 10";
+        $data['featureVideo'] = $this->db->createCommand($query)->queryAll();
+
+        //danh sach tag video
+
+        $data['video_tags'] = array(
+            array(
+                'alias' => 'ios',
+                'name' => 'iOS'
+            ),
+            array(
+                'alias' => 'iphone',
+                'name' => 'iPhone'
+            ),
+            array(
+                'alias' => 'apple',
+                'name' => 'Apple'
+            ),
+            array(
+                'alias' => 'android',
+                'name' => 'Android'
+            ),
+            array(
+                'alias' => 'google',
+                'name' => 'Google'
+            )
+        );
+
         $this->render('index', array('data' => $data));
     }
 

@@ -3,7 +3,8 @@
 
 <div class="clear"></div>
 <!-- feature -->
-
+<?php $this->renderPartial('feature', array('data' => $data)) ?>
+<div class="clear"></div>
 <div class="row">
     <div class="twelve columns">
         <section id="maincontainer">
@@ -18,6 +19,7 @@
                     <!-- Block Category 2 -->
                     <?php $this->renderPartial('catebox', array('data' => $data)) ?>
                     <!-- end block category 2 -->
+
 
                     <?php $this->renderPartial('latestnew', array('data' => $data)) ?>
 

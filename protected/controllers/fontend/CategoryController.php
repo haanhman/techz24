@@ -9,12 +9,14 @@ class CategoryController extends FontendController
         $categories = $this->getListCategory();
         $category_feature = array();
         $cate = array();
+
         foreach ($categories as $item) {
             if ($item['alias'] == $alias) {
                 $cate = $item;
                 break;
             }
         }
+
         if(empty($cate)) {
             $this->redirect($this->createUrl('index/index'));
         }
