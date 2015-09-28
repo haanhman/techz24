@@ -36,7 +36,7 @@
                                                     </div>
                                                     <div class="play-icon"></div>
                                                     <img src="<?php echo getYoutubeThumbnail($item['thumbnails']) ?>"
-                                                         alt="">
+                                                         alt="<?php echo CHtml::encode($item['title']) ?>">
 
                                                     <div class="title-carousel">
                                                         <div class="ticarousel"><?php echo $item['title'] ?></div>
@@ -84,7 +84,7 @@
                                                     </div>
                                                     <div class="play-icon"></div>
                                                     <img src="<?php echo getYoutubeThumbnail($item['thumbnails']) ?>"
-                                                         alt="">
+                                                         alt="<?php echo CHtml::encode($item['title']) ?>">
 
                                                     <div class="title-carousel">
                                                         <div class="ticarousel"><?php echo $item['title'] ?></div>
@@ -132,7 +132,7 @@
                                                     </div>
                                                     <div class="play-icon"></div>
                                                     <img src="<?php echo getYoutubeThumbnail($item['thumbnails']) ?>"
-                                                         alt="">
+                                                         alt="<?php echo CHtml::encode($item['title']) ?>">
 
                                                     <div class="title-carousel">
                                                         <div class="ticarousel"><?php echo $item['title'] ?></div>

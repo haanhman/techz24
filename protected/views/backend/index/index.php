@@ -68,5 +68,12 @@
                 </div>
             </div>
         </div>
+        <hr />
+        <a target="_blank" href="/crawler/youtube/channel?id=1">Youtube cnet</a><br />
+        <a target="_blank" href="/crawler/youtube/channel?id=2">Youtube Techcrunch</a><br />
+        <a target="_blank" href="/crawler/youtube/channel?id=3">Youtube Engadget</a><br />
+        <a target="_blank" href="/crawler/youtube/channel?id=4">Youtube Mashable</a><br />
+        <hr />
+        <a target="_blank" href="/crawler/youtube/detail">Youtube detail</a><br />
     </div>
 </div>

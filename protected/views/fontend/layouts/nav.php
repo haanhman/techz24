@@ -2,6 +2,9 @@
 $controller = Yii::app()->controller->id;
 $action = Yii::app()->controller->action->id;
 $title = 'Product reviews and prices, and tech news - Techz24';
+if($controller == 'video') {
+    $title = 'Video - Techz24';
+}
 ?>
 <div class="row">
     <div class="twelve columns">
@@ -9,7 +12,7 @@ $title = 'Product reviews and prices, and tech news - Techz24';
         <ul id="logos" class="nav-bar">
             <li class="logos">
                 <?php
-                if ($controller == 'index' && $action == 'index') {
+                if (($controller == 'video' || $controller == 'index') && $action == 'index') {
                     echo '<h1 style="padding: 0px; margin: 0px;">';
                 }
                 ?>
@@ -18,7 +21,7 @@ $title = 'Product reviews and prices, and tech news - Techz24';
                                  alt="<?php echo CHtml::encode($title) ?>"
                                  title="<?php echo CHtml::encode($title) ?>">
                 <?php
-                if ($controller == 'index' && $action == 'index') {
+                if (($controller == 'video' || $controller == 'index') && $action == 'index') {
                     echo '</h1>';
                 }
                 ?>
@@ -30,7 +33,7 @@ $title = 'Product reviews and prices, and tech news - Techz24';
         <nav class="mainbar" id="mainbar">
             <div class="two columns">
                 <?php
-                if ($controller == 'index' && $action == 'index') {
+                if (($controller == 'video' || $controller == 'index') && $action == 'index') {
                     echo '<h1 style="padding: 0px; margin: 0px;">';
                 }
                 ?>
@@ -39,7 +42,7 @@ $title = 'Product reviews and prices, and tech news - Techz24';
                                                                              alt="<?php echo CHtml::encode($title) ?>"
                                                                              title="<?php echo CHtml::encode($title) ?>"></a>
                 <?php
-                if ($controller == 'index' && $action == 'index') {
+                if (($controller == 'video' || $controller == 'index') && $action == 'index') {
                     echo '</h1>';
                 }
                 ?>

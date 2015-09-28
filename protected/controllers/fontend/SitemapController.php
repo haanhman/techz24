@@ -5,23 +5,27 @@ class SitemapController extends FontendController
 {
     public function actionIndex()
     {
+
+        $domain = 'http://' . $_SERVER['SERVER_NAME'];
+
         $time = explode(" ", microtime());
         $time = $time[1];
 
         // create object
-        $sitemap = new SitemapGenerator('http://' . $_SERVER['SERVER_NAME'] . '/', ROOT_PATH);
+        $sitemap = new SitemapGenerator($domain . '/', ROOT_PATH);
         // will create also compressed (gzipped) sitemap
         $sitemap->createGZipFile = true;
 
         $urls = array();
-        $urls[] = array('http://' . $_SERVER['SERVER_NAME'], date('c'), 'daily', '1');
+        $urls[] = array($domain, date('c'), 'daily', '1');
+        $urls[] = array($this->createAbsoluteUrl('video/index'), date('c'), 'daily', '1');
         //danh muc
         $query = "SELECT id, alias FROM tbl_category";
         $result = $this->db->createCommand($query)->queryAll();
         foreach ($result as $item) {
             $url = $this->createAbsoluteUrl('category/index', array('alias' => $item['alias']));
-            if($item['id'] == 20) {
-                $url = 'http://' . $_SERVER['SERVER_NAME'] . '/reviews.html';
+            if ($item['id'] == 20) {
+                $url = $domain . '/reviews.html';
             }
             $urls[] = array($url, date('c'), 'daily', '0.9');
         }
@@ -41,7 +45,15 @@ class SitemapController extends FontendController
             $urls[] = array($url);
         }
 
-        if($_GET['test'] == 1) {
+        //danh sach bai viet
+        $query = "SELECT id, alias FROM tbl_youtube ORDER BY id DESC";
+        $result = $this->db->createCommand($query)->queryAll();
+        foreach ($result as $item) {
+            $url = $this->createAbsoluteUrl('video/detail', array('alias' => $item['alias']));
+            $urls[] = array($url);
+        }
+
+        if ($_GET['test'] == 1) {
             echo count($urls);
             die;
         }
