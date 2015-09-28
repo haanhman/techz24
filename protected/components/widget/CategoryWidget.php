@@ -14,23 +14,20 @@ class CategoryWidget extends MyWidget {
 
     public function run() {
         $data = array();
-        $query = "SELECT * FROM tbl_category ORDER BY weight";
-        $result = $this->db->createCommand($query)->queryAll();
-        foreach ($result as $item) {
-            $data['category'][$item['id']] = $item;
-        }
-        $data['cate_static'] = $this->staticCategory();
-        $this->render('category', array('data' => $data));
-    }
+        //danh sach feature video
+        $query = "SELECT * FROM tbl_youtube WHERE is_feature = 1 ORDER BY created DESC LIMIT 10";
+        $data['featureVideo'] = $this->db->createCommand($query)->queryAll();
 
-    private function staticCategory() {
-        $data = array();
-        $query = "SELECT cate_id, COUNT(id) AS total FROM tbl_archive GROUP BY cate_id";
-        $result = $this->db->createCommand($query)->queryAll();
-        foreach($result as $item) {
-            $data[$item['cate_id']] = $item['total'];
+        $list_video_id = array();
+
+        foreach($data['featureVideo'] as $item) {
+            $list_video_id[] =$item['id'];
         }
-        return $data;
+
+        $query = "SELECT * FROM tbl_youtube WHERE id NOT IN (". implode(',', $list_video_id) .") AND is_feature = 0 ORDER BY created DESC LIMIT 10";
+        $data['recentVideo'] = $this->db->createCommand($query)->queryAll();
+
+        $this->render('category', array('data' => $data));
     }
 
 }

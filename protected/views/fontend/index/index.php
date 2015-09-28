@@ -35,8 +35,7 @@
                     <!-- widget video  -->
                     <?php $this->widget('ReviewWidget'); ?>
 
-                    <!-- widget custome menus -->
-                    <?php $this->widget('CategoryWidget'); ?>
+                    <?php $this->widget('RecentVideoWidget'); ?>
 
                     <?php $this->widget('AdsWidget'); ?>
 
