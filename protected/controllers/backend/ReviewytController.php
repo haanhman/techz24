@@ -130,6 +130,7 @@ class ReviewytController extends BackendController
         $row['alias'] = $this->checkAlias(change_url_seo($row['title']));
         $row['tags'] = $tags;
         $row['viewer'] = rand(123, 5000);
+        $row['is_feature'] = intval($_GET['is_feature']);
 
         $publishedAt = trim($row['publishedAt'], '"');
         $row['created'] = strtotime($publishedAt);

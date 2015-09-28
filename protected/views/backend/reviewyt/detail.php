@@ -16,6 +16,7 @@
                                     <div class="form-actions">
                                         <button type="submit" class="btn blue">Cập nhật</button>
                                         <button onclick="window.location='<?php echo $this->createUrl('approve', array('id' => $data['id'])) ?>';" type="button" class="btn red">Approve</button>
+                                        <button onclick="window.location='<?php echo $this->createUrl('approve', array('id' => $data['id'], 'is_feature' => 1)) ?>';" type="button" class="btn red">Approve Feature</button>
                                     </div>
                                 </td>
                             </tr>
