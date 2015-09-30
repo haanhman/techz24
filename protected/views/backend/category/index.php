@@ -4,16 +4,26 @@ $page = 1;
 <div class="row">
     <div class="col-md-12">
 
+        <div class="page-bar">
+            <ul class="page-breadcrumb">
+                <li>
+                    <a target="_blank" href="/crawler/cnet/all">Crawler cnet</a>
+                    <i class="fa fa-angle-right"></i>
+                </li>
+                <li>
+                    <a target="_blank" href="/crawler/techcrunch/all">Crawler techcrunch</a>
+                    <i class="fa fa-angle-right"></i>
+                </li>
+                <li>
+                    <a target="_blank" href="/crawler/wpcentral/all">Crawler wpcentral</a>
+                </li>
+            </ul>
+        </div>
+
         <div style="margin-bottom: 10px;">
             <a href="<?php echo $this->createUrl('add') ?>" class="btn btn-circle red-sunglo btn-sm">
                 <i class="fa fa-plus"></i> Thêm mới</a>
         </div>
-
-        <p>
-            <a target="_blank" href="/crawler/cnet/all">Crawler cnet</a><br />
-            <a target="_blank" href="/crawler/techcrunch/all">Crawler techcrunch</a>
-            <a target="_blank" href="/crawler/wpcentral/all">Crawler wpcentral</a>
-        </p>
 
         <?php echo showMessage(); ?>
         <div class="portlet box green">

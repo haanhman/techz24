@@ -24,7 +24,22 @@ class YoutubeController extends BackendController
     {
         $data = array();
         $where = "";
+
+        $name = urlGETParams('name');
+        $feature = urlGETParams('feature', VARIABLE_NUMBER);
+        $error = urlGETParams('error', VARIABLE_NUMBER);
+        if (!empty($name)) {
+            $where .= " AND title LIKE '%" . addslashes($name) . "%'";
+        }
+        if($feature == 1) {
+            $where .= " AND is_feature = 1 ";
+        }
+        if($error == 1) {
+            $where .= " AND is_error = 1 ";
+        }
+
         $query_count = "SELECT COUNT(id) FROM tbl_youtube WHERE 1 " . $where;
+
         $item_count = $this->db->createCommand($query_count)->queryScalar();
 
         $pages = new CPagination($item_count);
@@ -63,6 +78,7 @@ class YoutubeController extends BackendController
 
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $params = $_POST;
+            $params['is_feature'] = formPostParams('is_feature', VARIABLE_NUMBER);
             yii_update_row('youtube', $params, 'id = ' . $id);
             createMessage('Cập nhật thành công');
             $this->redirect($this->createUrl('detail', array('id' => $id)));
@@ -71,6 +87,20 @@ class YoutubeController extends BackendController
         $query = "SELECT * FROM tbl_youtube WHERE id = " . $id;
         $data = $this->db->createCommand($query)->queryRow();
         $this->render('detail', array('data' => $data));
+    }
+
+    public function actionDelete()
+    {
+
+        $id = urlGETParams('id', VARIABLE_NUMBER);
+
+        $query = "SELECT * FROM tbl_youtube WHERE id = " . $id;
+        $row = $this->db->createCommand($query)->queryRow();
+
+        $query = "DELETE FROM tbl_youtube WHERE id = " . $id;
+        $data = $this->db->createCommand($query)->execute();
+        createMessage('Xoá video: ' . $row['title'] . ' thành công');
+        $this->redirect($_SERVER['HTTP_REFERER']);
     }
 
 

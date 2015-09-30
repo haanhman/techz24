@@ -1,0 +1,1 @@
+ALTER TABLE `tbl_youtube`  ADD `is_error` TINYINT(1) NOT NULL  AFTER `status`;

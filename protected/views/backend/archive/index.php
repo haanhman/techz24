@@ -1,9 +1,18 @@
 <h3 class="page-title">Danh sách nội dung Live</h3>
 <div class="row">
     <div class="col-md-12">
+        <div class="page-bar">
+            <ul class="page-breadcrumb">
+                <li>
+                    <a href="<?php echo $this->createUrl('shorturl') ?>">Create short url</a>
+                    <i class="fa fa-angle-right"></i>
+                </li>
+                <li>
+                    <a href="<?php echo $this->createUrl('index', array('have_video' => 1)) ?>">Have video</a>
+                </li>
+            </ul>
+        </div>
         <p>Tổng số có <strong><?php echo $item_count ?></strong> nội dung cần duyệt</p>
-        <a href="<?php echo $this->createUrl('shorturl') ?>">Create short url</a> ||
-        <a href="<?php echo $this->createUrl('index', array('have_video' => 1)) ?>">Have video</a>
         <?php echo showMessage(); ?>
         <div class="table-responsive">
             <table class="table table-striped table-bordered table-hover">

@@ -28,7 +28,9 @@
                             <tr>
                                 <td style="width: 15%">Nổi bật</td>
                                 <td>
-                                    <input <?php if($data['is_feature'] == 1) echo 'checked=""'; ?> type="checkbox" name="is_feature" value="1"/>
+                                    <input <?php if ($data['is_feature'] == 1) echo 'checked=""'; ?> type="checkbox"
+                                                                                                     name="is_feature"
+                                                                                                     value="1"/>
                                 </td>
                             </tr>
                             <tr>
@@ -41,7 +43,12 @@
                             <tr>
                                 <td>Thumbnail</td>
                                 <td>
-                                    <?php echo $data['thumbnails'] ?>
+                                    <?php
+                                    $thumbnails = json_decode($data['thumbnails'], true);
+                                    foreach($thumbnails as $item) {
+                                        echo $item['url'] . '<br />';
+                                    }
+                                    ?>
                                 </td>
                             </tr>
                             <tr>

@@ -1,7 +1,23 @@
 <div class="row">
     <div class="col-md-12">
         <p>Tổng số có <strong><?php echo $item_count ?></strong> video cần duyệt</p>
-        <a href="<?php echo $this->createUrl('index', array('order' => 1)) ?>">Order created</a>
+
+        <form method="GET" action="">
+            <?php
+            $name = urlGETParams('name');
+            $feature = urlGETParams('feature', VARIABLE_NUMBER);
+            $order = urlGETParams('order', VARIABLE_NUMBER);
+            $error = urlGETParams('error', VARIABLE_NUMBER);
+            ?>
+            Tiêu đề video
+            <input class="form-control" style="width: 200px; display: inline-block" type="text" name="name" value="<?php echo CHtml::encode($name) ?>" />
+            <label><input type="checkbox" name="feature" value="1" <?php if($feature == 1) echo 'checked=""'; ?> /> Feature</label>
+            <label><input type="checkbox" name="order" value="1" <?php if($order == 1) echo 'checked=""'; ?> /> Order created</label>
+            <label><input type="checkbox" name="error" value="1" <?php if($error == 1) echo 'checked=""'; ?> /> Lỗi</label>
+            <input type="submit" value="Search">
+        </form>
+        <hr />
+
         <div class="portlet box green">
             <div class="portlet-title">
                 <div class="caption">Danh sách video từ youtube</div>
@@ -15,6 +31,7 @@
                             <th style="width: 5%">#</th>
                             <th>Thumbnail</th>
                             <th>Feature</th>
+                            <th>Error</th>
                             <th>Channel Name</th>
                             <th>published</th>
                             <th>Tiêu đề</th>
@@ -43,6 +60,13 @@
                                     <?php
                                     if($item['is_feature'] == 1) {
                                         echo '<i style="color: green; font-size: 20px;" class="icon-check"></i>';
+                                    }
+                                    ?>
+                                </td>
+                                <td style="text-align: center">
+                                    <?php
+                                    if($item['is_error'] == 1) {
+                                        echo '<i style="color: red; font-size: 20px;" class="fa fa-warning"></i>';
                                     }
                                     ?>
                                 </td>
