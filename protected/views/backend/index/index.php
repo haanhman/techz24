@@ -13,6 +13,16 @@
                     <div class="number"><?php echo $data['total_comment'] ?></div>
                 </div>
             </div>
+
+            <div class="tile bg-green" onclick="window.location='<?php echo $this->createUrl('tag') ?>';">
+                <div class="tile-body">
+                    <div style="font-size: 84px;padding-top: 35px;text-align: center;">@</div>
+                </div>
+                <div class="tile-object">
+                    <div class="name">Tags</div>
+                    <div class="number"></div>
+                </div>
+            </div>
             <div class="tile bg-green" onclick="window.location='<?php echo $this->createUrl('review/index') ?>';">
                 <div class="tile-body">
                     <i class="fa fa-bar-chart-o"></i>
@@ -22,6 +32,8 @@
                     <div class="number"><?php echo $data['total_review'] ?></div>
                 </div>
             </div>
+        </div>
+        <div class="tiles">
             <div class="tile bg-red-intense" onclick="window.location='/crawler/cnet/detail';">
                 <div class="tile-body">
                     <div style="font-size: 30px;padding-top: 35px;text-align: center;">Cnet</div>
@@ -47,14 +59,12 @@
                     <div class="number"><?php echo $data['wpcentral_crawler'] ?></div>
                 </div>
             </div>
-
-            <div class="tile bg-green" onclick="window.location='<?php echo $this->createUrl('tag') ?>';">
+            <div class="tile bg-red-intense" onclick="window.location='/crawler/androidcentral/detail';">
                 <div class="tile-body">
-                    <div style="font-size: 84px;padding-top: 35px;text-align: center;">@</div>
+                    <div style="font-size: 20px;padding-top: 35px;text-align: center;">Android Central</div>
                 </div>
                 <div class="tile-object">
-                    <div class="name">Tags</div>
-                    <div class="number"></div>
+                    <div class="number"><?php echo $data['androidcenter_crawler'] ?></div>
                 </div>
             </div>
         </div>

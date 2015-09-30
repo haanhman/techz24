@@ -36,3 +36,5 @@ file_put_contents(dirname(__FILE__) . '/b.txt', $str);
 /usr/bin/GET http://www.techz24.com/crawler/cnet/category?cate_id=16&page=1
 /usr/bin/GET http://www.techz24.com/crawler/cnet/category?cate_id=10&page=1
 /usr/bin/GET http://www.techz24.com/crawler/techcrunch/category?cate_id=17&page=1
+
+/usr/bin/GET http://www.techz24.com/crawler/androidcentral/category?cate_id=21&page=0

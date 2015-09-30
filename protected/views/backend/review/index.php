@@ -1,26 +1,32 @@
-
 <div class="row">
     <div class="col-md-12">
 
         <div style="margin-bottom: 10px;">
-            <a href="<?php echo $this->createUrl('index', array('source' => 1)) ?>" class="btn btn-circle red-sunglo btn-sm">Cnet</a>
-            <a href="<?php echo $this->createUrl('index', array('source' => 2)) ?>" class="btn btn-circle red-sunglo btn-sm">Techcrunch</a>
-            <a href="<?php echo $this->createUrl('index', array('source' => 3)) ?>" class="btn btn-circle red-sunglo btn-sm">WPcentral</a>
+            <a href="<?php echo $this->createUrl('index', array('source' => 1)) ?>"
+               class="btn btn-circle red-sunglo btn-sm">Cnet</a>
+            <a href="<?php echo $this->createUrl('index', array('source' => 2)) ?>"
+               class="btn btn-circle red-sunglo btn-sm">Techcrunch</a>
+            <a href="<?php echo $this->createUrl('index', array('source' => 3)) ?>"
+               class="btn btn-circle red-sunglo btn-sm">WPcentral</a>
+            <a href="<?php echo $this->createUrl('index', array('source' => 4)) ?>"
+               class="btn btn-circle red-sunglo btn-sm">Android Central</a>
         </div>
 
         <p>Tổng số có <strong><?php echo $item_count ?></strong> nội dung cần duyệt</p>
         <?php
-            if($data['total_have_video'] > 0) {
-                echo 'Có <strong>' . $data['total_have_video'] . '</strong> tin cần phải check video';
-            }
+        if ($data['total_have_video'] > 0) {
+            echo 'Có <strong>' . $data['total_have_video'] . '</strong> tin cần phải check video';
+        }
         ?>
         <p>
-            <a onclick="return confirm('are you sure?');" href="<?php echo $this->createUrl('review/approveall') ?>">Approve All Data</a> ||
+            <a onclick="return confirm('are you sure?');" href="<?php echo $this->createUrl('review/approveall') ?>">Approve
+                All Data</a> ||
             <a href="<?php echo $this->createUrl('review/check') ?>">Check have video</a>
         </p>
+
         <div class="portlet box green">
             <div class="portlet-title">
-                <div class="caption">Danh sách nội dung </div>
+                <div class="caption">Danh sách nội dung</div>
             </div>
             <div class="portlet-body">
                 <?php echo showMessage(); ?>
@@ -49,25 +55,29 @@
                             <tr>
                                 <td><?php echo $i++ ?></td>
                                 <td>
-                                    <img class="thumbnail" src="<?php echo $item['thumbnail'] ?>" />
+                                    <a href="<?php echo $this->createUrl('detail', array('id' => $item['id'])) ?>">
+                                        <img class="thumbnail" src="<?php echo $item['thumbnail'] ?>"/>
+                                    </a>
                                 </td>
                                 <th>
                                     <?php
-                                        if($item['have_video'] == 1) {
-                                            echo '<i style="color: green;" class="icon-check"></i>';
-                                        }
+                                    if ($item['have_video'] == 1) {
+                                        echo '<i style="color: green;" class="icon-check"></i>';
+                                    }
                                     ?>
                                 </th>
                                 <td>
                                     <a href="<?php echo $this->createUrl('detail', array('id' => $item['id'])) ?>"><?php echo $item['title'] ?></a>
-                                    <br />
+                                    <br/>
                                     <?php echo $data['category'][$item['cate_id']] ?>
                                 </td>
                                 <td>
                                     <?php echo nl2br($item['short_text']) ?>
                                 </td>
                                 <td>
-                                    <a onclick="return confirm('Are you sure?')" href="<?php echo $this->createUrl('delete', array('id' => $item['id'])) ?>"><i class="icon-trash"></i></a>
+                                    <a onclick="return confirm('Are you sure?')"
+                                       href="<?php echo $this->createUrl('delete', array('id' => $item['id'])) ?>"><i
+                                            class="icon-trash"></i></a>
                                 </td>
                             </tr>
                             <?php

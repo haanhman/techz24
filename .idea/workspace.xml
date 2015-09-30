@@ -22,97 +22,139 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="YoutubeController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/controllers/backend/YoutubeController.php">
+      <file leaf-file-name="AndroidcentralController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/crawler/AndroidcentralController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.26923">
-              <caret line="101" column="32" selection-start-line="101" selection-start-column="32" selection-end-line="101" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.627383">
+              <caret line="153" column="16" selection-start-line="153" selection-start-column="16" selection-end-line="153" selection-end-column="16" />
               <folding>
-                <marker date="1443615174000" expanded="true" signature="875:917" placeholder="SELECT COUNT..tbl_youtube..." />
-                <marker date="1443615174000" expanded="true" signature="1407:1542" placeholder="SELECT * FRO..tbl_youtube..." />
-                <marker date="1443615174000" expanded="true" signature="2329:2366" placeholder="SELECT * FRO..tbl_youtube..." />
-                <marker date="1443615174000" expanded="true" signature="2613:2650" placeholder="SELECT * FRO..tbl_youtube..." />
-                <marker date="1443615174000" expanded="true" signature="2739:2774" placeholder="DELETE FROM ..." />
+                <marker date="1443624475000" expanded="true" signature="385:455" placeholder="SELECT id FR..tbl_category..." />
+                <marker date="1443624475000" expanded="true" signature="2058:2096" placeholder="SELECT * FRO..tbl_category..." />
+                <marker date="1443624475000" expanded="true" signature="4063:4164" placeholder="SELECT * FRO..tbl_link..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detail.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/backend/youtube/detail.php">
+      <file leaf-file-name="function.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/function.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.65384614">
-              <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+            <state vertical-scroll-proportion="-16.961538">
+              <caret line="30" column="22" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="22" />
               <folding>
-                <element signature="n#style#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <marker date="1443615114000" expanded="true" signature="939:982" placeholder="..." />
-                <marker date="1443615114000" expanded="true" signature="1044:1094" placeholder="..." />
+                <marker date="1443623023000" expanded="true" signature="13652:13722" placeholder="SELECT id FR..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReviewController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/backend/ReviewController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.09434">
+              <caret line="169" column="47" selection-start-line="169" selection-start-column="47" selection-end-line="169" selection-end-column="47" />
+              <folding>
+                <marker date="1443623094000" expanded="true" signature="391:417" placeholder="SELECT * FRO..tbl_category..." />
+                <marker date="1443623094000" expanded="true" signature="860:902" placeholder="SELECT COUNT..tbl_archive..." />
+                <marker date="1443623094000" expanded="true" signature="1297:1467" placeholder="SELECT id, c..tbl_archive..." />
+                <marker date="1443623094000" expanded="true" signature="1583:1638" placeholder="SELECT COUNT..tbl_archive..." />
+                <marker date="1443623094000" expanded="true" signature="2126:2163" placeholder="SELECT * FRO..tbl_archive..." />
+                <marker date="1443623094000" expanded="true" signature="3146:3183" placeholder="SELECT * FRO..tbl_archive..." />
+                <marker date="1443623094000" expanded="true" signature="3436:3473" placeholder="SELECT * FRO..tbl_archive..." />
+                <marker date="1443623094000" expanded="true" signature="3570:3605" placeholder="DELETE FROM ..." />
+                <marker date="1443623094000" expanded="true" signature="3907:3951" placeholder="SELECT id FR..tbl_tags..." />
+                <marker date="1443623094000" expanded="true" signature="4649:4686" placeholder="SELECT * FRO..tbl_archive..." />
+                <marker date="1443623094000" expanded="true" signature="5893:5928" placeholder="DELETE FROM ..." />
+                <marker date="1443623094000" expanded="true" signature="6163:6210" placeholder="SELECT id FR..tbl_archive..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/backend/youtube/index.php">
+        <entry file="file://$PROJECT_DIR$/protected/views/backend/index/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.730769">
-              <caret line="67" column="54" selection-start-line="67" selection-start-column="54" selection-end-line="67" selection-end-column="54" />
-              <folding>
-                <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <marker date="1443614773000" expanded="true" signature="3123:3153" placeholder="..." />
-                <marker date="1443614773000" expanded="true" signature="3523:3551" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sql.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bkgau/sql.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1295032214000" expanded="true" signature="1274:1408" placeholder="..." />
-                <marker date="1295032214000" expanded="true" signature="3565:3591" placeholder="SELECT * FRO..." />
-                <marker date="1295032214000" expanded="true" signature="5722:5754" placeholder="INSERT INTO ..." />
-                <marker date="1295032214000" expanded="true" signature="7380:7426" placeholder="DELETE FROM ..." />
-                <marker date="1295032214000" expanded="true" signature="7579:7595" placeholder="DROP TABLE `..." />
-                <marker date="1295032214000" expanded="true" signature="8098:8132" placeholder="ALTER TABLE ..." />
-                <marker date="1295032214000" expanded="true" signature="8334:8589" placeholder="..." />
-                <marker date="1295032214000" expanded="true" signature="8367:8580" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sql.sql" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/db/sql.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="78" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="78" />
+            <state vertical-scroll-proportion="-14.346154">
+              <caret line="61" column="87" selection-start-line="61" selection-start-column="87" selection-end-line="61" selection-end-column="87" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/backend/category/index.php">
+      <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/backend/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.7692307">
-              <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="20" selection-end-column="14" />
+            <state vertical-scroll-proportion="-12.153846">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding>
-                <marker date="1443614408000" expanded="true" signature="2502:2515" placeholder="..." />
-                <marker date="1443614408000" expanded="true" signature="4211:4224" placeholder="..." />
+                <marker date="1443622985000" expanded="true" signature="136:176" placeholder="SELECT COUNT..tbl_latest_comment..." />
+                <marker date="1443622985000" expanded="true" signature="280:312" placeholder="SELECT COUNT..tbl_archive..." />
+                <marker date="1443622985000" expanded="true" signature="423:487" placeholder="SELECT COUNT..tbl_link..." />
+                <marker date="1443622985000" expanded="true" signature="598:662" placeholder="SELECT COUNT..tbl_link..." />
+                <marker date="1443622985000" expanded="true" signature="779:843" placeholder="SELECT COUNT..tbl_link..." />
+                <marker date="1443622985000" expanded="true" signature="959:1023" placeholder="SELECT COUNT..tbl_link..." />
+                <marker date="1443622985000" expanded="true" signature="1143:1211" placeholder="SELECT COUNT..tbl_youtube..." />
+                <marker date="1443622985000" expanded="true" signature="3432:3466" placeholder="UPDATE tbl_t..." />
+                <marker date="1443622985000" expanded="true" signature="3541:3569" placeholder="SELECT tags ..tbl_archive..." />
+                <marker date="1443622985000" expanded="true" signature="4120:4194" placeholder="UPDATE tbl_t..." />
+                <marker date="1443622985000" expanded="true" signature="4425:4467" placeholder="UPDATE tbl_t..." />
+                <marker date="1443622985000" expanded="true" signature="4542:4570" placeholder="SELECT tags ..tbl_youtube..." />
+                <marker date="1443622985000" expanded="true" signature="5121:5203" placeholder="UPDATE tbl_t..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/backend/archive/index.php">
+        <entry file="file://$PROJECT_DIR$/protected/views/backend/review/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.5384617">
-              <caret line="10" column="110" selection-start-line="10" selection-start-column="110" selection-end-line="10" selection-end-column="110" />
+            <state vertical-scroll-proportion="-18.307692">
+              <caret line="75" column="37" selection-start-line="75" selection-start-column="37" selection-end-line="75" selection-end-column="37" />
+              <folding>
+                <marker date="1443623453000" expanded="true" signature="3117:3130" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sql.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/sql.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="96" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="96" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="b.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/b.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-19.923077">
+              <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nav.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/fontend/layouts/nav.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.076923">
+              <caret line="83" column="45" selection-start-line="83" selection-start-column="45" selection-end-line="83" selection-end-column="45" />
+              <folding>
+                <marker date="1443623870000" expanded="true" signature="546:572" placeholder="..." />
+                <marker date="1443623870000" expanded="true" signature="1449:1475" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReviewytController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/backend/ReviewytController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.3846154">
+              <caret line="106" column="4" selection-start-line="106" selection-start-column="4" selection-end-line="114" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -131,14 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/protected/views/fontend/category/index.php" />
-        <option value="$PROJECT_DIR$/protected/views/fontend/search/index.php" />
-        <option value="$PROJECT_DIR$/protected/views/fontend/tag/index.php" />
-        <option value="$PROJECT_DIR$/protected/views/fontend/review/related_post.php" />
-        <option value="$PROJECT_DIR$/protected/views/backend/review/index.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/fontend/ReviewController.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/backend/ReviewController.php" />
-        <option value="$PROJECT_DIR$/protected/views/fontend/category/review.php" />
         <option value="$PROJECT_DIR$/protected/controllers/fontend/CategoryController.php" />
         <option value="$PROJECT_DIR$/protected/components/widget/views/review.php" />
         <option value="$PROJECT_DIR$/protected/controllers/backend/ArchiveController.php" />
@@ -147,11 +181,9 @@
         <option value="$PROJECT_DIR$/protected/components/CrawlerController.php" />
         <option value="$PROJECT_DIR$/protected/views/backend/reviewyt/index.php" />
         <option value="$PROJECT_DIR$/protected/views/backend/layouts/sidebar.php" />
-        <option value="$PROJECT_DIR$/protected/components/FontendController.php" />
         <option value="$PROJECT_DIR$/protected/views/fontend/detail/index.php" />
         <option value="$PROJECT_DIR$/protected/views/fontend/layouts/nav_mobile.php" />
         <option value="$PROJECT_DIR$/protected/views/fontend/index/feature.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/backend/IndexController.php" />
         <option value="$PROJECT_DIR$/protected/controllers/fontend/IndexController.php" />
         <option value="$PROJECT_DIR$/protected/config/fontend.php" />
         <option value="$PROJECT_DIR$/protected/views/fontend/layouts/main.php" />
@@ -159,7 +191,6 @@
         <option value="$PROJECT_DIR$/protected/components/widget/RecentVideoWidget.php" />
         <option value="$PROJECT_DIR$/protected/views/fontend/index/index.php" />
         <option value="$PROJECT_DIR$/protected/components/widget/CategoryWidget.php" />
-        <option value="$PROJECT_DIR$/protected/views/fontend/layouts/nav.php" />
         <option value="$PROJECT_DIR$/protected/views/fontend/video/index.php" />
         <option value="$PROJECT_DIR$/protected/views/fontend/video/tag.php" />
         <option value="$PROJECT_DIR$/protected/components/widget/views/recentvideo.php" />
@@ -168,20 +199,31 @@
         <option value="$PROJECT_DIR$/protected/views/backend/reviewyt/detail.php" />
         <option value="$PROJECT_DIR$/protected/controllers/fontend/VideoController.php" />
         <option value="$PROJECT_DIR$/protected/views/fontend/video/detail.php" />
-        <option value="$PROJECT_DIR$/a.php" />
         <option value="$PROJECT_DIR$/protected/controllers/crawler/CnetController.php" />
-        <option value="$PROJECT_DIR$/b.php" />
         <option value="$PROJECT_DIR$/define.php" />
         <option value="$PROJECT_DIR$/protected/controllers/crawler/YoutubeController.php" />
-        <option value="$PROJECT_DIR$/lib/function.php" />
-        <option value="$PROJECT_DIR$/protected/views/backend/index/index.php" />
         <option value="$PROJECT_DIR$/protected/controllers/backend/ReviewytController.php" />
-        <option value="$PROJECT_DIR$/protected/views/backend/category/index.php" />
         <option value="$PROJECT_DIR$/protected/views/backend/archive/index.php" />
         <option value="$PROJECT_DIR$/db/admin_backend.sql" />
         <option value="$PROJECT_DIR$/protected/views/backend/youtube/index.php" />
         <option value="$PROJECT_DIR$/protected/views/backend/youtube/detail.php" />
         <option value="$PROJECT_DIR$/protected/controllers/backend/YoutubeController.php" />
+        <option value="$PROJECT_DIR$/db/sql.sql" />
+        <option value="$PROJECT_DIR$/protected/views/backend/category/add.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/backend/CategoryController.php" />
+        <option value="$PROJECT_DIR$/protected/views/backend/category/index.php" />
+        <option value="$PROJECT_DIR$/abc.txt" />
+        <option value="$PROJECT_DIR$/a.php" />
+        <option value="$PROJECT_DIR$/abc.html" />
+        <option value="$PROJECT_DIR$/protected/views/backend/index/index.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/backend/IndexController.php" />
+        <option value="$PROJECT_DIR$/lib/function.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/backend/ReviewController.php" />
+        <option value="$PROJECT_DIR$/protected/views/backend/review/index.php" />
+        <option value="$PROJECT_DIR$/protected/components/FontendController.php" />
+        <option value="$PROJECT_DIR$/protected/views/fontend/layouts/nav.php" />
+        <option value="$PROJECT_DIR$/b.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/crawler/AndroidcentralController.php" />
       </list>
     </option>
   </component>
@@ -252,7 +294,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -271,6 +317,58 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="techz24" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="techz24" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="techz24" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="techz24" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -296,81 +394,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="youtube" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="techz24" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="techz24" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="techz24" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="techz24" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="category" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="techz24" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="techz24" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="archive" />
+              <option name="myItemId" value="index" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -402,7 +426,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -416,7 +440,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crawler" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -434,11 +466,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/protected/controllers/crawler" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/protected/components/widget/views" />
       <recent name="$PROJECT_DIR$/protected/components/widget" />
       <recent name="$PROJECT_DIR$/protected/views/fontend/video" />
-      <recent name="$PROJECT_DIR$/public/assets/fontend/img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/protected/components" />
@@ -534,97 +566,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/assets/global/plugins/bootstrap-summernote/summernote.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.8432057">
-          <caret line="0" column="13793" selection-start-line="0" selection-start-column="13781" selection-end-line="0" selection-end-column="13793" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/CrawlerController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73391306">
-          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/backend/reviewyt/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/backend/layouts/sidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6031196">
-          <caret line="75" column="61" selection-start-line="75" selection-start-column="61" selection-end-line="75" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/fontend/category/review.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.461538">
-          <caret line="138" column="0" selection-start-line="138" selection-start-column="0" selection-end-line="153" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/fontend/category/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7348353">
-          <caret line="40" column="18" selection-start-line="28" selection-start-column="12" selection-end-line="40" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/backend/archive/edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42634314">
-          <caret line="103" column="28" selection-start-line="103" selection-start-column="28" selection-end-line="103" selection-end-column="137" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/fontend/DetailController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12869565">
-          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/fontend/detail/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53217393">
-          <caret line="72" column="130" selection-start-line="64" selection-start-column="32" selection-end-line="72" selection-end-column="130" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/fontend/detail/social.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3076923">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/FontendController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40869564">
-          <caret line="77" column="39" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/fontend/index/catslide.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.41391304">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/fontend/index/catebox.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="13.730769">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/fontend/tag/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7095652">
@@ -667,13 +608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/backend/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74956524">
-          <caret line="127" column="33" selection-start-line="127" selection-start-column="33" selection-end-line="127" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/fontend/index/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.615385">
@@ -713,13 +647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/fontend/layouts/nav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14782609">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -786,71 +713,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/crawler/CnetController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="261" column="62" selection-start-line="261" selection-start-column="62" selection-end-line="261" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/b.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.83015597">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/a.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6153846">
-          <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/define.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.17677642">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/crawler/YoutubeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="54" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
-          <folding>
-            <marker date="1443587461000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_youtube..." />
-            <marker date="1443587461000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..tbl_youtube..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/backend/index/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="77" column="109" selection-start-line="77" selection-start-column="109" selection-end-line="77" selection-end-column="109" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/function.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34835356">
-          <caret line="64" column="9" selection-start-line="64" selection-start-column="9" selection-end-line="64" selection-end-column="9" />
-          <folding>
-            <marker date="1443587488000" expanded="true" signature="-1:-1" placeholder="SELECT id FR..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/backend/category/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.7692307">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="20" selection-end-column="14" />
-          <folding>
-            <marker date="1443614408000" expanded="true" signature="2502:2515" placeholder="..." />
-            <marker date="1443614408000" expanded="true" signature="4211:4224" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -862,34 +728,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/backend/ReviewytController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6863085">
-          <caret line="83" column="5" selection-start-line="71" selection-start-column="4" selection-end-line="83" selection-end-column="5" />
-          <folding>
-            <marker date="1443594279000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..tbl_youtube..." />
-            <marker date="1443594279000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_youtube..." />
-            <marker date="1443594279000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_youtube..." />
-            <marker date="1443594279000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_youtube..." />
-            <marker date="1443594279000" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-            <marker date="1443594279000" expanded="true" signature="-1:-1" placeholder="SELECT id FR..tbl_tags_youtube..." />
-            <marker date="1443594279000" expanded="true" signature="-1:-1" placeholder="SELECT id FR..tbl_youtube..." />
-            <marker date="1443594279000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_youtube..." />
-            <marker date="1443594279000" expanded="true" signature="-1:-1" placeholder="UPDATE tbl_y..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/backend/YoutubeController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-18.26923">
           <caret line="101" column="32" selection-start-line="101" selection-start-column="32" selection-end-line="101" selection-end-column="32" />
           <folding>
-            <marker date="1443615174000" expanded="true" signature="875:917" placeholder="SELECT COUNT..tbl_youtube..." />
-            <marker date="1443615174000" expanded="true" signature="1407:1542" placeholder="SELECT * FRO..tbl_youtube..." />
-            <marker date="1443615174000" expanded="true" signature="2329:2366" placeholder="SELECT * FRO..tbl_youtube..." />
-            <marker date="1443615174000" expanded="true" signature="2613:2650" placeholder="SELECT * FRO..tbl_youtube..." />
-            <marker date="1443615174000" expanded="true" signature="2739:2774" placeholder="DELETE FROM ..." />
+            <marker date="1443615174000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..tbl_youtube..." />
+            <marker date="1443615174000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_youtube..." />
+            <marker date="1443615174000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_youtube..." />
+            <marker date="1443615174000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_youtube..." />
+            <marker date="1443615174000" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -900,8 +748,8 @@
           <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
           <folding>
             <element signature="n#style#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <marker date="1443615114000" expanded="true" signature="939:982" placeholder="..." />
-            <marker date="1443615114000" expanded="true" signature="1044:1094" placeholder="..." />
+            <marker date="1443615114000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1443615114000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -912,8 +760,8 @@
           <caret line="67" column="54" selection-start-line="67" selection-start-column="54" selection-end-line="67" selection-end-column="54" />
           <folding>
             <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <marker date="1443614773000" expanded="true" signature="3123:3153" placeholder="..." />
-            <marker date="1443614773000" expanded="true" signature="3523:3551" placeholder="..." />
+            <marker date="1443614773000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1443614773000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -923,14 +771,240 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1295032214000" expanded="true" signature="1274:1408" placeholder="..." />
-            <marker date="1295032214000" expanded="true" signature="3565:3591" placeholder="SELECT * FRO..." />
-            <marker date="1295032214000" expanded="true" signature="5722:5754" placeholder="INSERT INTO ..." />
-            <marker date="1295032214000" expanded="true" signature="7380:7426" placeholder="DELETE FROM ..." />
-            <marker date="1295032214000" expanded="true" signature="7579:7595" placeholder="DROP TABLE `..." />
-            <marker date="1295032214000" expanded="true" signature="8098:8132" placeholder="ALTER TABLE ..." />
-            <marker date="1295032214000" expanded="true" signature="8334:8589" placeholder="..." />
-            <marker date="1295032214000" expanded="true" signature="8367:8580" placeholder="{...}" />
+            <marker date="1295032214000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1295032214000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1295032214000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1295032214000" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1295032214000" expanded="true" signature="-1:-1" placeholder="DROP TABLE `..." />
+            <marker date="1295032214000" expanded="true" signature="-1:-1" placeholder="ALTER TABLE ..." />
+            <marker date="1295032214000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1295032214000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/backend/category/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.038462">
+          <caret line="115" column="79" selection-start-line="115" selection-start-column="61" selection-end-line="115" selection-end-column="79" />
+          <folding>
+            <marker date="1443618498000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1443618498000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/crawler/YoutubeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.79549396">
+          <caret line="115" column="5" selection-start-line="98" selection-start-column="4" selection-end-line="115" selection-end-column="5" />
+          <folding>
+            <marker date="1443587461000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_youtube..." />
+            <marker date="1443587461000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..tbl_youtube..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/abc.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/backend/category/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.576923">
+          <caret line="53" column="92" selection-start-line="53" selection-start-column="74" selection-end-line="53" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/backend/CategoryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.4615386">
+          <caret line="66" column="35" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
+          <folding>
+            <marker date="1443618447000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1443618447000" expanded="true" signature="-1:-1" placeholder="SELECT cate_..tbl_archive..." />
+            <marker date="1443618447000" expanded="true" signature="-1:-1" placeholder="SELECT id, n..tbl_category..." />
+            <marker date="1443618447000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_category..." />
+            <marker date="1443618447000" expanded="true" signature="-1:-1" placeholder="SELECT id, n..tbl_category..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/crawler/Cnet100Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6811092">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1443195022000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_category..." />
+            <marker date="1443195022000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_link..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/crawler/TechcrunchController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5384617">
+          <caret line="140" column="8" selection-start-line="140" selection-start-column="8" selection-end-line="150" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/CrawlerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.14731368">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+          <folding>
+            <marker date="1443325463000" expanded="true" signature="-1:-1" placeholder="UPDATE tbl_l..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_0.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.3846154">
+          <caret line="361" column="49" selection-start-line="361" selection-start-column="49" selection-end-line="361" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_defines.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.730769">
+          <caret line="247" column="9" selection-start-line="247" selection-start-column="9" selection-end-line="247" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11785095">
+          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/abc.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="368.11322">
+          <caret line="2671" column="0" selection-start-line="2671" selection-start-column="0" selection-end-line="2671" selection-end-column="0" />
+          <folding>
+            <marker date="1443622082000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1443622082000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/crawler/CnetController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.307692">
+          <caret line="249" column="8" selection-start-line="249" selection-start-column="8" selection-end-line="249" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/backend/ReviewytController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.3846154">
+          <caret line="106" column="4" selection-start-line="106" selection-start-column="4" selection-end-line="114" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/backend/index/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.346154">
+          <caret line="61" column="87" selection-start-line="61" selection-start-column="87" selection-end-line="61" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/function.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.961538">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="22" />
+          <folding>
+            <marker date="1443623023000" expanded="true" signature="13652:13722" placeholder="SELECT id FR..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/backend/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.153846">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <marker date="1443622985000" expanded="true" signature="136:176" placeholder="SELECT COUNT..tbl_latest_comment..." />
+            <marker date="1443622985000" expanded="true" signature="280:312" placeholder="SELECT COUNT..tbl_archive..." />
+            <marker date="1443622985000" expanded="true" signature="423:487" placeholder="SELECT COUNT..tbl_link..." />
+            <marker date="1443622985000" expanded="true" signature="598:662" placeholder="SELECT COUNT..tbl_link..." />
+            <marker date="1443622985000" expanded="true" signature="779:843" placeholder="SELECT COUNT..tbl_link..." />
+            <marker date="1443622985000" expanded="true" signature="959:1023" placeholder="SELECT COUNT..tbl_link..." />
+            <marker date="1443622985000" expanded="true" signature="1143:1211" placeholder="SELECT COUNT..tbl_youtube..." />
+            <marker date="1443622985000" expanded="true" signature="3432:3466" placeholder="UPDATE tbl_t..." />
+            <marker date="1443622985000" expanded="true" signature="3541:3569" placeholder="SELECT tags ..tbl_archive..." />
+            <marker date="1443622985000" expanded="true" signature="4120:4194" placeholder="UPDATE tbl_t..." />
+            <marker date="1443622985000" expanded="true" signature="4425:4467" placeholder="UPDATE tbl_t..." />
+            <marker date="1443622985000" expanded="true" signature="4542:4570" placeholder="SELECT tags ..tbl_youtube..." />
+            <marker date="1443622985000" expanded="true" signature="5121:5203" placeholder="UPDATE tbl_t..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/backend/ReviewController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.09434">
+          <caret line="169" column="47" selection-start-line="169" selection-start-column="47" selection-end-line="169" selection-end-column="47" />
+          <folding>
+            <marker date="1443623094000" expanded="true" signature="391:417" placeholder="SELECT * FRO..tbl_category..." />
+            <marker date="1443623094000" expanded="true" signature="860:902" placeholder="SELECT COUNT..tbl_archive..." />
+            <marker date="1443623094000" expanded="true" signature="1297:1467" placeholder="SELECT id, c..tbl_archive..." />
+            <marker date="1443623094000" expanded="true" signature="1583:1638" placeholder="SELECT COUNT..tbl_archive..." />
+            <marker date="1443623094000" expanded="true" signature="2126:2163" placeholder="SELECT * FRO..tbl_archive..." />
+            <marker date="1443623094000" expanded="true" signature="3146:3183" placeholder="SELECT * FRO..tbl_archive..." />
+            <marker date="1443623094000" expanded="true" signature="3436:3473" placeholder="SELECT * FRO..tbl_archive..." />
+            <marker date="1443623094000" expanded="true" signature="3570:3605" placeholder="DELETE FROM ..." />
+            <marker date="1443623094000" expanded="true" signature="3907:3951" placeholder="SELECT id FR..tbl_tags..." />
+            <marker date="1443623094000" expanded="true" signature="4649:4686" placeholder="SELECT * FRO..tbl_archive..." />
+            <marker date="1443623094000" expanded="true" signature="5893:5928" placeholder="DELETE FROM ..." />
+            <marker date="1443623094000" expanded="true" signature="6163:6210" placeholder="SELECT id FR..tbl_archive..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/backend/review/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.307692">
+          <caret line="75" column="37" selection-start-line="75" selection-start-column="37" selection-end-line="75" selection-end-column="37" />
+          <folding>
+            <marker date="1443623453000" expanded="true" signature="3117:3130" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/FontendController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33272728">
+          <caret line="40" column="35" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="35" />
+          <folding>
+            <marker date="1443623033000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_category..." />
+            <marker date="1443623033000" expanded="true" signature="-1:-1" placeholder="SELECT id, n..tbl_tags..." />
+            <marker date="1443623033000" expanded="true" signature="-1:-1" placeholder="SELECT id, n..tbl_tags_youtube..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/fontend/layouts/nav.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.076923">
+          <caret line="83" column="45" selection-start-line="83" selection-start-column="45" selection-end-line="83" selection-end-column="45" />
+          <folding>
+            <marker date="1443623870000" expanded="true" signature="546:572" placeholder="..." />
+            <marker date="1443623870000" expanded="true" signature="1449:1475" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -938,8 +1012,28 @@
     <entry file="file://$PROJECT_DIR$/db/sql.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="78" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="78" />
+          <caret line="0" column="96" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="96" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.923077">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/crawler/AndroidcentralController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.627383">
+          <caret line="153" column="16" selection-start-line="153" selection-start-column="16" selection-end-line="153" selection-end-column="16" />
+          <folding>
+            <marker date="1443624475000" expanded="true" signature="385:455" placeholder="SELECT id FR..tbl_category..." />
+            <marker date="1443624475000" expanded="true" signature="2058:2096" placeholder="SELECT * FRO..tbl_category..." />
+            <marker date="1443624475000" expanded="true" signature="4063:4164" placeholder="SELECT * FRO..tbl_link..." />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -19,8 +19,12 @@ class IndexController extends BackendController
         $query = "SELECT COUNT(*) FROM tbl_link WHERE status = 0 AND source_id = 3";
         $data['wpcentral_crawler'] = $this->db_crawler->createCommand($query)->queryScalar();
 
+        $query = "SELECT COUNT(*) FROM tbl_link WHERE status = 0 AND source_id = 4";
+        $data['androidcenter_crawler'] = $this->db_crawler->createCommand($query)->queryScalar();
+
         $query = "SELECT COUNT(*) FROM tbl_youtube WHERE status = 1 AND is_approve = 0";
         $data['total_youtube'] = $this->db_crawler->createCommand($query)->queryScalar();
+
 
         $this->render('index', array('data' => $data));
     }

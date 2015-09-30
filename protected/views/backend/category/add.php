@@ -50,6 +50,11 @@ if(empty($row)) {
                         </div>
 
                         <div class="form-group">
+                            <label>Android center Url</label>
+                            <input class="form-control" type="text" name="android_center_url"
+                                   value="<?php echo $row['android_center_url']?>" placeholder="Nhập URL android_center_url">
+                        </div>
+                        <div class="form-group">
                             <label>Danh mục mục cha</label>
                             <select class="form-control" name="parent_id" style="width: 200px;">
                                 <option value="0">Chọn danh mục</option>

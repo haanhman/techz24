@@ -158,7 +158,7 @@ class ReviewController extends BackendController
         $values = array(
             'cate_id' => $row['cate_id'],
             'title' => $row['title'],
-            'alias' => change_url_seo($row['title']),
+            'alias' => $this->checkAlias(change_url_seo($row['title'])),
             'thumbnail' => $row['thumbnail'],
             'short_text' => $row['short_text'],
             'content' => $row['content'],
@@ -181,46 +181,17 @@ class ReviewController extends BackendController
         $this->redirect($this->createUrl('review/index', array('source' => $row['source_id'])));
     }
 
-    public function actionApproveAll()
-    {
-        $query = "SELECT * FROM tbl_archive WHERE is_delete = 0 AND have_video = 0";
-        $result = $this->db_crawler->createCommand($query)->queryAll();
-        if (empty($result)) {
-            die('khong co du lieu');
+    private function checkAlias($alias) {
+        $query = "SELECT id FROM tbl_archive WHERE alias = :alias";
+        $values = array(':alias' => $alias);
+        $id = $this->db->createCommand($query)->bindValues($values)->queryScalar();
+        if($id > 0) {
+            return $this->checkAlias($alias . '-2');
         }
-        foreach ($result as $row) {
-            if (!empty($row['tags'])) {
-                $tags = json_decode($row['tags'], true);
-                trim_array($tags);
-                $tags = $this->createTags($tags);
-            }
-            //`tags`, `meta_keywords`, `meta_description`, `gallery`, `source_id`, `source_url`, `status`
-            $values = array(
-                'parent_id' => $row['parent_id'],
-                'cate_id' => $row['cate_id'],
-                'title' => $row['title'],
-                'alias' => change_url_seo($row['title']),
-                'thumbnail' => $row['thumbnail'],
-                'short_text' => $row['short_text'],
-                'content' => $row['content'],
-                'gallery' => $row['gallery'],
-                'meta_keywords' => $row['meta_keywords'],
-                'meta_description' => $row['meta_description'],
-                'source_id' => $row['source_id'],
-                'source_url' => $row['source_url'],
-                'have_video' => $row['have_video'],
-                'status' => 1,
-                'tags' => $tags,
-                'created' => time()
-            );
-            yii_insert_row('archive', $values);
-            createMessage('Approve noi dung: ' . $row['title'] . ' thành công');
-        }
-
-        $query = "DELETE FROM tbl_archive";
-        $this->db_crawler->createCommand($query)->execute();
-        $this->redirect($this->createUrl('review/index'));
+        return $alias;
     }
+
+
 
     public function actionCheck() {
         $query = "UPDATE tbl_archive SET have_video = 1 WHERE content LIKE '%<div class=\"playOverlay\">Play</div>%'";

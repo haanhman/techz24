@@ -35,11 +35,7 @@ class FontendController extends CController
 
     public function getSource()
     {
-        return array(
-            1 => 'Cnet.com',
-            2 => 'Techcrunch.com',
-            3 => 'Windowscentral.com'
-        );
+        return getNewsSource();
     }
 
     public function getListCategory()

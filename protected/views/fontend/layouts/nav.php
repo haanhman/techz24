@@ -80,6 +80,9 @@ if($controller == 'video') {
                         if (!empty($categories)) {
                             echo '<ul>';
                             foreach ($categories as $cate) {
+                                if($cate['id'] == 20) {
+                                    continue;
+                                }
                                 echo '<li>';
                                 echo '<a>' . $cate['name'] . '</a>';
                                 if(!empty($cate['sub'])) {

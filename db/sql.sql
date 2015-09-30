@@ -1,1 +1,1 @@
-ALTER TABLE `tbl_youtube`  ADD `is_error` TINYINT(1) NOT NULL  AFTER `status`;
+ALTER TABLE `tbl_category` ADD `android_center_url` VARCHAR(255) NOT NULL AFTER `wpcentral_url`;

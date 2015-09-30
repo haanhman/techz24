@@ -12,7 +12,8 @@ function getYoutubeChannel() {
         2 => 'UCCjyq_K1Xwfg8Lndy7lKMpA',
         3 => 'UC-6OW5aJYBFM33zXQlBKPNA',
         4 => 'UCL8Nxsa1LB9DrMTHtt3IKiw',
-        5 => 'UCsW36751Gy-EAbHQwe9WBNw'
+        5 => 'UCsW36751Gy-EAbHQwe9WBNw',
+        6 => 'UC-kFCSJLpxuJdgMnQz8Dvrg',
     );
 }
 function getYoutubeChannelName() {
@@ -21,10 +22,20 @@ function getYoutubeChannelName() {
         2 => 'Techcrunch',
         3 => 'Engadget',
         4 => 'Mashable',
-        5 => 'PhoneDog'
+        5 => 'PhoneDog',
+        6 => 'Android Central'
     );
 }
 
+
+function getNewsSource() {
+    return array(
+        1 => 'Cnet.com',
+        2 => 'Techcrunch.com',
+        3 => 'Windowscentral.com',
+        4 => 'androidcentral.com'
+    );
+}
 
 function base_url()
 {
