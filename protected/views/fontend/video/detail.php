@@ -14,11 +14,11 @@ $url = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 
                             <div class="postmeta">
                                 <div class="share-post">SHARE :
-                                    <a href="http://www.facebook.com/sharer.php?u=<?php echo $url ?>"><i
+                                    <a target="_blank" href="http://www.facebook.com/sharer.php?u=<?php echo $url ?>"><i
                                             class="fa fa-facebook"></i></a>
-                                    <a href="https://plus.google.com/share?url=<?php echo $url ?>"><i
+                                    <a target="_blank" href="https://plus.google.com/share?url=<?php echo $url ?>"><i
                                             class="fa fa-google-plus"></i></a>
-                                    <a href="https://twitter.com/share?url=<?php echo $url ?>&amp;text=<?php echo CHtml::encode($row['title']) ?>&amp;hashtags=techz24"><i
+                                    <a target="_blank" href="https://twitter.com/share?url=<?php echo $url ?>&amp;text=<?php echo CHtml::encode($row['title']) ?>&amp;hashtags=techz24"><i
                                             class="fa fa-twitter"></i></a>
                                 </div>
                             </div>

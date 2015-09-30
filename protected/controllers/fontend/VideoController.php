@@ -70,6 +70,7 @@ class VideoController extends FontendController
             'title' => $row['title'] . ' - Techz24',
             'description' => short_text($row['description'], 160),
             'keywords' => short_text($keywords, 85),
+            'image' => getYoutubeThumbnail($row['thumbnails'], 'standard')
         );
 
 

@@ -3,7 +3,8 @@
     <div class="col-md-12">
         <?php echo showMessage() ?>
         <div class="tiles">
-            <div class="tile bg-green-meadow" onclick="window.location='<?php echo $this->createUrl('latestcomment') ?>';">
+            <div class="tile bg-green-meadow"
+                 onclick="window.location='<?php echo $this->createUrl('latestcomment') ?>';">
                 <div class="tile-body">
                     <i class="fa fa-comments"></i>
                 </div>
@@ -58,7 +59,8 @@
             </div>
         </div>
         <div class="tiles">
-            <div class="tile bg-red-intense" onclick="window.location='<?php echo $this->createUrl('reviewyt/index') ?>';">
+            <div class="tile bg-red-intense"
+                 onclick="window.location='<?php echo $this->createUrl('reviewyt/index') ?>';">
                 <div class="tile-body">
                     <i class="fa fa-youtube-play"></i>
                 </div>
@@ -68,12 +70,15 @@
                 </div>
             </div>
         </div>
-        <hr />
-        <a target="_blank" href="/crawler/youtube/channel?id=1">Youtube cnet</a><br />
-        <a target="_blank" href="/crawler/youtube/channel?id=2">Youtube Techcrunch</a><br />
-        <a target="_blank" href="/crawler/youtube/channel?id=3">Youtube Engadget</a><br />
-        <a target="_blank" href="/crawler/youtube/channel?id=4">Youtube Mashable</a><br />
-        <hr />
-        <a target="_blank" href="/crawler/youtube/detail">Youtube detail</a><br />
+        <hr/>
+
+        <?php
+        $channel = getYoutubeChannelName();
+        foreach ($channel as $channel_id => $channel_name) {
+            echo '<a target="_blank" href="/crawler/youtube/channel?id=' . $channel_id . '">' . $channel_name . '</a><br />';
+        }
+        ?>
+        <hr/>
+        <a target="_blank" href="/crawler/youtube/detail">Youtube detail</a><br/>
     </div>
 </div>

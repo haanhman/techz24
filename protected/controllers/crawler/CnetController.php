@@ -255,4 +255,10 @@ class CnetController extends CrawlerController
         $data['title'] = trim($title);
         return $data;
     }
+
+    public function actionTest() {
+        $time = date('d/m/Y H:i:s');
+        $values = array('created' => $time);
+        yii_insert_row('test_crawler', $values, 'db_crawler');
+    }
 }

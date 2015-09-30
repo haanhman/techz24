@@ -5,6 +5,27 @@ define('VARIABLE_NUMBER', 2);
 define('VARIABLE_FLOAT', 3);
 define('VARIABLE_ARRAY', 4);
 
+
+function getYoutubeChannel() {
+    return array(
+        1 => 'UCOmcA3f_RrH6b9NmcNa4tdg', //cnet
+        2 => 'UCCjyq_K1Xwfg8Lndy7lKMpA',
+        3 => 'UC-6OW5aJYBFM33zXQlBKPNA',
+        4 => 'UCL8Nxsa1LB9DrMTHtt3IKiw',
+        5 => 'UCsW36751Gy-EAbHQwe9WBNw'
+    );
+}
+function getYoutubeChannelName() {
+    return array(
+        1 => 'Cnet',
+        2 => 'Techcrunch',
+        3 => 'Engadget',
+        4 => 'Mashable',
+        5 => 'PhoneDog'
+    );
+}
+
+
 function base_url()
 {
     return Yii::app()->baseUrl;

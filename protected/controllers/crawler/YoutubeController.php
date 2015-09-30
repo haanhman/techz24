@@ -24,18 +24,8 @@ class YoutubeController extends CrawlerController
     public function init()
     {
         parent::init();
-        $this->_channel = array(
-            1 => 'UCOmcA3f_RrH6b9NmcNa4tdg', //cnet
-            2 => 'UCCjyq_K1Xwfg8Lndy7lKMpA',
-            3 => 'UC-6OW5aJYBFM33zXQlBKPNA',
-            4 => 'UCL8Nxsa1LB9DrMTHtt3IKiw'
-        );
-        $this->_channel_name = array(
-            1 => 'Cnet',
-            2 => 'Techcrunch',
-            3 => 'Engadget',
-            4 => 'Mashable'
-        );
+        $this->_channel = getYoutubeChannel();
+        $this->_channel_name = getYoutubeChannelName();
         $this->_key = 'AIzaSyAN_HfFGZ_yViypHGkHpPNSjUzDaiR-KaQ';
     }
 

@@ -23,7 +23,7 @@ class ReviewytController extends BackendController
     public function actionIndex()
     {
         $data = array();
-        $where = " AND is_approve = 0 ";
+        $where = " AND is_approve = 0 AND status = 1 ";
         $query_count = "SELECT COUNT(id) FROM tbl_youtube WHERE 1 " . $where;
         $item_count = $this->db_crawler->createCommand($query_count)->queryScalar();
 
