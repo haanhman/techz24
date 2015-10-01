@@ -68,35 +68,50 @@ class AndroidcentralController extends CrawlerController
         $category_url .= $page;
 //        echo $category_url . '<br />';
 
-        $response = $this->fectchDataFromUrl($category_url);
-        if(empty($response)) {
-            die('Error Khong lay duoc noi dung');
+        if($cate_id == 21) {
+            $response = $this->fectchDataFromUrl($category_url);
+            if(empty($response)) {
+                die('Error Khong lay duoc noi dung');
+            }
+
+            $html = str_get_html($response);
+            $items = $html->find('.grid_item');
+
+
+            $data = array();
+            foreach($items as $item) {
+                $a = $item->find('.grid_title a', 0);
+                $link_url = $this->_domain . trim($a->href);
+                if(strpos($link_url, 'forums.androidcentral.com') !== false) {
+                    continue;
+                }
+                $dek = $item->find('.grid_summary', 0);
+                if (!empty($dek)) {
+                    $str_desc = $dek->innertext();
+                    $str_desc = strip_tags($str_desc);
+                    $data[$link_url] = trim($str_desc);
+                }
+            }
+        } else {
+//            $category_url = 'http://techz24.vn/abc.html';
+            $html = file_get_html($category_url);
+            $content = $html->find('.content', 0);
+            $items = $content->find('.node-article');
+            foreach($items as $item) {
+                $a = $item->find('h2 a', 0);
+                $link_url = $this->_domain . trim($a->href);
+                if(strpos($link_url, 'forums.androidcentral.com') !== false) {
+                    continue;
+                }
+                $dek = $item->find('.body', 0);
+                if (!empty($dek)) {
+                    $str_desc = $dek->innertext();
+                    $str_desc = strip_tags($str_desc);
+                    $data[$link_url] = trim($str_desc);
+                }
+            }
         }
 
-//        $response = file_get_contents(ROOT_PATH. '/abc.txt');
-//        $response = str_replace('({"', '{"', $response);
-//        $response = str_replace('"});', '"}', $response);
-//        $response = json_decode($response, true);
-
-
-        $html = str_get_html($response);
-        $items = $html->find('.grid_item');
-
-
-        $data = array();
-        foreach($items as $item) {
-            $a = $item->find('.grid_title a', 0);
-            $link_url = $this->_domain . trim($a->href);
-            if(strpos($link_url, 'forums.androidcentral.com') !== false) {
-                continue;
-            }
-            $dek = $item->find('.grid_summary', 0);
-            if (!empty($dek)) {
-                $str_desc = $dek->innertext();
-                $str_desc = strip_tags($str_desc);
-                $data[$link_url] = trim($str_desc);
-            }
-        }
 
         if (empty($data)) {
             echo 'Khong co du lieu vui long kiem tra lai';
@@ -209,7 +224,7 @@ class AndroidcentralController extends CrawlerController
         $values = array(
             'parent_id' => $row['parent_id'],
             'cate_id' => $row['cate_id'],
-            'title' => str_replace(' | Windows Central', '', $title),
+            'title' => str_replace(' | Android Central', '', $title),
             'thumbnail' => $thumbnail,
             'gallery' => json_encode($list_images),
             'tags' => json_encode($tags),

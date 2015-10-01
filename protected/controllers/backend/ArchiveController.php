@@ -76,7 +76,7 @@ class ArchiveController extends BackendController
 
     public function actionShortUrl()
     {
-        $query = "SELECT id, source_url FROM " . $this->_table . " WHERE short_url = '' LIMIT 10";
+        $query = "SELECT id, source_url FROM " . $this->_table . " WHERE m = '' LIMIT 10";
         $result = $this->db->createCommand($query)->queryAll();
         if (empty($result)) {
             die('Het roi');

@@ -38,6 +38,7 @@ $fontend_settings = array(
                 'reviews.html' => array('category/index', 'defaultParams' => array('alias' => 'reviews')),
                 'sitemap.xml' => array('sitemap/index'),
                 'search' => array('search/index', 'urlSuffix' => '/'),
+                'search/video' => array('search/video', 'urlSuffix' => '/'),
                 'category/<alias:[a-zA-Z0-9\-]+>' => array('category/index', 'urlSuffix' => '.html'),
                 'topics/<alias:[a-zA-Z0-9\-]+>' => array('tag/index', 'urlSuffix' => '.html'),
                 'news/<alias:[a-zA-Z0-9\-]+>' => array('detail/index', 'urlSuffix' => '.html'),

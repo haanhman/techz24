@@ -1,1 +1,1 @@
-ALTER TABLE `tbl_category` ADD `android_center_url` VARCHAR(255) NOT NULL AFTER `wpcentral_url`;
+ALTER TABLE `tbl_tags_youtube` ADD `total_video` INT NOT NULL AFTER `is_feature`;

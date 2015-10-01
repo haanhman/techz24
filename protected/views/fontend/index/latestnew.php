@@ -51,21 +51,24 @@ if($controller != 'index') {
                     </div>
                     <?php
                     if (!empty($item['tags'])) {
-                        echo '<div class="tags">';
-                        echo 'Tags: ';
                         $tags = explode(',', trim($item['tags'], ','));
-                        $i = 1;
-                        foreach ($tags as $tag_id) {
-                            $tag = $data['tags'][$tag_id];
-                            ?>
-                            <a href="<?php echo $this->createUrl('tag/index', array('alias' => $tag['alias'])) ?>"><strong><?php echo $tag['name'] ?></strong></a>
-                            <?php
-                            if($i < count($tags)) {
-                                echo ', ';
+                        $tags = array_filter($tags);
+                        if(!empty($tags)) {
+                            echo '<div class="tags">';
+                            echo 'Tags: ';
+                            $i = 1;
+                            foreach ($tags as $tag_id) {
+                                $tag = $data['tags'][$tag_id];
+                                ?>
+                                <a href="<?php echo $this->createUrl('tag/index', array('alias' => $tag['alias'])) ?>"><strong><?php echo $tag['name'] ?></strong></a>
+                                <?php
+                                if($i < count($tags)) {
+                                    echo ', ';
+                                }
+                                $i++;
                             }
-                            $i++;
+                            echo '</div>';
                         }
-                        echo '</div>';
                     }
                     ?>
                 </div>

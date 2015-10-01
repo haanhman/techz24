@@ -14,7 +14,7 @@ class SearchController extends FontendController
         $item_count = $this->db->createCommand($query_count)->queryScalar();
 
         $pages = new CPagination($item_count);
-        $perPage = 10;
+        $perPage = 20;
         $pages->setPageSize($perPage);
 
         $page = isset($_GET['page']) ? intval($_GET['page']) : 0;
@@ -72,4 +72,65 @@ class SearchController extends FontendController
         }
         return $data;
     }
+
+
+    public function actionVideo()
+    {
+        $data = array();
+        $keyword = urlGETParams('keyword');
+
+
+
+        $where = " AND title LIKE '%" . addslashes($keyword) . "%' ";
+        $query_count = "SELECT COUNT(id) FROM tbl_youtube WHERE 1 " . $where;
+        $item_count = $this->db->createCommand($query_count)->queryScalar();
+
+        $pages = new CPagination($item_count);
+        $perPage = 30;
+        $pages->setPageSize($perPage);
+
+        $page = isset($_GET['page']) ? intval($_GET['page']) : 0;
+        if ($page <= 0) {
+            $page = 1;
+        }
+
+        $offset = ($page - 1) * $perPage;
+
+        $query = "SELECT * FROM tbl_youtube WHERE 1 " . $where . " "
+            . " ORDER BY created DESC "
+            . "LIMIT " . $offset . "," . $perPage;
+        $data['listVideo'] = $this->db->createCommand($query)->queryAll();
+
+        $tags = array();
+        if (!empty($data['listVideo'])) {
+            foreach ($data['listVideo'] as $item) {
+                $arr = explode(',', trim($item['tags'], ','));
+                if (!empty($arr)) {
+                    foreach ($arr as $t) {
+                        $tags[] = $t;
+                    }
+                }
+            }
+            $tags = array_unique($tags);
+            $data['tags'] = $this->getListTags($tags);
+        }
+
+        $title = $keyword . ' search results';
+        if($page > 1) {
+            $title .= ' - page ' . $page;
+        }
+
+        $this->_meta = array(
+            'title' => $title . ' - Techz24'
+        );
+//        echo "<pre>" . print_r($data, true) . "</pre>";
+//        die;
+        $this->render('video', array(
+            'data' => $data,
+            'item_count' => $item_count,
+            'page_size' => $perPage,
+            'pages' => $pages,
+        ));
+    }
+
 }

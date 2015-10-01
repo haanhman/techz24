@@ -34,7 +34,7 @@
 
     <meta name="description" content="<?php echo CHtml::encode($this->_meta['description']) ?>"/>
     <meta name="keywords" content="<?php echo CHtml::encode($this->_meta['keywords']) ?>"/>
-    <meta name="author" content="anhmantk"/>
+    <meta name="author" content="Techz24"/>
 
 
     <link rel="stylesheet" href="<?php echo base_url() ?>/public/assets/fontend/style.css">

@@ -34,7 +34,7 @@ $url = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
                             </div>
                             <div class="clear"></div>
 
-                            <div class="post-content">
+                            <div class="post-content" style="margin-top: 20px">
                                 <?php echo nl2br($row['description']) ?>
                                 <div class="clear"></div>
                                 <?php

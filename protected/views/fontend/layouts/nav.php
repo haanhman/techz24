@@ -110,8 +110,12 @@ if($controller == 'video') {
                         <div style="position: relative;margin: 12px 5px 0 0 !important;">
                             <?php
                             $keyword = isset($_GET['keyword']) ? urlGETParams('keyword') : '';
+                            $url_search = $this->createUrl('search/index');
+                            if($controller == 'video' | ($controller == 'search' && $action == 'video')) {
+                                $url_search = $this->createUrl('search/video');
+                            }
                             ?>
-                            <form action="<?php echo $this->createUrl('search/index') ?>" method="GET">
+                            <form action="<?php echo $url_search ?>" method="GET">
                                 <input value="<?php echo CHtml::encode($keyword) ?>" class="custom-text" type="text"
                                        name="keyword" placeholder="Search">
 

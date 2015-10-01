@@ -126,16 +126,33 @@ class IndexController extends BackendController
         $data = array_filter($data);
         $data = array_count_values($data);
         uasort($data, 'sortTag');
-        $tags = array();
-        foreach($data as $tid => $count) {
-            $tags[] = $tid;
-            if(count($tags) == 20) {
-                break;
-            }
+
+
+
+        $params = array();
+        foreach($data as $tag_id => $total_video) {
+            $params[] = array(
+                'tag_id' => $tag_id,
+                'total_video' => $total_video
+            );
         }
-        $query = "UPDATE tbl_tags_youtube SET is_feature = 1 WHERE id IN (". implode(',', $tags) .")";
+        yii_insert_multiple('tag_video', $params);
+
+
+        $query = "UPDATE tbl_tags_youtube AS t1, tbl_tag_video AS t2 ".
+                    "SET t1.total_video = t2.total_video WHERE t1.id = t2.tag_id";
         $this->db->createCommand($query)->execute();
-        createMessage('Update feature tag thanh cong');
+//
+//        $tags = array();
+//        foreach($data as $tid => $count) {
+//            $tags[] = $tid;
+//            if(count($tags) == 20) {
+//                break;
+//            }
+//        }
+//        $query = "UPDATE tbl_tags_youtube SET is_feature = 1 WHERE id IN (". implode(',', $tags) .")";
+//        $this->db->createCommand($query)->execute();
+        createMessage('Update total video tag thanh cong');
         $this->redirect($this->createUrl('index'));
     }
 

@@ -31,7 +31,7 @@ class CategoryController extends FontendController
         $item_count = $this->db->createCommand($query_count)->queryScalar();
 
         $pages = new CPagination($item_count);
-        $perPage = 10;
+        $perPage = 20;
         if($cate_id == 20) {
             $perPage = 100;
         }
