@@ -105,7 +105,7 @@ class VideoController extends FontendController
         $item_count = $this->db->createCommand($query_count)->queryScalar();
 
         $pages = new CPagination($item_count);
-        $perPage = 15;
+        $perPage = 30;
         $pages->setPageSize($perPage);
 
         $page = isset($_GET['page']) ? intval($_GET['page']) : 0;

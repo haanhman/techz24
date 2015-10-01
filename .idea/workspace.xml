@@ -68,10 +68,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/fontend/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6313043">
+            <state vertical-scroll-proportion="-13.961538">
               <caret line="48" column="105" selection-start-line="48" selection-start-column="105" selection-end-line="48" selection-end-column="105" />
               <folding>
                 <marker date="1443739920000" expanded="true" signature="1155:1201" placeholder="SELECT name ..tbl_tags..." />
@@ -79,6 +79,46 @@
                 <marker date="1443739920000" expanded="true" signature="1835:1930" placeholder="SELECT alias..tbl_tags_youtube..." />
                 <marker date="1443739920000" expanded="true" signature="2156:2224" placeholder="SELECT cate_..tbl_archive..." />
                 <marker date="1443739920000" expanded="true" signature="2556:2727" placeholder="SELECT id, c..tbl_archive..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VideoWidget.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/components/widget/VideoWidget.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tagvideo.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/components/widget/views/tagvideo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.2692308">
+              <caret line="5" column="71" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VideoController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/fontend/VideoController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5982609">
+              <caret line="107" column="21" selection-start-line="107" selection-start-column="21" selection-end-line="107" selection-end-column="21" />
+              <folding>
+                <marker date="1443740155000" expanded="true" signature="175:252" placeholder="SELECT * FRO..tbl_youtube..." />
+                <marker date="1443740155000" expanded="true" signature="481:586" placeholder="SELECT * FRO..tbl_youtube..." />
+                <marker date="1443740155000" expanded="true" signature="800:917" placeholder="SELECT * FRO..tbl_youtube..." />
+                <marker date="1443740155000" expanded="true" signature="1479:1525" placeholder="SELECT * FRO..tbl_youtube..." />
+                <marker date="1443740155000" expanded="true" signature="1803:1886" placeholder="UPDATE tbl_y..." />
+                <marker date="1443740155000" expanded="true" signature="2749:2805" placeholder="SELECT * FRO..tbl_youtube..." />
+                <marker date="1443740155000" expanded="true" signature="3122:3173" placeholder="SELECT * FRO..tbl_tags_youtube..." />
+                <marker date="1443740155000" expanded="true" signature="3546:3588" placeholder="SELECT COUNT..tbl_youtube..." />
+                <marker date="1443740155000" expanded="true" signature="3975:4098" placeholder="SELECT * FRO..tbl_youtube..." />
               </folding>
             </state>
           </provider>
@@ -117,7 +157,6 @@
         <option value="$PROJECT_DIR$/protected/components/widget/views/category.php" />
         <option value="$PROJECT_DIR$/protected/controllers/fontend/SitemapController.php" />
         <option value="$PROJECT_DIR$/protected/views/backend/reviewyt/detail.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/fontend/VideoController.php" />
         <option value="$PROJECT_DIR$/protected/controllers/crawler/CnetController.php" />
         <option value="$PROJECT_DIR$/define.php" />
         <option value="$PROJECT_DIR$/protected/controllers/crawler/YoutubeController.php" />
@@ -150,7 +189,6 @@
         <option value="$PROJECT_DIR$/protected/views/backend/youtube/index.php" />
         <option value="$PROJECT_DIR$/protected/views/backend/youtube/edit_tag.php" />
         <option value="$PROJECT_DIR$/protected/views/fontend/layouts/main.php" />
-        <option value="$PROJECT_DIR$/protected/components/widget/views/tagvideo.php" />
         <option value="$PROJECT_DIR$/protected/views/backend/index/index.php" />
         <option value="$PROJECT_DIR$/protected/controllers/backend/IndexController.php" />
         <option value="$PROJECT_DIR$/protected/views/backend/layouts/sidebar.php" />
@@ -158,6 +196,8 @@
         <option value="$PROJECT_DIR$/protected/controllers/backend/YoutubeController.php" />
         <option value="$PROJECT_DIR$/protected/components/widget/TagVideoWidget.php" />
         <option value="$PROJECT_DIR$/protected/controllers/fontend/IndexController.php" />
+        <option value="$PROJECT_DIR$/protected/components/widget/views/tagvideo.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/fontend/VideoController.php" />
       </list>
     </option>
   </component>
@@ -231,8 +271,26 @@
               <option name="myItemId" value="protected" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="techz24" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="techz24" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fontend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -250,117 +308,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="youtube" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="techz24" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="techz24" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="techz24" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="techz24" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="archive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="techz24" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="techz24" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="techz24" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="techz24" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="techz24" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="techz24" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="widget" />
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -435,7 +383,7 @@
     <frame x="0" y="23" width="1280" height="721" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27625203" sideWeight="0.49386504" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27625203" sideWeight="0.49386504" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297546" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -478,20 +426,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/define.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17677642">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bkgau/sql.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/crawler/YoutubeController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.79549396">
@@ -828,14 +762,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/widget/views/tagvideo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65384614">
-          <caret line="1" column="43" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/components/widget/views/tag.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -933,7 +859,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/fontend/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6313043">
+        <state vertical-scroll-proportion="-13.961538">
           <caret line="48" column="105" selection-start-line="48" selection-start-column="105" selection-end-line="48" selection-end-column="105" />
           <folding>
             <marker date="1443739920000" expanded="true" signature="1155:1201" placeholder="SELECT name ..tbl_tags..." />
@@ -941,6 +867,40 @@
             <marker date="1443739920000" expanded="true" signature="1835:1930" placeholder="SELECT alias..tbl_tags_youtube..." />
             <marker date="1443739920000" expanded="true" signature="2156:2224" placeholder="SELECT cate_..tbl_archive..." />
             <marker date="1443739920000" expanded="true" signature="2556:2727" placeholder="SELECT id, c..tbl_archive..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/widget/VideoWidget.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/widget/views/tagvideo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2692308">
+          <caret line="5" column="71" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/fontend/VideoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5982609">
+          <caret line="107" column="21" selection-start-line="107" selection-start-column="21" selection-end-line="107" selection-end-column="21" />
+          <folding>
+            <marker date="1443740155000" expanded="true" signature="175:252" placeholder="SELECT * FRO..tbl_youtube..." />
+            <marker date="1443740155000" expanded="true" signature="481:586" placeholder="SELECT * FRO..tbl_youtube..." />
+            <marker date="1443740155000" expanded="true" signature="800:917" placeholder="SELECT * FRO..tbl_youtube..." />
+            <marker date="1443740155000" expanded="true" signature="1479:1525" placeholder="SELECT * FRO..tbl_youtube..." />
+            <marker date="1443740155000" expanded="true" signature="1803:1886" placeholder="UPDATE tbl_y..." />
+            <marker date="1443740155000" expanded="true" signature="2749:2805" placeholder="SELECT * FRO..tbl_youtube..." />
+            <marker date="1443740155000" expanded="true" signature="3122:3173" placeholder="SELECT * FRO..tbl_tags_youtube..." />
+            <marker date="1443740155000" expanded="true" signature="3546:3588" placeholder="SELECT COUNT..tbl_youtube..." />
+            <marker date="1443740155000" expanded="true" signature="3975:4098" placeholder="SELECT * FRO..tbl_youtube..." />
           </folding>
         </state>
       </provider>
