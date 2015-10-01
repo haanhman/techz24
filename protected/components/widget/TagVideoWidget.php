@@ -10,15 +10,15 @@
  *
  * @author anhmantk
  */
-class CommentWidget extends MyWidget
+class TagVideoWidget extends MyWidget
 {
 
     public function run()
     {
         $data = array();
-        $query = "SELECT * FROM tbl_latest_comment ORDER BY id";
+        $query = "SELECT alias, name FROM tbl_tags_youtube WHERE is_feature = 1 ORDER BY total_video DESC LIMIT 10";
         $data['listItem'] = $this->db->createCommand($query)->queryAll();
-        $this->render('comment', array('data' => $data));
+        $this->render('tagvideo', array('data' => $data));
     }
 
 

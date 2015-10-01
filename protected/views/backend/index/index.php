@@ -3,17 +3,6 @@
     <div class="col-md-12">
         <?php echo showMessage() ?>
         <div class="tiles">
-            <div class="tile bg-green-meadow">
-                <a href="<?php echo $this->createUrl('latestcomment') ?>">
-                    <div class="tile-body">
-                        <i class="fa fa-comments"></i>
-                    </div>
-                    <div class="tile-object">
-                        <div class="name">Comment</div>
-                        <div class="number"><?php echo $data['total_comment'] ?></div>
-                    </div>
-                </a>
-            </div>
 
             <div class="tile bg-green">
                 <a href="<?php echo $this->createUrl('tag') ?>">

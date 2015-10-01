@@ -46,29 +46,8 @@ class IndexController extends FontendController
         $data['featureVideo'] = $this->db->createCommand($query)->queryAll();
 
         //danh sach tag video
-
-        $data['video_tags'] = array(
-            array(
-                'alias' => 'ios',
-                'name' => 'iOS'
-            ),
-            array(
-                'alias' => 'iphone',
-                'name' => 'iPhone'
-            ),
-            array(
-                'alias' => 'apple',
-                'name' => 'Apple'
-            ),
-            array(
-                'alias' => 'android',
-                'name' => 'Android'
-            ),
-            array(
-                'alias' => 'google',
-                'name' => 'Google'
-            )
-        );
+        $query = "SELECT alias, name FROM tbl_tags_youtube WHERE is_feature = 1 ORDER BY total_video DESC LIMIT 5";
+        $data['video_tags'] = $this->db->createCommand($query)->queryAll();
 
         $this->render('index', array('data' => $data));
     }

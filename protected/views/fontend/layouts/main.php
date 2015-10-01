@@ -82,9 +82,7 @@
 
                     <!-- widget latest comment -->
                     <div class="four columns gridfooter">
-                        <div class="widget lastcomment">
-                            <?php $this->widget('CommentWidget'); ?>
-                        </div>
+                        <?php $this->widget('TagVideoWidget'); ?>
                     </div>
 
 

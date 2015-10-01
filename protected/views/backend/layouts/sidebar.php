@@ -76,7 +76,18 @@
                 <a href="<?php echo $this->createUrl('youtube/index') ?>">
                     <i class="icon-social-youtube"></i>
                     <span class="title">Youtube</span>
+                    <span class="arrow "></span>
                 </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a href="<?php echo $this->createUrl('youtube/index') ?>">
+                            <i class="icon-briefcase"></i> Danh sách video</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo $this->createUrl('youtube/tag') ?>">
+                            <i class="icon-briefcase"></i> Tags</a>
+                    </li>
+                </ul>
             </li>
 
         </ul>

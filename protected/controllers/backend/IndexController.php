@@ -4,8 +4,8 @@ class IndexController extends BackendController
 {
     public function actionIndex() {
         $data = array();
-        $query = "SELECT COUNT(id) FROM tbl_latest_comment";
-        $data['total_comment'] = $this->db->createCommand($query)->queryScalar();
+//        $query = "SELECT COUNT(id) FROM tbl_latest_comment";
+//        $data['total_comment'] = $this->db->createCommand($query)->queryScalar();
 
         $query = "SELECT COUNT(*) FROM tbl_archive";
         $data['total_review'] = $this->db_crawler->createCommand($query)->queryScalar();
@@ -142,16 +142,6 @@ class IndexController extends BackendController
         $query = "UPDATE tbl_tags_youtube AS t1, tbl_tag_video AS t2 ".
                     "SET t1.total_video = t2.total_video WHERE t1.id = t2.tag_id";
         $this->db->createCommand($query)->execute();
-//
-//        $tags = array();
-//        foreach($data as $tid => $count) {
-//            $tags[] = $tid;
-//            if(count($tags) == 20) {
-//                break;
-//            }
-//        }
-//        $query = "UPDATE tbl_tags_youtube SET is_feature = 1 WHERE id IN (". implode(',', $tags) .")";
-//        $this->db->createCommand($query)->execute();
         createMessage('Update total video tag thanh cong');
         $this->redirect($this->createUrl('index'));
     }
