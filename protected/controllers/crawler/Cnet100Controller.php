@@ -23,8 +23,8 @@ class Cnet100Controller extends CrawlerController
 
         echo "<pre>" . print_r($category, true) . "</pre>";
         echo $category_url . '<br />';
-
-        $html = file_get_html($category_url);
+        $response = fectchContent($category_url);
+        $html = str_get_html($response);
         $data = array();
         for ($i = 1; $i <= 100; $i++) {
             $item = $html->find('div[section="prod' . $i . '"]', 0);
@@ -72,7 +72,9 @@ class Cnet100Controller extends CrawlerController
         }
         echo "<pre>" . print_r($row, true) . "</pre>";
         $url = $row['url'];
-        $html = file_get_html($url);
+
+        $response = fectchContent($url);
+        $html = str_get_html($response);
 
         $title = trim($html->find('title', 0)->innertext());
         $title = str_replace(' - CNET', '', $title);

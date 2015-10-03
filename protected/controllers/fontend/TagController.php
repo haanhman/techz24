@@ -60,7 +60,7 @@ class TagController extends FontendController
             'title' => $title . ' - Techz24',
             'description' => 'Techz24 news editors and reporters provide top '.$data['row']['name'].' news, with in-depth coverage of issues and events.'
         );
-
+        $this->_style_class = 'page right-sidebar singular fade-imgs-in-appear one-side-wide both-sidebars archive-page';
         $this->render('index', array(
             'data' => $data,
             'item_count' => $item_count,

@@ -13,7 +13,7 @@
 class ReviewWidget extends MyWidget {
 
     public function run() {
-        $query = "SELECT id, alias, title, thumbnail, short_text, cate_id FROM tbl_archive WHERE cate_id = 20 ORDER BY id DESC LIMIT 3";
+        $query = "SELECT id, alias, title, thumbnail, short_text, cate_id, created FROM tbl_archive WHERE cate_id = 20 ORDER BY id DESC LIMIT 10";
         $data =  $this->db->createCommand($query)->queryAll();
         $this->render('review', array('data' => $data));
     }

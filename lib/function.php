@@ -430,6 +430,13 @@ function plist_render($structure)
     echo $plist->toXML(true);
 }
 
+function convert_time_T($date) {
+    return date('Y-m-d', $date) .'T'.date('i:m:s', $date) .'+00:00';
+}
+
+function convert_time_Normal($date) {
+    return date('F d, Y', $date);
+}
 
 function convert_time($date, $granularity = 1)
 {
@@ -754,4 +761,26 @@ function strLeft2($str, $len, $pad = '...', $strip = FALSE) {
     }
 
     return substr_replace($txt, $pad, $pos);
+}
+
+function fectchContent($url)
+{
+    $ch = curl_init($url);
+
+//    curl_setopt($ch, CURLOPT_PROXY, '84.253.120.4');
+//    curl_setopt($ch, CURLOPT_PROXYPORT, 3128);
+
+    curl_setopt($ch, CURLOPT_VERBOSE, 1);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_HEADER, 0);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 0);
+    curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows NT 5.1; rv:13.0) Gecko/20100101 Firefox/13.0.1');
+    $response = curl_exec($ch);
+    if(empty($url)) {
+        die('Fetch content faile: ' . $url);
+    }
+    return $response;
 }

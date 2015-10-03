@@ -1,81 +1,103 @@
-<div class="row">
-    <div class="twelve columns">
-        <section id="maincontainer">
-            <!-- Side Left Main Conten Area -->
-            <div class="eight columns">
-                <div id="content">
-                    <h1 class="blocktitle" style="margin: 0px"><?php echo $data['row']['name'] ?></h1>
+<div class="boxed-content-wrapper clearfix">
 
+    <div class="nav-shaddow"></div>
+    <div style="margin-top:-17px; margin-bottom:20px;"></div>
+    <div class="inner">
 
-                    <div class="pagevideo">
-                        <?php
-                        $lists = array_chunk($data['listVideo'], 3);
+        <div class="main_container">
+            <div class="main-col">
+                <div class="category-title">
+                    <div class="mom_breadcrumb breadcrumb breadcrumbs">
+                        <div class="breadcrumbs-plus">
+                            <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                                <a itemprop="url" href="<?php echo $this->createUrl('index/index') ?>" class="home">
+                                    <span itemprop="title">Home</span>
+                                </a>
+                            </span>
+                            <span class="separator">
+                                <i class="sep fa-icon-double-angle-right"></i>
+                            </span>
+
+                            <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                                <a itemprop="url" href="<?php echo $this->createUrl('video/index') ?>" class="home">
+                                    <span itemprop="title">Video</span>
+                                </a>
+                            </span>
+
+                            <span class="separator">
+                                <i class="sep fa-icon-double-angle-right"></i>
+                            </span><?php echo $data['row']['name'] ?>
+
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="base-box blog-post p-single bp-horizontal-share post-198 post type-post status-publish format-standard has-post-thumbnail category-sports category-world tag-design tag-momizat tag-templates tag-themes tag-tutorial tag-wordpress"
+                    itemscope="" itemtype="http://schema.org/Article">
+                    <h1 class="post-tile entry-title" itemprop="name"><?php echo $data['row']['name'] ?></h1>
+                    <?php
+                    $lists = array_chunk($data['listVideo'], 2);
+                    foreach ($lists as $rows) {
                         $i = 1;
-                        $count = count($lists);
-                        foreach ($lists as $rows) {
-                            echo '<div class="rows">';
-                            foreach ($rows as $item) {
-                                $video_url = $this->createUrl('video/detail', array('alias' => $item['alias']));
-                                ?>
-                                <div class="four columns">
-                                    <div class="inner">
-                                        <h2>
-                                            <a class="title" href="<?php echo $video_url ?>">
-                                                <div class="img">
-                                                    <div class="meta-carousel">
-                                                        <i class="fa fa-eye"></i> <?php echo $item['viewer'] ?>
-                                                    </div>
-                                                    <div class="play-icon"></div>
-                                                    <img src="<?php echo getYoutubeThumbnail($item['thumbnails']) ?>"
-                                                         alt="<?php echo CHtml::encode($item['title']) ?>">
+                        foreach ($rows as $item) {
+                            $video_url = $this->createUrl('video/detail', array('alias' => $item['alias']));
+                            ?>
+                            <div class="one_half <?php if ($i == 2) echo 'last'; ?>">
+                                <div class="video-item">
+                                    <a href="<?php echo $video_url ?>">
+                                        <div class="thumbnail">
+                                            <div class="over">
+                                                <i class="icon-play"></i>
+                                            </div>
+                                            <img src="<?php echo getYoutubeThumbnail($item['thumbnails']) ?>"
+                                                 data-hidpi="<?php echo getYoutubeThumbnail($item['thumbnails']) ?>"
+                                                 alt="<?php echo CHtml::encode($item['title']) ?>"
+                                                 class="disappear appear">
+                                        </div>
+                                    </a>
 
-                                                    <div class="title-carousel">
-                                                        <div class="ticarousel"><?php echo $item['title'] ?></div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </h2>
-                                    </div>
+                                    <h2><a href="<?php echo $video_url ?>"><?php echo $item['title'] ?></a></h2>
                                 </div>
-                                <?php
-                            }
-                            if ($i < $count) {
-                                ?>
-                                <div class="clear"></div>
-                                <div class="line1 clearfix"></div>
-                                <div class="clear"></div>
-                                <?php
+                            </div>
+                            <?php
+                            if ($i == 2) {
+                                echo '<div class="clear"></div>';
                             }
                             $i++;
-                            echo '</div>';
                         }
-                        ?>
-                    </div>
-                    <div class="clear"></div>
-                    <div class="line1"></div>
-                    <?php
-                    if (!empty($data['listVideo'])) {
-                        echo '<div class="dataTables_paginate paging_bootstrap">';
-                        $this->widget('CLinkPager', array(
-                            'header' => '',
-                            'pages' => $pages,
-                        ));
-                        echo '</div>';
                     }
                     ?>
-                    <?php $this->renderPartial('//layouts/banner_top') ?>
+                    <!-- entry content -->
                 </div>
-            </div>
-            <div class="four columns">
-                <aside>
-                    <!-- widget video  -->
-                    <?php $this->widget('ReviewWidget'); ?>
+                <!-- base box -->
+                <div class="clear"></div>
+                <?php
+                if (!empty($data['listVideo'])) {
+                    echo '<div class="dataTables_paginate paging_bootstrap">';
+                    $this->widget('CLinkPager', array(
+                        'header' => '',
+                        'pages' => $pages,
+                    ));
+                    echo '</div>';
+                }
+                ?>
 
-                    <?php $this->widget('AdsWidget'); ?>
-
-                    <?php $this->widget('SocialWidget'); ?>
-                </aside>
             </div>
-        </section>
+            <!--main column-->
+
+            <div class="clear"></div>
+        </div>
+        <!--main container-->
+        <div class="sidebar main-sidebar">
+            <?php $this->widget('ReviewWidget'); ?>
+            <?php $this->renderPartial('//index/ads-small', array('data' => $data)) ?>
+            <?php $this->widget('RecentVideoAndTagWidget'); ?>
+            <?php $this->widget('SocialWidget'); ?>
+        </div>
+
+        <!--main sidebar-->
+        <div class="clear"></div>
     </div>
+    <!--main inner-->
+
 </div>

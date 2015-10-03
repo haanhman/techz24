@@ -21,125 +21,13 @@
     <favorites_list name="techz24" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="tag.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/backend/youtube/tag.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.2692308">
-              <caret line="5" column="102" selection-start-line="5" selection-start-column="102" selection-end-line="5" selection-end-column="102" />
-              <folding>
-                <marker date="1443739787000" expanded="true" signature="2042:2072" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="YoutubeController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/controllers/backend/YoutubeController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.576923">
-              <caret line="144" column="43" selection-start-line="144" selection-start-column="43" selection-end-line="144" selection-end-column="43" />
-              <folding>
-                <marker date="1443739828000" expanded="true" signature="875:917" placeholder="SELECT COUNT..tbl_youtube..." />
-                <marker date="1443739828000" expanded="true" signature="1407:1542" placeholder="SELECT * FRO..tbl_youtube..." />
-                <marker date="1443739828000" expanded="true" signature="2329:2366" placeholder="SELECT * FRO..tbl_youtube..." />
-                <marker date="1443739828000" expanded="true" signature="2613:2650" placeholder="SELECT * FRO..tbl_youtube..." />
-                <marker date="1443739828000" expanded="true" signature="2739:2774" placeholder="DELETE FROM ..." />
-                <marker date="1443739828000" expanded="true" signature="3087:3129" placeholder="SELECT * FRO..tbl_tags_youtube..." />
-                <marker date="1443739828000" expanded="true" signature="3272:3344" placeholder="UPDATE tbl_t..." />
-                <marker date="1443739828000" expanded="true" signature="3754:3806" placeholder="UPDATE tbl_t..." />
-                <marker date="1443739828000" expanded="true" signature="4055:4097" placeholder="SELECT * FRO..tbl_tags_youtube..." />
-                <marker date="1443739828000" expanded="true" signature="4719:4766" placeholder="SELECT COUNT..tbl_tags_youtube..." />
-                <marker date="1443739828000" expanded="true" signature="5186:5326" placeholder="SELECT * FRO..tbl_tags_youtube..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TagVideoWidget.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/components/widget/TagVideoWidget.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.807693">
-              <caret line="18" column="105" selection-start-line="18" selection-start-column="105" selection-end-line="18" selection-end-column="105" />
-              <folding>
-                <marker date="1443739906000" expanded="true" signature="288:384" placeholder="SELECT alias..tbl_tags_youtube..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/controllers/fontend/IndexController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.961538">
-              <caret line="48" column="105" selection-start-line="48" selection-start-column="105" selection-end-line="48" selection-end-column="105" />
-              <folding>
-                <marker date="1443739920000" expanded="true" signature="1155:1201" placeholder="SELECT name ..tbl_tags..." />
-                <marker date="1443739920000" expanded="true" signature="1628:1705" placeholder="SELECT * FRO..tbl_youtube..." />
-                <marker date="1443739920000" expanded="true" signature="1835:1930" placeholder="SELECT alias..tbl_tags_youtube..." />
-                <marker date="1443739920000" expanded="true" signature="2156:2224" placeholder="SELECT cate_..tbl_archive..." />
-                <marker date="1443739920000" expanded="true" signature="2556:2727" placeholder="SELECT id, c..tbl_archive..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VideoWidget.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/components/widget/VideoWidget.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tagvideo.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/components/widget/views/tagvideo.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.2692308">
-              <caret line="5" column="71" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VideoController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/protected/controllers/fontend/VideoController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5982609">
-              <caret line="107" column="21" selection-start-line="107" selection-start-column="21" selection-end-line="107" selection-end-column="21" />
-              <folding>
-                <marker date="1443740155000" expanded="true" signature="175:252" placeholder="SELECT * FRO..tbl_youtube..." />
-                <marker date="1443740155000" expanded="true" signature="481:586" placeholder="SELECT * FRO..tbl_youtube..." />
-                <marker date="1443740155000" expanded="true" signature="800:917" placeholder="SELECT * FRO..tbl_youtube..." />
-                <marker date="1443740155000" expanded="true" signature="1479:1525" placeholder="SELECT * FRO..tbl_youtube..." />
-                <marker date="1443740155000" expanded="true" signature="1803:1886" placeholder="UPDATE tbl_y..." />
-                <marker date="1443740155000" expanded="true" signature="2749:2805" placeholder="SELECT * FRO..tbl_youtube..." />
-                <marker date="1443740155000" expanded="true" signature="3122:3173" placeholder="SELECT * FRO..tbl_tags_youtube..." />
-                <marker date="1443740155000" expanded="true" signature="3546:3588" placeholder="SELECT COUNT..tbl_youtube..." />
-                <marker date="1443740155000" expanded="true" signature="3975:4098" placeholder="SELECT * FRO..tbl_youtube..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sidebar.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/backend/layouts/sidebar.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.923077">
-              <caret line="83" column="74" selection-start-line="83" selection-start-column="74" selection-end-line="83" selection-end-column="74" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
         <option value="Html5" />
       </list>
     </option>
@@ -147,57 +35,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/assets/fontend/techz24.css" />
-        <option value="$PROJECT_DIR$/protected/components/widget/RecentVideoWidget.php" />
+        <option value="$PROJECT_DIR$/protected/views/fontend/index/box-game.php" />
+        <option value="$PROJECT_DIR$/protected/views/fontend/index/top-video.php" />
+        <option value="$PROJECT_DIR$/protected/views/fontend/index/feature-video.php" />
+        <option value="$PROJECT_DIR$/protected/components/widget/FeatureWidget.php" />
+        <option value="$PROJECT_DIR$/protected/components/widget/FeatureVideoWidget.php" />
+        <option value="$PROJECT_DIR$/protected/components/widget/views/social.php" />
+        <option value="$PROJECT_DIR$/protected/views/fontend/index/ads-small.php" />
         <option value="$PROJECT_DIR$/protected/views/fontend/index/index.php" />
-        <option value="$PROJECT_DIR$/protected/components/widget/CategoryWidget.php" />
-        <option value="$PROJECT_DIR$/protected/views/fontend/video/index.php" />
-        <option value="$PROJECT_DIR$/protected/views/fontend/video/tag.php" />
-        <option value="$PROJECT_DIR$/protected/components/widget/views/recentvideo.php" />
-        <option value="$PROJECT_DIR$/protected/components/widget/views/category.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/fontend/SitemapController.php" />
-        <option value="$PROJECT_DIR$/protected/views/backend/reviewyt/detail.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/crawler/CnetController.php" />
-        <option value="$PROJECT_DIR$/define.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/crawler/YoutubeController.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/backend/ReviewytController.php" />
-        <option value="$PROJECT_DIR$/protected/views/backend/archive/index.php" />
-        <option value="$PROJECT_DIR$/db/admin_backend.sql" />
-        <option value="$PROJECT_DIR$/protected/views/backend/youtube/detail.php" />
-        <option value="$PROJECT_DIR$/protected/views/backend/category/add.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/backend/CategoryController.php" />
-        <option value="$PROJECT_DIR$/abc.txt" />
-        <option value="$PROJECT_DIR$/a.php" />
-        <option value="$PROJECT_DIR$/lib/function.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/backend/ReviewController.php" />
-        <option value="$PROJECT_DIR$/protected/views/backend/review/index.php" />
+        <option value="$PROJECT_DIR$/protected/views/fontend/index/recent-post.php" />
+        <option value="$PROJECT_DIR$/protected/components/widget/ReviewWidget.php" />
+        <option value="$PROJECT_DIR$/protected/components/widget/views/review.php" />
         <option value="$PROJECT_DIR$/protected/components/FontendController.php" />
-        <option value="$PROJECT_DIR$/b.php" />
-        <option value="$PROJECT_DIR$/protected/views/fontend/index/latestnew.php" />
-        <option value="$PROJECT_DIR$/abc.html" />
-        <option value="$PROJECT_DIR$/protected/controllers/crawler/AndroidcentralController.php" />
-        <option value="$PROJECT_DIR$/protected/views/backend/category/index.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/backend/ArchiveController.php" />
-        <option value="$PROJECT_DIR$/protected/views/fontend/search/video.php" />
-        <option value="$PROJECT_DIR$/protected/views/fontend/layouts/nav.php" />
-        <option value="$PROJECT_DIR$/protected/views/fontend/video/detail.php" />
-        <option value="$PROJECT_DIR$/protected/config/fontend.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/fontend/CategoryController.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/fontend/SearchController.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/fontend/TagController.php" />
-        <option value="$PROJECT_DIR$/db/sql.sql" />
-        <option value="$PROJECT_DIR$/protected/views/backend/youtube/index.php" />
-        <option value="$PROJECT_DIR$/protected/views/backend/youtube/edit_tag.php" />
-        <option value="$PROJECT_DIR$/protected/views/fontend/layouts/main.php" />
-        <option value="$PROJECT_DIR$/protected/views/backend/index/index.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/backend/IndexController.php" />
-        <option value="$PROJECT_DIR$/protected/views/backend/layouts/sidebar.php" />
-        <option value="$PROJECT_DIR$/protected/views/backend/youtube/tag.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/backend/YoutubeController.php" />
-        <option value="$PROJECT_DIR$/protected/components/widget/TagVideoWidget.php" />
         <option value="$PROJECT_DIR$/protected/controllers/fontend/IndexController.php" />
-        <option value="$PROJECT_DIR$/protected/components/widget/views/tagvideo.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/fontend/CategoryController.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/fontend/TagController.php" />
+        <option value="$PROJECT_DIR$/protected/views/fontend/tag/index.php" />
+        <option value="$PROJECT_DIR$/protected/views/fontend/search/index.php" />
+        <option value="$PROJECT_DIR$/protected/views/fontend/category/review.php" />
         <option value="$PROJECT_DIR$/protected/controllers/fontend/VideoController.php" />
+        <option value="$PROJECT_DIR$/protected/components/widget/views/feature_video.php" />
+        <option value="$PROJECT_DIR$/protected/components/widget/views/video_tag.php" />
+        <option value="$PROJECT_DIR$/protected/components/widget/RecentVideoAndTagWidget.php" />
+        <option value="$PROJECT_DIR$/protected/views/fontend/video/tag.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/fontend/DetailController.php" />
+        <option value="$PROJECT_DIR$/protected/views/fontend/detail/social.php" />
+        <option value="$PROJECT_DIR$/protected/views/fontend/video/detail.php" />
+        <option value="$PROJECT_DIR$/protected/views/fontend/review/index.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/fontend/ReviewController.php" />
+        <option value="$PROJECT_DIR$/protected/views/fontend/layouts/nav/search.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/fontend/SearchController.php" />
+        <option value="$PROJECT_DIR$/protected/views/fontend/search/video.php" />
+        <option value="$PROJECT_DIR$/public/js/gallery.js" />
+        <option value="$PROJECT_DIR$/protected/views/fontend/detail/gallery.php" />
+        <option value="$PROJECT_DIR$/protected/views/fontend/category/index.php" />
+        <option value="$PROJECT_DIR$/public/assets/fontend/techz24.css" />
+        <option value="$PROJECT_DIR$/protected/views/fontend/video/index.php" />
+        <option value="$PROJECT_DIR$/protected/views/fontend/layouts/main.php" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/protected/components/FontendUrlManager.php" />
+        <option value="$PROJECT_DIR$/protected/config/fontend.php" />
+        <option value="$PROJECT_DIR$/protected/views/fontend/layouts/nav/mobile.php" />
+        <option value="$PROJECT_DIR$/protected/views/fontend/layouts/nav/desktop.php" />
+        <option value="$PROJECT_DIR$/public/css/techz24.css" />
+        <option value="$PROJECT_DIR$/protected/views/backend/category/index.php" />
+        <option value="$PROJECT_DIR$/lib/function.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/crawler/WpcentralController.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/crawler/AndroidcentralController.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/crawler/Cnet100Controller.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/crawler/CnetController.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/crawler/TechcrunchController.php" />
+        <option value="$PROJECT_DIR$/protected/views/fontend/detail/index.php" />
       </list>
     </option>
   </component>
@@ -240,6 +128,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -271,26 +161,8 @@
               <option name="myItemId" value="protected" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="techz24" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="techz24" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fontend" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -308,14 +180,30 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="techz24" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="techz24" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -326,16 +214,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/protected/components/widget/views" />
-      <recent name="$PROJECT_DIR$/protected/views/backend/youtube" />
+      <recent name="$PROJECT_DIR$/protected/views/fontend/detail" />
+      <recent name="$PROJECT_DIR$/public/js/gallery" />
       <recent name="$PROJECT_DIR$/protected/views/fontend/search" />
-      <recent name="$PROJECT_DIR$/protected/controllers/crawler" />
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/protected/views/fontend/review" />
+      <recent name="$PROJECT_DIR$/protected/views/fontend/video" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/js/gallery" />
+      <recent name="$PROJECT_DIR$/protected/views/fontend/layouts" />
+      <recent name="$PROJECT_DIR$/protected/components/widget/views/footer" />
+      <recent name="$PROJECT_DIR$/protected/views/fontend/layouts/nav" />
       <recent name="$PROJECT_DIR$/protected/components" />
-      <recent name="$PROJECT_DIR$/bkgau" />
-      <recent name="$PROJECT_DIR$/protected/views/fontend/index" />
     </key>
   </component>
   <component name="RunManager">
@@ -381,9 +271,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="721" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27625203" sideWeight="0.49386504" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2907916" sideWeight="0.49386504" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297546" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -426,481 +316,467 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/controllers/crawler/YoutubeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79549396">
-          <caret line="115" column="5" selection-start-line="98" selection-start-column="4" selection-end-line="115" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/abc.txt">
+    <entry file="file://$PROJECT_DIR$/protected/components/widget/views/review.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/backend/category/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.576923">
-          <caret line="53" column="92" selection-start-line="53" selection-start-column="74" selection-end-line="53" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/backend/CategoryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.4615386">
-          <caret line="66" column="35" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/crawler/Cnet100Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6811092">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/crawler/TechcrunchController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617">
-          <caret line="140" column="8" selection-start-line="140" selection-start-column="8" selection-end-line="150" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/CrawlerController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.14731368">
-          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_0.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.3846154">
-          <caret line="361" column="49" selection-start-line="361" selection-start-column="49" selection-end-line="361" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_defines.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.730769">
-          <caret line="247" column="9" selection-start-line="247" selection-start-column="9" selection-end-line="247" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/a.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11785095">
-          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/crawler/CnetController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.307692">
-          <caret line="249" column="8" selection-start-line="249" selection-start-column="8" selection-end-line="249" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/backend/ReviewytController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="106" column="4" selection-start-line="106" selection-start-column="4" selection-end-line="114" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/function.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="22" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="22" />
+          <caret line="0" column="24" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/backend/ReviewController.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/fontend/index/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="169" column="47" selection-start-line="169" selection-start-column="47" selection-end-line="169" selection-end-column="47" />
+        <state vertical-scroll-proportion="-9.192307">
+          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="94" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/backend/review/index.php">
+    <entry file="file://$PROJECT_DIR$/goodnews/review-data.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="75" column="37" selection-start-line="75" selection-start-column="37" selection-end-line="75" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.029462738">
+          <caret line="36" column="40" selection-start-line="0" selection-start-column="0" selection-end-line="424" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/components/FontendController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33272728">
-          <caret line="40" column="35" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/b.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.538462">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/fontend/category/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="65" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/abc.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.81454545">
-          <caret line="1287" column="0" selection-start-line="1287" selection-start-column="0" selection-end-line="1287" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/backend/category/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.053913042">
-          <caret line="117" column="68" selection-start-line="117" selection-start-column="68" selection-end-line="117" selection-end-column="68" />
+        <state vertical-scroll-proportion="0.32409012">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
           <folding>
-            <marker date="1443701577000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443701577000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/backend/ArchiveController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="78" column="74" selection-start-line="78" selection-start-column="73" selection-end-line="78" selection-end-column="74" />
-          <folding>
-            <marker date="1443712462000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_category..." />
-            <marker date="1443712462000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
-            <marker date="1443712462000" expanded="true" signature="-1:-1" placeholder="SELECT id, c..." />
-            <marker date="1443712462000" expanded="true" signature="-1:-1" placeholder="SELECT id, s..." />
-            <marker date="1443712462000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_archive..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/crawler/AndroidcentralController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="96" column="49" selection-start-line="96" selection-start-column="49" selection-end-line="96" selection-end-column="49" />
-          <folding>
-            <marker date="1443701107000" expanded="true" signature="-1:-1" placeholder="SELECT id FR..tbl_category..." />
-            <marker date="1443701107000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_category..." />
-            <marker date="1443701107000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_link..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/fontend/search/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/fontend/index/latestnew.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29565218">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/fontend/search/video.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23652174">
-          <caret line="14" column="61" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/fontend/layouts/nav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.0">
-          <caret line="113" column="102" selection-start-line="113" selection-start-column="102" selection-end-line="113" selection-end-column="102" />
-          <folding>
-            <marker date="1443736794000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443736794000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/fontend.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68">
-          <caret line="40" column="53" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/fontend/video/detail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.423077">
-          <caret line="36" column="77" selection-start-line="36" selection-start-column="77" selection-end-line="36" selection-end-column="77" />
-          <folding>
-            <element signature="n#style#0;n#div#2;n#article#0;n#section#0;n#div#0;n#div#0;n#section#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1443874321000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_category..." />
+            <marker date="1443874321000" expanded="true" signature="-1:-1" placeholder="SELECT id, n..tbl_tags..." />
+            <marker date="1443874321000" expanded="true" signature="-1:-1" placeholder="SELECT id, n..tbl_tags_youtube..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/fontend/TagController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.384615">
-          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+        <state vertical-scroll-proportion="-15.692307">
+          <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="121" />
           <folding>
-            <marker date="1443737230000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_tags..." />
-            <marker date="1443737230000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..tbl_archive..." />
-            <marker date="1443737230000" expanded="true" signature="-1:-1" placeholder="SELECT id, c..tbl_archive..." />
-            <marker date="1443737230000" expanded="true" signature="-1:-1" placeholder="SELECT cate_..tbl_archive..." />
+            <marker date="1443874859000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_tags..." />
+            <marker date="1443874859000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..tbl_archive..." />
+            <marker date="1443874859000" expanded="true" signature="-1:-1" placeholder="SELECT id, c..tbl_archive..." />
+            <marker date="1443874859000" expanded="true" signature="-1:-1" placeholder="SELECT cate_..tbl_archive..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/fontend/SearchController.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/fontend/search/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.4230769">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        <state vertical-scroll-proportion="-6.207547">
+          <caret line="126" column="51" selection-start-line="126" selection-start-column="51" selection-end-line="126" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/fontend/category/review.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6290909">
+          <caret line="84" column="51" selection-start-line="84" selection-start-column="51" selection-end-line="84" selection-end-column="51" />
           <folding>
-            <marker date="1443737225000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..tbl_archive..." />
-            <marker date="1443737225000" expanded="true" signature="-1:-1" placeholder="SELECT id, c..tbl_archive..." />
-            <marker date="1443737225000" expanded="true" signature="-1:-1" placeholder="SELECT cate_..tbl_archive..." />
-            <marker date="1443737225000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..tbl_youtube..." />
-            <marker date="1443737225000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_youtube..." />
+            <marker date="1443876264000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/fontend/ReviewController.php">
+    <entry file="file://$PROJECT_DIR$/goodnews/video-data.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.029462738">
+          <caret line="234" column="18" selection-start-line="0" selection-start-column="0" selection-end-line="386" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/widget/views/feature_video.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.076923">
+          <caret line="20" column="84" selection-start-line="20" selection-start-column="84" selection-end-line="20" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/widget/views/recentvideo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.9615384">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1443255334000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_archive..." />
-            <marker date="1443255334000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_category..." />
-            <marker date="1443255334000" expanded="true" signature="-1:-1" placeholder="SELECT id, a..tbl_archive..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/fontend/CategoryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.115385">
-          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-          <folding>
-            <marker date="1443737214000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..tbl_archive..." />
-            <marker date="1443737214000" expanded="true" signature="-1:-1" placeholder="SELECT id, c..tbl_archive..." />
-            <marker date="1443737214000" expanded="true" signature="-1:-1" placeholder="SELECT cate_..tbl_archive..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/sql.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="81" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="81" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/backend/youtube/detail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65384614">
-          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/backend/youtube/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15478261">
-          <caret line="61" column="40" selection-start-line="61" selection-start-column="40" selection-end-line="61" selection-end-column="113" />
-          <folding>
-            <marker date="1443738619000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443738619000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/backend/youtube/edit_tag.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.576923">
-          <caret line="7" column="53" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/widget/TagWidget.php">
+    <entry file="file://$PROJECT_DIR$/protected/components/MyWidget.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.461538">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="23" />
-          <folding>
-            <marker date="1442581792000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_tags..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/fontend/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.038462">
-          <caret line="84" column="65" selection-start-line="84" selection-start-column="65" selection-end-line="84" selection-end-column="65" />
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/widget/views/video.php">
+    <entry file="file://$PROJECT_DIR$/protected/components/widget/views/video_tag.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65384614">
-          <caret line="1" column="33" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="33" />
+        <state vertical-scroll-proportion="-11.730769">
+          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/widget/views/tag.php">
+    <entry file="file://$PROJECT_DIR$/protected/components/widget/RecentVideoAndTagWidget.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/backend/index/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11826087">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.3830156">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <marker date="1443880445000" expanded="true" signature="-1:-1" placeholder="SELECT id FR..tbl_youtube..." />
+            <marker date="1443880445000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_youtube..." />
+            <marker date="1443880445000" expanded="true" signature="-1:-1" placeholder="SELECT alias..tbl_tags_youtube..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/backend/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1773913">
-          <caret line="6" column="62" selection-start-line="6" selection-start-column="62" selection-end-line="7" selection-end-column="83" />
-          <folding>
-            <marker date="1443739452000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..tbl_latest_comment..." />
-            <marker date="1443739452000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..tbl_archive..." />
-            <marker date="1443739452000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..tbl_link..." />
-            <marker date="1443739452000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..tbl_link..." />
-            <marker date="1443739452000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..tbl_link..." />
-            <marker date="1443739452000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..tbl_link..." />
-            <marker date="1443739452000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..tbl_youtube..." />
-            <marker date="1443739452000" expanded="true" signature="-1:-1" placeholder="UPDATE tbl_t..." />
-            <marker date="1443739452000" expanded="true" signature="-1:-1" placeholder="SELECT tags ..tbl_archive..." />
-            <marker date="1443739452000" expanded="true" signature="-1:-1" placeholder="UPDATE tbl_t..." />
-            <marker date="1443739452000" expanded="true" signature="-1:-1" placeholder="UPDATE tbl_t..." />
-            <marker date="1443739452000" expanded="true" signature="-1:-1" placeholder="SELECT tags ..tbl_youtube..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/backend/layouts/sidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.923077">
-          <caret line="83" column="74" selection-start-line="83" selection-start-column="74" selection-end-line="83" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/backend/archive/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38434783">
-          <caret line="13" column="14" selection-start-line="3" selection-start-column="8" selection-end-line="13" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/backend/youtube/tag.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2692308">
-          <caret line="5" column="102" selection-start-line="5" selection-start-column="102" selection-end-line="5" selection-end-column="102" />
-          <folding>
-            <marker date="1443739787000" expanded="true" signature="2042:2072" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/backend/YoutubeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.576923">
-          <caret line="144" column="43" selection-start-line="144" selection-start-column="43" selection-end-line="144" selection-end-column="43" />
-          <folding>
-            <marker date="1443739828000" expanded="true" signature="875:917" placeholder="SELECT COUNT..tbl_youtube..." />
-            <marker date="1443739828000" expanded="true" signature="1407:1542" placeholder="SELECT * FRO..tbl_youtube..." />
-            <marker date="1443739828000" expanded="true" signature="2329:2366" placeholder="SELECT * FRO..tbl_youtube..." />
-            <marker date="1443739828000" expanded="true" signature="2613:2650" placeholder="SELECT * FRO..tbl_youtube..." />
-            <marker date="1443739828000" expanded="true" signature="2739:2774" placeholder="DELETE FROM ..." />
-            <marker date="1443739828000" expanded="true" signature="3087:3129" placeholder="SELECT * FRO..tbl_tags_youtube..." />
-            <marker date="1443739828000" expanded="true" signature="3272:3344" placeholder="UPDATE tbl_t..." />
-            <marker date="1443739828000" expanded="true" signature="3754:3806" placeholder="UPDATE tbl_t..." />
-            <marker date="1443739828000" expanded="true" signature="4055:4097" placeholder="SELECT * FRO..tbl_tags_youtube..." />
-            <marker date="1443739828000" expanded="true" signature="4719:4766" placeholder="SELECT COUNT..tbl_tags_youtube..." />
-            <marker date="1443739828000" expanded="true" signature="5186:5326" placeholder="SELECT * FRO..tbl_tags_youtube..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/widget/TagVideoWidget.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.807693">
-          <caret line="18" column="105" selection-start-line="18" selection-start-column="105" selection-end-line="18" selection-end-column="105" />
-          <folding>
-            <marker date="1443739906000" expanded="true" signature="288:384" placeholder="SELECT alias..tbl_tags_youtube..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/fontend/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.961538">
-          <caret line="48" column="105" selection-start-line="48" selection-start-column="105" selection-end-line="48" selection-end-column="105" />
-          <folding>
-            <marker date="1443739920000" expanded="true" signature="1155:1201" placeholder="SELECT name ..tbl_tags..." />
-            <marker date="1443739920000" expanded="true" signature="1628:1705" placeholder="SELECT * FRO..tbl_youtube..." />
-            <marker date="1443739920000" expanded="true" signature="1835:1930" placeholder="SELECT alias..tbl_tags_youtube..." />
-            <marker date="1443739920000" expanded="true" signature="2156:2224" placeholder="SELECT cate_..tbl_archive..." />
-            <marker date="1443739920000" expanded="true" signature="2556:2727" placeholder="SELECT id, c..tbl_archive..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/widget/VideoWidget.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/components/widget/views/tagvideo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2692308">
-          <caret line="5" column="71" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/fontend/VideoController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5982609">
-          <caret line="107" column="21" selection-start-line="107" selection-start-column="21" selection-end-line="107" selection-end-column="21" />
+        <state vertical-scroll-proportion="-4.8846154">
+          <caret line="120" column="24" selection-start-line="120" selection-start-column="15" selection-end-line="120" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/fontend/tag/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.730769">
+          <caret line="110" column="14" selection-start-line="101" selection-start-column="12" selection-end-line="110" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/fontend/video/tag.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.1538463">
+          <caret line="74" column="43" selection-start-line="74" selection-start-column="43" selection-end-line="74" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/fontend/CategoryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.307693">
+          <caret line="82" column="8" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="121" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goodnews/chitiet-baiviet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.509434">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1443740155000" expanded="true" signature="175:252" placeholder="SELECT * FRO..tbl_youtube..." />
-            <marker date="1443740155000" expanded="true" signature="481:586" placeholder="SELECT * FRO..tbl_youtube..." />
-            <marker date="1443740155000" expanded="true" signature="800:917" placeholder="SELECT * FRO..tbl_youtube..." />
-            <marker date="1443740155000" expanded="true" signature="1479:1525" placeholder="SELECT * FRO..tbl_youtube..." />
-            <marker date="1443740155000" expanded="true" signature="1803:1886" placeholder="UPDATE tbl_y..." />
-            <marker date="1443740155000" expanded="true" signature="2749:2805" placeholder="SELECT * FRO..tbl_youtube..." />
-            <marker date="1443740155000" expanded="true" signature="3122:3173" placeholder="SELECT * FRO..tbl_tags_youtube..." />
-            <marker date="1443740155000" expanded="true" signature="3546:3588" placeholder="SELECT COUNT..tbl_youtube..." />
-            <marker date="1443740155000" expanded="true" signature="3975:4098" placeholder="SELECT * FRO..tbl_youtube..." />
+            <marker date="1443791384000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1443791384000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goodnews/chitiet-data.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.3773584">
+          <caret line="318" column="22" selection-start-line="273" selection-start-column="16" selection-end-line="318" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/fontend/detail/social.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.18868">
+          <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/fontend/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.237435">
+          <caret line="67" column="60" selection-start-line="67" selection-start-column="60" selection-end-line="67" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/fontend/ReviewController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.307692">
+          <caret line="48" column="48" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
+          <folding>
+            <marker date="1443884844000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_archive..." />
+            <marker date="1443884844000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_category..." />
+            <marker date="1443884844000" expanded="true" signature="-1:-1" placeholder="SELECT id, a..tbl_archive..." />
+            <marker date="1443884844000" expanded="true" signature="-1:-1" placeholder="SELECT id, a..tbl_archive..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/fontend/layouts/nav/search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.058925476">
+          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/fontend/SearchController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6135182">
+          <caret line="125" column="121" selection-start-line="125" selection-start-column="121" selection-end-line="125" selection-end-column="121" />
+          <folding>
+            <marker date="1443885530000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..tbl_archive..." />
+            <marker date="1443885530000" expanded="true" signature="-1:-1" placeholder="SELECT id, c..tbl_archive..." />
+            <marker date="1443885530000" expanded="true" signature="-1:-1" placeholder="SELECT cate_..tbl_archive..." />
+            <marker date="1443885530000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..tbl_youtube..." />
+            <marker date="1443885530000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_youtube..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/fontend/search/video.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9116118">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/gallery/gallery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8308458">
+          <caret line="84" column="2" selection-start-line="84" selection-start-column="2" selection-end-line="84" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/fontend/DetailController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6915078">
+          <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="51" selection-end-column="5" />
+          <folding>
+            <marker date="1443881313000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_archive..." />
+            <marker date="1443881313000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_category..." />
+            <marker date="1443881313000" expanded="true" signature="-1:-1" placeholder="SELECT id, a..tbl_archive..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/gallery/jssor.slider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6875">
+          <caret line="2494" column="160" selection-start-line="2494" selection-start-column="157" selection-end-line="2494" selection-end-column="160" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/gallery/jssor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="26.613598">
+          <caret line="994" column="61" selection-start-line="994" selection-start-column="59" selection-end-line="994" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/fontend/techz24.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="374" column="1" selection-start-line="374" selection-start-column="1" selection-end-line="374" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/fontend/video/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.45283">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/fontend/category/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.153846">
+          <caret line="20" column="71" selection-start-line="20" selection-start-column="71" selection-end-line="20" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/fontend/video/detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="42.53846">
+          <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/fontend/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49393415">
+          <caret line="126" column="72" selection-start-line="126" selection-start-column="72" selection-end-line="126" selection-end-column="72" />
+          <folding>
+            <marker date="1443888344000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1443888344000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maintain.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14731368">
+          <caret line="5" column="52" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/components/FontendUrlManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.076923">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/fontend.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.692307">
+          <caret line="38" column="100" selection-start-line="38" selection-start-column="100" selection-end-line="38" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/fontend/layouts/nav/mobile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.038462">
+          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/fontend/layouts/nav/desktop.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.8076925">
+          <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/fontend/detail/gallery.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.9615384">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/techz24.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6296296">
+          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/backend/category/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.346153">
+          <caret line="113" column="172" selection-start-line="113" selection-start-column="172" selection-end-line="113" selection-end-column="172" />
+          <folding>
+            <marker date="1443891570000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1443891570000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/crawler/YoutubeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.653846">
+          <caret line="115" column="5" selection-start-line="98" selection-start-column="4" selection-end-line="115" selection-end-column="5" />
+          <folding>
+            <marker date="1443587461000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_youtube..." />
+            <marker date="1443587461000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..tbl_youtube..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/crawler/WpcentralController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.45283">
+          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="49" selection-end-column="40" />
+          <folding>
+            <marker date="1443891998000" expanded="true" signature="-1:-1" placeholder="SELECT id FR..tbl_category..." />
+            <marker date="1443891998000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_category..." />
+            <marker date="1443891998000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_link..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/crawler/AndroidcentralController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.269231">
+          <caret line="151" column="40" selection-start-line="151" selection-start-column="40" selection-end-line="151" selection-end-column="40" />
+          <folding>
+            <marker date="1443892096000" expanded="true" signature="-1:-1" placeholder="SELECT id FR..tbl_category..." />
+            <marker date="1443892096000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_category..." />
+            <marker date="1443892096000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_link..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/crawler/Cnet100Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.076923">
+          <caret line="76" column="40" selection-start-line="76" selection-start-column="40" selection-end-line="76" selection-end-column="40" />
+          <folding>
+            <marker date="1443892125000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_category..." />
+            <marker date="1443892125000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_link..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/crawler/CnetController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.346154">
+          <caret line="131" column="38" selection-start-line="131" selection-start-column="38" selection-end-line="131" selection-end-column="38" />
+          <folding>
+            <marker date="1443892150000" expanded="true" signature="-1:-1" placeholder="SELECT id FR..tbl_category..." />
+            <marker date="1443892150000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_category..." />
+            <marker date="1443892150000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_link..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/crawler/TechcrunchController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.423077">
+          <caret line="116" column="38" selection-start-line="116" selection-start-column="38" selection-end-line="116" selection-end-column="38" />
+          <folding>
+            <marker date="1443892180000" expanded="true" signature="-1:-1" placeholder="SELECT id FR..tbl_category..." />
+            <marker date="1443892180000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_category..." />
+            <marker date="1443892180000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..tbl_link..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/function.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.038462">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="22" />
+          <folding>
+            <marker date="1443891920000" expanded="true" signature="-1:-1" placeholder="SELECT id FR..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/fontend/detail/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55979204">
+          <caret line="52" column="125" selection-start-line="52" selection-start-column="125" selection-end-line="52" selection-end-column="125" />
+          <folding>
+            <marker date="1443892875000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>

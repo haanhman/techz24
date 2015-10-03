@@ -38,15 +38,14 @@ class ReviewController extends FontendController
             'keywords' => $data['row']['meta_keywords'],
             'image' => $data['row']['thumbnail']
         );
-
-        $this->render('index', array(
+        $this->_style_class = 'page right-sidebar singular fade-imgs-in-appear one-side-wide both-sidebars archive-page';
+        $this->render('//detail/index', array(
             'data' => $data
         ));
     }
 
     private function getRelatedPost($row) {
-        $query = "SELECT id, alias, title, thumbnail, short_text, cate_id FROM tbl_archive WHERE cate_id = 20 AND id <> :id ORDER BY id DESC LIMIT 9";
-        $values = array(':id' => $row['id']);
-        return $this->db->createCommand($query)->bindValues($values)->queryAll();
+        $query = "SELECT id, alias, title, thumbnail, short_text, cate_id FROM tbl_archive ORDER BY id DESC LIMIT 8";
+        return $this->db->createCommand($query)->queryAll();
     }
 }

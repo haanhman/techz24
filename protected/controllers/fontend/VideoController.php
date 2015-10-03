@@ -16,21 +16,21 @@ class VideoController extends FontendController
         }
 
 
-        $query = "SELECT * FROM tbl_youtube WHERE id NOT IN (" . implode(',', $list_id) . ") ORDER BY created DESC LIMIT 18";
+        $query = "SELECT * FROM tbl_youtube WHERE id NOT IN (" . implode(',', $list_id) . ") ORDER BY created DESC LIMIT 15";
         $data['listVideo'] = $this->db->createCommand($query)->queryAll();
 
         //danh sach video xem nhieu 7 ngay qua
         $starttime = strtotime('-7 days');
         $endtime = time();
         $query = "SELECT * FROM tbl_youtube WHERE created BETWEEN " . $starttime . " AND " . $endtime . " ORDER BY viewer DESC LIMIT 12";
-        $data['videoXemNhieu'] = $this->db->createCommand($query)->queryAll();
+        $data['topView'] = $this->db->createCommand($query)->queryAll();
 
         $this->_meta = array(
             'title' => 'Videos - Techz24',
             'description' => 'Techz24 videos include HD streaming and downloadable content, the latest tech news, video reviews, Techz24 shows and more.',
             'keywords' => '',
         );
-
+        $this->_style_class = 'page right-sidebar singular fade-imgs-in-appear one-side-wide both-sidebars archive-page';
         $this->render('index', array(
             'data' => $data
         ));
@@ -77,7 +77,7 @@ class VideoController extends FontendController
         $query = "SELECT * FROM tbl_youtube ORDER BY created DESC LIMIT 18";
         $data['listVideo'] = $this->db->createCommand($query)->queryAll();
 
-
+        $this->_style_class = 'page right-sidebar singular fade-imgs-in-appear one-side-wide both-sidebars archive-page';
         $data['row'] = $row;
         $this->render('detail', array(
             'data' => $data
@@ -130,7 +130,7 @@ class VideoController extends FontendController
             'title' => $title . ' - Techz24',
             'description' => 'All videos in topic . ' . $data['row']['name'] . ' on Techz24'
         );
-
+        $this->_style_class = 'page right-sidebar singular fade-imgs-in-appear one-side-wide both-sidebars archive-page';
         $this->render('tag', array(
             'data' => $data,
             'item_count' => $item_count,

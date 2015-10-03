@@ -53,7 +53,7 @@ class SearchController extends FontendController
         $this->_meta = array(
             'title' => $title . ' - Techz24'
         );
-
+        $this->_style_class = 'page right-sidebar singular fade-imgs-in-appear one-side-wide both-sidebars archive-page';
         $this->render('index', array(
             'data' => $data,
             'item_count' => $item_count,
@@ -123,8 +123,7 @@ class SearchController extends FontendController
         $this->_meta = array(
             'title' => $title . ' - Techz24'
         );
-//        echo "<pre>" . print_r($data, true) . "</pre>";
-//        die;
+        $this->_style_class = 'page right-sidebar singular fade-imgs-in-appear one-side-wide both-sidebars archive-page';
         $this->render('video', array(
             'data' => $data,
             'item_count' => $item_count,

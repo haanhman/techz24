@@ -1,24 +1,20 @@
 <!DOCTYPE html>
-
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7]>
-<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en-US"> <![endif]-->
 <!--[if IE 7]>
-<html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<html class="no-js lt-ie9 lt-ie8" lang="en-US"> <![endif]-->
 <!--[if IE 8]>
-<html class="no-js lt-ie9" lang="en"> <![endif]-->
+<html class="no-js lt-ie9" lang="en-US"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js" lang="en"> <!--<![endif]-->
+<html class="no-js" lang="en-US"> <!--<![endif]-->
 <head>
-    <meta charset="utf-8"/>
-
-    <!-- Set the viewport width to device width for mobile -->
-    <meta name="viewport" content="width=device-width"/>
-
-    <title><?php echo $this->_meta['title'] ?></title>
     <?php
     $url = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
     ?>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title><?php echo $this->_meta['title'] ?></title>
     <meta property="og:site_name" content="Techz24"/>
     <meta property="og:title" content="<?php echo CHtml::encode($this->_meta['title']) ?>"/>
     <meta property="og:url" content="<?php echo $url ?>"/>
@@ -36,110 +32,143 @@
     <meta name="keywords" content="<?php echo CHtml::encode($this->_meta['keywords']) ?>"/>
     <meta name="author" content="Techz24"/>
 
+    <meta property="og:type" content="article"/>
+    <meta property="og:description" content="<?php echo CHtml::encode($this->_meta['description']) ?>"/>
+    <meta property="og:site_name" content="Techz24"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!--    <link rel="shortcut icon" href="" />-->
+    <!--    <link rel="apple-touch-icon" href="" />-->
 
-    <link rel="stylesheet" href="<?php echo base_url() ?>/public/assets/fontend/style.css">
-    <link rel="stylesheet" href="<?php echo base_url() ?>/public/assets/fontend/techz24.css">
-    <script src="<?php echo base_url() ?>/public/assets/fontend/js/jquery.min.js"></script>
-    <script src="<?php echo base_url() ?>/public/assets/fontend/js/modernizr.foundation.js"></script>
 
+    <!--[if lt IE 9]>
+    <script src="/public/js/html5.js"></script>
+    <script src="/public/js/IE9.js"></script>
+    <![endif]-->
 
-    <!-- switch theme  remove this on live project -->
-    <link href="<?php echo base_url() ?>/public/assets/fontend/css/schemes/redori.css" id="switchyuk" rel='stylesheet'
-          type='text/css'/>
-    <!-- end switch theme -->
+    <!-- This site is optimized with the Yoast WordPress SEO plugin v1.7.1 - https://yoast.com/wordpress/plugins/seo/ -->
+    <meta name="robots" content="noindex,follow"/>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' id='bp-parent-css-css' href='/public/css/buddypress.css' type='text/css' media='screen'/>
+    <link rel='stylesheet' id='contact-form-7-css' href='/public/css/styles.css' type='text/css' media='all'/>
+    <link rel='stylesheet' id='plugins-css' href='/public/css/plugins.css' type='text/css' media='all'/>
+    <link rel='stylesheet' id='main-css' href='/public/css/main.css' type='text/css' media='all'/>
+    <link rel='stylesheet' id='main-css' href='/public/css/techz24.css' type='text/css' media='all'/>
+    <link rel='stylesheet' id='responsive-css' href='/public/css/media.css' type='text/css' media='all'/>
+
+    <script type='text/javascript' src='/public/js/jquery.js'></script>
+    <script type='text/javascript' src='/public/js/widget-members.min.js' defer='defer'></script>
+    <!--[if IE 8]><![endif]-->
     <?php
     if($_SERVER['HTTP_HOST'] == 'techz24.com' || $_SERVER['HTTP_HOST'] == 'www.techz24.com') {
         $this->renderPartial('//layouts/analyticstracking');
     }
     ?>
+</head>
+
+<body class="<?php echo $this->_style_class ?>">
 
 
-<body>
-<!-- Pushy Menu -->
-<?php $this->renderPartial('//layouts/nav_mobile') ?>
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+<div class="boxed-wrap clearfix">
+    <div id="header-wrapper">
+        <!--statr topbar-->
+        <!--end topbar-->
+        <header class="header">
+            <div class="inner">
+                <div class="logo">
 
-<!-- Site Overlay -->
-<div class="site-overlay"></div>
-<div id="container">
-
-    <header>
-        <?php $this->renderPartial('//layouts/nav') ?>
-    </header>
-    <!-- End Header and Nav -->
-
-    <!-- main content -->
-    <?php echo $content ?>
-
-    <!-- FOOTER AREA  -->
-    <footer>
-        <div class="row">
-            <div class="twelve columns">
-                <section id="footer">
-                    <!-- widget tags -->
-                    <div class="four columns">
-                        <?php $this->widget('TagWidget'); ?>
-                    </div>
-
-                    <!-- widget latest comment -->
-                    <div class="four columns gridfooter">
-                        <?php $this->widget('TagVideoWidget'); ?>
-                    </div>
+                    <?php
+                    $have_h1 = false;
+                    $controller = Yii::app()->controller->id;
+                    $action = Yii::app()->controller->action->id;
+                    $title = 'Product reviews and prices, and tech news - Techz24';
+                    if($controller == 'video') {
+                        $title = 'Video - Techz24';
+                    }elseif($_SERVER['REDIRECT_URL'] == '/reviews.html') {
+                        $title = 'Top 100 products reviews | Techz24';
+                        $have_h1 = true;
+                    }
 
 
-                    <!-- widget contact -->
-                    <div class="four columns">
-                        <div class="widget wcontact">
-                            <h3 class="blocktitle"><span>OUR CONTACT</span></h3>
 
-                            <div class="dcontact">
-                                <img src="<?php echo base_url() ?>/public/assets/fontend/images/logo.png" alt=""><br/>
-                                <p>
-                                    Email: <a href="mailto:techz24.com@gmail.com">techz24.com@gmail.com</a>
-                                </p>
-                                <br/><br/>
-                                <div class="sn">
-                                    <a target="_blank" href="https://www.facebook.com/techz24dotcom" title="Techz24 on facebook"><i class="fa fa-facebook"></i></a>
-                                    <a target="_blank" href="https://plus.google.com/118045223438632929013" title="Techz24 on google plus"><i class="fa fa-google-plus"></i></a>
-                                    <a target="_blank" href="https://twitter.com/techz24" title="Techz24 on twitter"><i class="fa fa-twitter"></i></a>
-                                    <a target="_blank" href="https://www.youtube.com/channel/UCaFh8XtzKLXA6zjiylbI2zw/videos" title="Techz24 on youtube"><i class="fa fa-youtube"></i></a>
+                    if (($controller == 'video' || $controller == 'index') && $action == 'index') {
+                        $have_h1 = true;
+                    }
+
+
+                    if($have_h1) {
+                        echo '<h1>';
+                    }
+
+
+
+                    ?>
+
+                    <a title="<?php echo CHtml::encode($title) ?>" href="<?php echo $this->createUrl('index/index') ?>">
+                            <img class="tech-logo" src="/public/images/tech-logo.png"
+                                 alt="<?php echo CHtml::encode($title) ?>"/>
+                        <img class="mom_retina_logo tech-logo" src="/public/images/tech-logo.png"
+                             alt="<?php echo CHtml::encode($title) ?>"/>
+                        </a>
+                    <?php
+                    if($have_h1) {
+                        echo '</h1>';
+                    }
+                    ?>
+                </div>
+                <div class="header-right">
+                    <div class="mom-e3lanat-wrap  ">
+                        <div class="mom-e3lanat " style="">
+                            <div class="mom-e3lanat-inner">
+
+                                <div class="mom-e3lan" data-id="3969" style=" ">
+                                    <a target="_blank" href="http://ouo.io/ref/XiEqR34B" title="Techz24 - Make short links and earn the biggest money"><img src="<?php echo base_url() ?>/public/assets/fontend/img/ouo_ads.jpg" alt="Techz24 - Make short links and earn the biggest money"></a>
                                 </div>
+                                <!--mom ad-->
                             </div>
                         </div>
+                        <!--Mom ads-->
                     </div>
+                </div>
+                <!--header right-->
 
-
-                    <div class="row clear"></div>
-                    <!-- copyright -->
-                    <div class="copyright twelve columns">
-                        <div class="five columns">&copy; Copyright 2015, <span style="color:#FF0000;">TECH</span>Z24
-                        </div>
-                        <div class="seven columns">
-                            <div class="backtop">
-                                <a href="#container" class="toppage">
-                                    <i class="fa fa-chevron-up"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <div class="clear"></div>
             </div>
-        </div>
-    </footer>
+        </header>
+    </div>
+    <!--header wrap-->
+    <?php $this->renderPartial('//layouts/nav') ?>
+    <!--Navigation-->
+    <?php echo $content  ?>
+    <!--content boxed wrapper-->
+    <?php $this->renderPartial('//layouts/footer') ?>
 
-
+    <div class="clear"></div>
 </div>
+<!--Boxed wrap-->
+<a href="#" class="scrollToTop button"><i class="enotype-icon-arrow-up"></i></a>
 
 
-<!-- jQuery UI Widget and Effects Core -->
-<script src="<?php echo base_url() ?>/public/assets/fontend/js/foundation.min.js"></script>
-<script src="<?php echo base_url() ?>/public/assets/fontend/js/jquery-ui-1.8.23.custom.min.js"
-        type="text/javascript"></script>
-<!-- Latest version (3.0.6) of jQuery Mouse Wheel by Brandon Aaron -->
-<script src="<?php echo base_url() ?>/public/assets/fontend/js/jquery.mousewheel.min.js"
-        type="text/javascript"></script>
-<!-- jQuery Kinectic (1.5) used for touch scrolling -->
-<script src="<?php echo base_url() ?>/public/assets/fontend/js/jquery.kinetic.js" type="text/javascript"></script>
-<script src="<?php echo base_url() ?>/public/assets/fontend/js/pushy.js"></script>
-<script src="<?php echo base_url() ?>/public/assets/fontend/js/plugins.js"></script>
-<script src="<?php echo base_url() ?>/public/assets/fontend/js/app.js"></script>
+<script type='text/javascript' src='/public/js/sbp-lazy-load.min.js' defer='defer'></script>
+
+<script type='text/javascript' src='/public/js/plugins.js' defer='defer'></script>
+<script type='text/javascript' src='/public/js/main.js' defer='defer'></script>
+<script type='text/javascript' src='/public/js/jquery.prettyPhoto.js'></script>
 </body>
 </html>

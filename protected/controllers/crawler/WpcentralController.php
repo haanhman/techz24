@@ -46,8 +46,10 @@ class WpcentralController extends CrawlerController
             $category_url .= '?pg=' . $page;
         }
         echo $category_url . '<br />';
-        $html = file_get_html($category_url);
+        $response = fectchContent($category_url);
+        $html = str_get_html($response);
         $content = $html->find('.articles-simple-list', $page == 1 ? 1 : 0);
+
 
         $data = array();
         $assets = $content->find('.rf-entry');
@@ -108,7 +110,8 @@ class WpcentralController extends CrawlerController
 
         $url = $row['url'];
 
-        $html = file_get_html($url);
+        $response = fectchContent($url);
+        $html = str_get_html($response);
         if(empty($html)) {
             echo 'Error';
             $this->crawlerSuccess($row, 2);
@@ -203,6 +206,8 @@ class WpcentralController extends CrawlerController
         yii_insert_row('archive', $values, 'db_crawler');
         $this->crawlerSuccess($row);
     }
+
+
 
 
     private function getImages($gallery_href)

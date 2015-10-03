@@ -1,47 +1,61 @@
-<!-- Block main slider  Area -->
-<?php $this->renderPartial('catslide', array('data' => $data)) ?>
+<div class="boxed-content-wrapper clearfix">
 
-<div class="clear"></div>
-<!-- feature -->
-<?php $this->renderPartial('feature', array('data' => $data)) ?>
-<div class="clear"></div>
-<div class="row">
-    <div class="twelve columns">
-        <section id="maincontainer">
+    <div class="nav-shaddow"></div>
+    <div style="margin-top:-17px; margin-bottom:20px;"></div>
 
-            <!-- Side Left Main Conten Area -->
-            <div class="eight columns">
-                <div id="content">
-                    <!-- banner area -->
-                    <?php $this->renderPartial('//layouts/banner_top') ?>
-                    <!-- end banner -->
+    <div class="inner">
+        <div class="category-title">
+        </div>
+        <div class="vc_row wpb_row vc_row-fluid">
+            <div class="vc_main_col wpb_column vc_column_container ">
+                <div class="wpb_wrapper">
+                    <?php $this->renderPartial('feature-post', array('data' => $data)) ?>
+                    <?php $this->renderPartial('slide2', array('data' => $data)) ?>
+                    <!--News box two-->
+                    <?php $this->renderPartial('new-box', array('data' => $data)) ?>
+                    <!--news box-->
+                    <!--News box two-->
+                    <?php $this->renderPartial('box-social', array('data' => $data)) ?>
+                    <?php $this->renderPartial('box-game', array('data' => $data)) ?>
 
-                    <!-- Block Category 2 -->
-                    <?php $this->renderPartial('catebox', array('data' => $data)) ?>
-                    <!-- end block category 2 -->
+                    <!--news box-->
+                    <div class="clear"></div>
+                    <!--News box 2 columns-->
 
+                    <?php $this->renderPartial('recent-post', array('data' => $data)) ?>
 
-                    <?php $this->renderPartial('latestnew', array('data' => $data)) ?>
-
-                    <!-- Line thin  -->
-                    <div class="line1"></div>
-                    <!-- Banner Area -->
-                    <?php $this->renderPartial('//layouts/banner_top') ?>
                 </div>
             </div>
 
-            <div class="four columns">
-                <aside>
-                    <!-- widget video  -->
-                    <?php $this->widget('ReviewWidget'); ?>
+            <div class="vc_sec_sidebar sidebar secondary-sidebar wpb_column vc_column_container ">
+                <div class="wpb_wrapper">
 
-                    <?php $this->widget('RecentVideoWidget'); ?>
-
-                    <?php $this->widget('AdsWidget'); ?>
-
-                    <?php $this->widget('SocialWidget'); ?>
-                </aside>
+                    <div class="wpb_widgetised_column sidebar wpb_content_element">
+                        <div class="wpb_wrapper">
+                            <?php $this->widget('FeatureVideoWidget'); ?>
+                            <?php $this->renderPartial('ads-small', array('data' => $data)) ?>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
+
+            <div class="vc_sidebar sidebar main-sidebar wpb_column vc_column_container ">
+                <div class="wpb_wrapper">
+
+                    <div class="wpb_widgetised_column sidebar wpb_content_element">
+
+                            <?php $this->widget('ReviewWidget'); ?>
+                            <?php $this->widget('RecentVideoAndTagWidget'); ?>
+
+                            <?php $this->widget('SocialWidget'); ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
+    <!--main inner-->
+
 </div>

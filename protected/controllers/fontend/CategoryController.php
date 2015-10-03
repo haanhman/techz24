@@ -72,11 +72,15 @@ class CategoryController extends FontendController
             'description' => $cate['meta_description'],
             'keywords' => $cate['meta_keywords']
         );
-
+//        echo "<pre>" . print_r($data, true) . "</pre>";
+//        die;
         if($cate_id == 20) {
+            $this->_style_class = 'page right-sidebar singular fade-imgs-in-appear one-side-wide both-sidebars review-page';
             $this->render('review', array('data' => $data));
             return;
         }
+
+        $this->_style_class = 'page right-sidebar singular fade-imgs-in-appear one-side-wide both-sidebars archive-page';
         $this->render('index', array(
             'data' => $data,
             'item_count' => $item_count,

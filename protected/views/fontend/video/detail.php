@@ -2,137 +2,134 @@
 $row = $data['row'];
 $url = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 ?>
-<div class="row">
-    <div class="twelve columns">
-        <section id="maincontainer">
-            <div class="eight columns">
-                <div id="content">
-                    <!-- main content -->
-                    <section id="singlepost">
-                        <header>
-                            <h1><?php echo $row['title'] ?></h1>
+<div class="boxed-content-wrapper clearfix">
 
-                            <div class="postmeta">
-                                <div class="share-post">SHARE :
-                                    <a target="_blank" href="http://www.facebook.com/sharer.php?u=<?php echo $url ?>"><i
-                                            class="fa fa-facebook"></i></a>
-                                    <a target="_blank" href="https://plus.google.com/share?url=<?php echo $url ?>"><i
-                                            class="fa fa-google-plus"></i></a>
-                                    <a target="_blank" href="https://twitter.com/share?url=<?php echo $url ?>&amp;text=<?php echo CHtml::encode($row['title']) ?>&amp;hashtags=techz24"><i
-                                            class="fa fa-twitter"></i></a>
-                                </div>
-                            </div>
+    <div class="nav-shaddow"></div>
+    <div style="margin-top:-17px; margin-bottom:20px;"></div>
+    <div class="inner">
 
-                        </header>
-                        <article>
-                            <div class="vidpost" style="height: 450px; margin-bottom: 20px">
-                                <div class="flex-video widescreen">
-                                    <iframe width="100%" height="410"
-                                            src="https://www.youtube.com/embed/<?php echo $row['video_id'] ?>"
-                                            frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                            <div class="clear"></div>
+        <div class="main_container">
+            <div class="main-col">
+                <div class="category-title">
+                    <div class="mom_breadcrumb breadcrumb breadcrumbs">
+                        <div class="breadcrumbs-plus">
+                            <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                                <a itemprop="url" href="<?php echo $this->createUrl('index/index') ?>" class="home">
+                                    <span itemprop="title">Home</span>
+                                </a>
+                            </span>
+                            <span class="separator">
+                                <i class="sep fa-icon-double-angle-right"></i>
+                            </span>
+                            <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                                <a itemprop="url" href="<?php echo $this->createUrl('video/index') ?>" class="home">
+                                    <span itemprop="title">Video</span>
+                                </a>
+                            </span>
 
-                            <div class="post-content" style="margin-top: 20px">
-                                <?php echo nl2br($row['description']) ?>
-                                <div class="clear"></div>
-                                <?php
-                                if (!empty($data['tags'])) {
-                                    echo '<ul class="list-tag">';
-                                    echo '<li><strong>Tags: </strong></li>';
-                                    $i = 1;
-                                    foreach ($data['tags'] as $tag) {
-                                        echo '<li>';
-                                        echo '<a href="' . $this->createUrl('video/tag', array('alias' => $tag['alias'])) . '" title="' . CHtml::encode($tag['name']) . '">' . $tag['name'] . '</a>';
-                                        if ($i < count($data['tags'])) {
-                                            echo ', ';
-                                        }
-                                        echo '</li>';
-                                        $i++;
-                                    }
-                                    echo '</ul>';
-                                }
-                                $url = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-                                ?>
-
-                            </div>
-                            <div class="clear"></div>
-                            <div id="fb-root"></div>
-                            <script>(function (d, s, id) {
-                                    var js, fjs = d.getElementsByTagName(s)[0];
-                                    if (d.getElementById(id)) return;
-                                    js = d.createElement(s);
-                                    js.id = id;
-                                    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=1638273013053132";
-                                    fjs.parentNode.insertBefore(js, fjs);
-                                }(document, 'script', 'facebook-jssdk'));</script>
-                            <div class="fb-comments" data-href="<?php echo $url ?>" data-width="100%"
-                                 data-numposts="5"></div>
-                        </article>
-
-                        <!-- Banner Area -->
-                        <?php $this->renderPartial('//layouts/banner_top') ?>
-
-                        <h3 class="blocktitle" style="margin: 0px">Recent Videos</h3>
-
-                        <div class="pagevideo">
-                            <?php
-                            $lists = array_chunk($data['listVideo'], 3);
-                            $i = 1;
-                            $count = count($lists);
-                            foreach ($lists as $rows) {
-                                echo '<div class="rows">';
-                                foreach ($rows as $item) {
-                                    $video_url = $this->createUrl('video/detail', array('alias' => $item['alias']));
-                                    ?>
-                                    <div class="four columns">
-                                        <div class="inner">
-                                            <h2>
-                                                <a class="title" href="<?php echo $video_url ?>">
-                                                    <div class="img">
-                                                        <div class="meta-carousel">
-                                                            <i class="fa fa-eye"></i> <?php echo $item['viewer'] ?>
-                                                        </div>
-                                                        <div class="play-icon"></div>
-                                                        <img
-                                                            src="<?php echo getYoutubeThumbnail($item['thumbnails']) ?>"
-                                                            alt="<?php echo CHtml::encode($item['title']) ?>">
-
-                                                        <div class="title-carousel">
-                                                            <div class="ticarousel"><?php echo $item['title'] ?></div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </h2>
-                                        </div>
-                                    </div>
-                                    <?php
-                                }
-                                if ($i < $count) {
-                                    ?>
-                                    <div class="clear"></div>
-                                    <div class="line1 clearfix"></div>
-                                    <div class="clear"></div>
-                                    <?php
-                                }
-                                $i++;
-                                echo '</div>';
-                            }
-                            ?>
+                            <span class="separator">
+                                <i class="sep fa-icon-double-angle-right"></i>
+                            </span>
+                            <?php echo $data['row']['title'] ?>
                         </div>
-                    </section>
+                    </div>
                 </div>
-            </div>
-            <div class="four columns">
-                <aside>
-                    <?php $this->widget('ReviewWidget'); ?>
+                <div
+                    class="base-box blog-post p-single bp-horizontal-share post-198 post type-post status-publish format-standard has-post-thumbnail category-sports category-world tag-design tag-momizat tag-templates tag-themes tag-tutorial tag-wordpress"
+                    itemscope="" itemtype="http://schema.org/Article">
 
-                    <?php $this->widget('AdsWidget'); ?>
 
-                    <?php $this->widget('SocialWidget'); ?>
-                </aside>
+                    <div class="video_frame">
+                        <iframe width="820" height="480" src="http://www.youtube.com/embed/<?php echo $row['video_id'] ?>" frameborder="0" allowfullscreen></iframe>
+                    </div>
+
+                    <h1 class="post-tile entry-title" itemprop="name"><?php echo $data['row']['title'] ?></h1>
+
+                    <div class="mom-post-meta single-post-meta"></div>
+                    <div class="entry-content">
+                        <p><?php echo nl2br($row['description']) ?></p>
+
+                        <?php
+                        if (!empty($data['tags'])) {
+                            echo '<div class="post-tags">';
+                            echo '<span class="pt-title">Tags: </span>';
+                            foreach ($data['tags'] as $tag) {
+                                echo '<a rel="tag" href="' . $this->createUrl('video/tag', array('alias' => $tag['alias'])) . '" title="' . CHtml::encode($tag['name']) . '">' . $tag['name'] . '</a>';
+                            }
+                            echo '</div>';
+                        }
+                        ?>
+                        <?php $this->renderPartial('//detail/social', array('data' => $data)) ?>
+                        <div class="clear"></div>
+                        <div id="fb-root"></div>
+                        <script>(function(d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0];
+                                if (d.getElementById(id)) return;
+                                js = d.createElement(s); js.id = id;
+                                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=1638273013053132";
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }(document, 'script', 'facebook-jssdk'));</script>
+                        <div class="fb-comments" data-href="<?php echo $url ?>" data-width="100%" data-numposts="5"></div>
+                    </div>
+
+                    <!-- entry content -->
+                </div>
+                <!-- base box -->
+
+
+                <h2 class="single-title">Recent Videos</h2>
+
+                <div class="base-box single-box">
+                    <?php
+                    $lists = array_chunk($data['listVideo'], 3);
+                    foreach ($lists as $rows) {
+                        $i = 1;
+                        foreach ($rows as $item) {
+                            $video_url = $this->createUrl('video/detail', array('alias' => $item['alias']));
+                            ?>
+                            <div class="one_third <?php if ($i == 3) echo 'last'; ?>">
+                                <div class="video-item">
+                                    <a href="<?php echo $video_url ?>">
+                                        <div class="thumbnail">
+                                            <div class="over">
+                                                <i class="icon-play"></i>
+                                            </div>
+                                            <img src="<?php echo getYoutubeThumbnail($item['thumbnails']) ?>"
+                                                 data-hidpi="<?php echo getYoutubeThumbnail($item['thumbnails']) ?>"
+                                                 alt="<?php echo CHtml::encode($item['title']) ?>"
+                                                 class="disappear appear">
+                                        </div>
+                                    </a>
+
+                                    <h2><a href="<?php echo $video_url ?>"><?php echo $item['title'] ?></a></h2>
+                                </div>
+                            </div>
+                            <?php
+                            if ($i == 3) {
+                                echo '<div class="clear"></div>';
+                            }
+                            $i++;
+                        }
+                    }
+                    ?>
+                </div>
+
             </div>
-        </section>
+            <!--main column-->
+
+            <div class="clear"></div>
+            <div class="clear"></div>
+        </div>
+        <!--main container-->
+        <div class="sidebar main-sidebar">
+            <?php $this->widget('ReviewWidget'); ?>
+            <?php $this->renderPartial('//index/ads-small', array('data' => $data)) ?>
+            <?php $this->widget('SocialWidget'); ?>
+        </div>
+
+        <!--main sidebar-->
+        <div class="clear"></div>
     </div>
+    <!--main inner-->
+
 </div>

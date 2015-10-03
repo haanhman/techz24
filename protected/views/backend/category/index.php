@@ -103,19 +103,15 @@ $page = 1;
                                             }
                                             if (!empty($sub['techcrunch_url'])) {
                                                 $run_url = '/crawler/techcrunch/category?cate_id=' . $sub['id'] . '&page=' . $page;
-                                                echo 'Techcrunch: <a rel="nofollow" href="' . $run_url . '" target="_blank">' . $sub['techcrunch_url'] . '</a>';
+                                                echo 'Techcrunch: <a rel="nofollow" href="' . $run_url . '" target="_blank">' . $sub['techcrunch_url'] . '</a><br />';
                                             }
                                             if (!empty($sub['wpcentral_url'])) {
                                                 $run_url = '/crawler/wpcentral/category?cate_id=' . $sub['id'] . '&page=' . $page;
-                                                echo 'WPcentral: <a rel="nofollow" href="' . $run_url . '" target="_blank">' . $sub['wpcentral_url'] . '</a>';
-                                            }
-                                            if (!empty($sub['wpcentral_url'])) {
-                                                $run_url = '/crawler/wpcentral/category?cate_id=' . $sub['id'] . '&page=' . $page;
-                                                echo 'WPcentral: <a rel="nofollow" href="' . $run_url . '" target="_blank">' . $sub['wpcentral_url'] . '</a>';
+                                                echo 'WPcentral: <a rel="nofollow" href="' . $run_url . '" target="_blank">' . $sub['wpcentral_url'] . '</a><br />';
                                             }
                                             if (!empty($sub['android_center_url'])) {
                                                 $run_url = '/crawler/androidcentral/category?cate_id=' . $sub['id'] . '&page=0';
-                                                echo 'Android Center: <a rel="nofollow" href="' . $run_url . '" target="_blank">' . $sub['android_center_url'] . '</a>';
+                                                echo 'Android Center: <a rel="nofollow" href="' . $run_url . '" target="_blank">' . $sub['android_center_url'] . '</a><br />';
                                             }
                                             ?>
 

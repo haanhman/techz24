@@ -39,14 +39,14 @@ class DetailController extends FontendController
             'keywords' => $data['row']['meta_keywords'],
             'image' => $data['row']['thumbnail']
         );
-
+        $this->_style_class = 'page right-sidebar singular fade-imgs-in-appear one-side-wide both-sidebars archive-page';
         $this->render('index', array(
             'data' => $data
         ));
     }
 
     private function getRelatedPost($row) {
-        $query = "SELECT id, alias, title, thumbnail, short_text, cate_id FROM tbl_archive WHERE cate_id = :cate_id AND id <> :id ORDER BY id DESC LIMIT 10";
+        $query = "SELECT id, alias, title, thumbnail, short_text, cate_id FROM tbl_archive WHERE cate_id = :cate_id AND id <> :id ORDER BY id DESC LIMIT 8";
         $values = array(':cate_id' => $row['cate_id'], ':id' => $row['id']);
         return $this->db->createCommand($query)->bindValues($values)->queryAll();
     }

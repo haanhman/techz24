@@ -93,8 +93,8 @@ class AndroidcentralController extends CrawlerController
                 }
             }
         } else {
-//            $category_url = 'http://techz24.vn/abc.html';
-            $html = file_get_html($category_url);
+            $response = fectchContent($category_url);
+            $html = str_get_html($response);
             $content = $html->find('.content', 0);
             $items = $content->find('.node-article');
             foreach($items as $item) {
@@ -148,8 +148,8 @@ class AndroidcentralController extends CrawlerController
 //        die;
         $url = $row['url'];
 //        $url = 'http://techz24.vn/abc.html';
-
-        $html = file_get_html($url);
+        $response = fectchContent($url);
+        $html = str_get_html($response);
         if(empty($html)) {
             echo 'Error';
             $this->crawlerSuccess($row, 2);

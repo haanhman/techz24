@@ -12,6 +12,13 @@ class FontendUrlManager extends CUrlManager {
             }
             $params = $all_params;
         }
+
+        if ($route == 'category/index') {
+            if($params['alias'] == 'how-to') {
+                return '/how-to.html';
+            }
+        }
+
         return parent::createUrl($route, $params, $ampersand);
     }
 }

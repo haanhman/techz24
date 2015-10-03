@@ -52,7 +52,8 @@ class TechcrunchController extends CrawlerController
         echo "<pre>" . print_r($_GET, true) . "</pre>";
         echo $category_url . '<br />';
 
-        $html = file_get_html($category_url);
+        $response = fectchContent($category_url);
+        $html = str_get_html($response);
         $contents = $html->find('.block-content');
         $data = array();
         foreach($contents as $item) {
@@ -113,7 +114,8 @@ class TechcrunchController extends CrawlerController
         }
 
         $url = $row['url'];
-        $html = file_get_html($url);
+        $response = fectchContent($url);
+        $html = str_get_html($response);
         //div.article-main-body:first
         //.col-8:first
 

@@ -1,0 +1,11 @@
+#<FilesMatch "*.*">
+#    AuthName "Member Only"
+#    AuthType Basic
+#    AuthUserFile "/home4/anhmantk/public_html/bk/.htpasswd"
+#    require valid-user
+#</FilesMatch>
+
+AuthName "Member Only"
+AuthType Basic
+AuthUserFile ../.htpasswd
+require valid-user

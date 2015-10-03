@@ -53,7 +53,8 @@ class CnetController extends CrawlerController
         }
         echo "<pre>" . print_r($_GET, true) . "</pre>";
         echo $category_url . '<br />';
-        $html = file_get_html($category_url);
+        $response = fectchContent($category_url);
+        $html = str_get_html($response);
         $content = $html->find('.col-8', 0);
 
 
@@ -128,7 +129,8 @@ class CnetController extends CrawlerController
         echo "<pre>" . print_r($row, true) . "</pre>";
 
         $url = $row['url'];
-        $html = file_get_html($url);
+        $response = fectchContent($url);
+        $html = str_get_html($response);
         //div.article-main-body:first
         //.col-8:first
 

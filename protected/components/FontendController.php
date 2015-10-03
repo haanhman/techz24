@@ -9,6 +9,7 @@ class FontendController extends CController
      */
     protected $_meta;
     protected $_table;
+    protected $_style_class;
 
     /**
      *

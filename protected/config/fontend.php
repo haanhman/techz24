@@ -36,6 +36,7 @@ $fontend_settings = array(
                 '/mobile' => array('index/index'),
                 '/mobile/' => array('index/index'),
                 'reviews.html' => array('category/index', 'defaultParams' => array('alias' => 'reviews')),
+                'how-to.html' => array('category/index', 'defaultParams' => array('alias' => 'how-to')),
                 'sitemap.xml' => array('sitemap/index'),
                 'search' => array('search/index', 'urlSuffix' => '/'),
                 'search/video' => array('search/video', 'urlSuffix' => '/'),
