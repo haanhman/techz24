@@ -23,9 +23,8 @@ class IndexController extends FontendController
         $data['game']['category'] = $data['category'][19];
         $data['game']['post'] = $this->getListPost(19);
 
-
-
         $data['recent_post'] = $this->getNewPostNormal($category_feature);
+
         $tags = array();
         if (!empty($data['newpost'])) {
             foreach ($data['newpost'] as $item) {
@@ -83,6 +82,7 @@ class IndexController extends FontendController
     {
         $data = array();
         $category_feature[] = 20;
+        $category_feature[] = 22;
         $query = "SELECT id, cate_id, title, alias, thumbnail,short_text,created,tags FROM tbl_archive WHERE cate_id NOT IN (" . implode(',', $category_feature) . ") ORDER BY id DESC LIMIT 10";
         $result = $this->db->createCommand($query)->queryAll();
         foreach ($result as $item) {

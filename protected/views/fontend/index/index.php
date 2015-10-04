@@ -33,7 +33,8 @@
                     <div class="wpb_widgetised_column sidebar wpb_content_element">
                         <div class="wpb_wrapper">
                             <?php $this->widget('FeatureVideoWidget'); ?>
-                            <?php $this->renderPartial('ads-small', array('data' => $data)) ?>
+                            <?php $this->widget('AdsWidget'); ?>
+                            <?php $this->widget('HowToWidget'); ?>
                         </div>
                     </div>
                 </div>

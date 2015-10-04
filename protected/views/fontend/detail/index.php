@@ -135,7 +135,7 @@ $url = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
         <div class="sidebar main-sidebar">
             <?php $this->widget('ReviewWidget'); ?>
             <?php $this->widget('RecentVideoAndTagWidget'); ?>
-            <?php $this->renderPartial('//index/ads-small', array('data' => $data)) ?>
+            <?php $this->widget('AdsWidget'); ?>
             <?php $this->widget('SocialWidget'); ?>
         </div>
 

@@ -96,7 +96,7 @@
         <!--main container-->
         <div class="sidebar main-sidebar">
             <?php $this->widget('ReviewWidget'); ?>
-            <?php $this->renderPartial('//index/ads-small', array('data' => $data)) ?>
+            <?php $this->widget('AdsWidget'); ?>
             <?php $this->widget('RecentVideoAndTagWidget'); ?>
             <?php $this->widget('SocialWidget'); ?>
         </div>

@@ -94,8 +94,8 @@
         z-index: 9999;
         background: gray;
         position: fixed;
-        top: 100px;
-        right: 10px;
+        left: 290px;
+        bottom: 100px;
         padding: 5px;
     }
     div.panel a {

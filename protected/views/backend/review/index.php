@@ -12,17 +12,29 @@
                class="btn btn-circle red-sunglo btn-sm">Android Central</a>
         </div>
 
+        <?php
+        $source = isset($_GET['source']) ? intval($_GET['source']) : 1;
+        ?>
+        <div class="page-bar">
+            <ul class="page-breadcrumb">
+                <?php
+                if ($source == 1) {
+                    echo '<li><a href="' . $this->createUrl('review/checkvideo', array('source' => $source)) . '">Check video Cnet</a></li>';
+                } else {
+                    echo '<li><a href="' . $this->createUrl('review/checksource', array('source' => $source)) . '">Check source trong nội dung</a></li>';
+                }
+                ?>
+            </ul>
+        </div>
+
+
         <p>Tổng số có <strong><?php echo $item_count ?></strong> nội dung cần duyệt</p>
         <?php
         if ($data['total_have_video'] > 0) {
             echo 'Có <strong>' . $data['total_have_video'] . '</strong> tin cần phải check video';
         }
+
         ?>
-        <p>
-            <a onclick="return confirm('are you sure?');" href="<?php echo $this->createUrl('review/approveall') ?>">Approve
-                All Data</a> ||
-            <a href="<?php echo $this->createUrl('review/check') ?>">Check have video</a>
-        </p>
 
         <div class="portlet box green">
             <div class="portlet-title">

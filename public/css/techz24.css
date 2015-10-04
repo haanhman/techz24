@@ -398,3 +398,10 @@ div.rank {
 .jssorb13 div:hover, .jssorb13 .av:hover { background-position: -35px -5px; }
 .jssorb13 .av { background-position: -65px -5px; }
 .jssorb13 .dn, .jssorb13 .dn:hover { background-position: -95px -5px; }
+
+/*widget-howto*/
+.widget-howto h4 {
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+}

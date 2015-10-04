@@ -15,6 +15,5 @@ class AdsWidget extends MyWidget {
     public function run() {
         $this->render('ads');
     }
-
 }
 

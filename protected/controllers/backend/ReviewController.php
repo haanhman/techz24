@@ -193,11 +193,27 @@ class ReviewController extends BackendController
 
 
 
-    public function actionCheck() {
-        $query = "UPDATE tbl_archive SET have_video = 1 WHERE content LIKE '%<div class=\"playOverlay\">Play</div>%'";
+    public function actionCheckVideo() {
+        $query = "UPDATE tbl_archive SET have_video = 1 WHERE content LIKE '%<div class=\"playOverlay\">Play</div>%' AND source_id = " . $_GET['source'];;
+        $this->db_crawler->createCommand($query)->execute();
+
+        $query = "UPDATE tbl_archive SET have_video = 1 WHERE content LIKE '%source:%' AND source_id = " . $_GET['source'];
+        $this->db_crawler->createCommand($query)->execute();
+
+        $query = "UPDATE tbl_archive SET have_video = 1 WHERE content LIKE '%via:%' AND source_id = " . $_GET['source'];
         $this->db_crawler->createCommand($query)->execute();
         createMessage('Check thanh cong');
-        $this->redirect($this->createUrl('review/index'));
+        $this->redirect($this->createUrl('review/index', array('source' => $_GET['source'])));
+    }
+
+    public function actionCheckSource() {
+        $query = "UPDATE tbl_archive SET have_video = 1 WHERE content LIKE '%source:%' AND source_id = " . $_GET['source'];
+        $this->db_crawler->createCommand($query)->execute();
+
+        $query = "UPDATE tbl_archive SET have_video = 1 WHERE content LIKE '%via:%' AND source_id = " . $_GET['source'];
+        $this->db_crawler->createCommand($query)->execute();
+        createMessage('Check thanh cong');
+        $this->redirect($this->createUrl('review/index', array('source' => $_GET['source'])));
     }
 
 }
